@@ -1,3 +1,159 @@
+@ARTICLE{Ren2024-dp,
+  title         = "Samba: Simple hybrid state space models for efficient
+                   unlimited context language modeling",
+  author        = "Ren, Liliang and Liu, Yang and Lu, Yadong and Shen, Yelong
+                   and Liang, Chen and Chen, Weizhu",
+  journal       = "ArXiv",
+  volume        = "abs/2406.07522",
+  abstract      = "Efficiently modeling sequences with infinite context length
+                   has been a long-standing problem. Past works suffer from
+                   either the quadratic computation complexity or the limited
+                   extrapolation ability on length generalization. In this work,
+                   we present Samba, a simple hybrid architecture that
+                   layer-wise combines Mamba, a selective State Space Model
+                   (SSM), with Sliding Window Attention (SWA). Samba selectively
+                   compresses a given sequence into recurrent hidden states
+                   while still maintaining the ability to precisely recall
+                   memories with the attention mechanism. We scale Samba up to
+                   3.8B parameters with 3.2T training tokens and show that Samba
+                   substantially outperforms the state-of-the-art models based
+                   on pure attention or SSMs on a wide range of benchmarks. When
+                   trained on 4K length sequences, Samba can be efficiently
+                   extrapolated to 256K context length with perfect memory
+                   recall and show improved token predictions up to 1M context
+                   length. As a linear-time sequence model, Samba enjoys a 3.73x
+                   higher throughput compared to Transformers with grouped-query
+                   attention when processing user prompts of 128K length, and
+                   3.64x speedup when generating 64K tokens with unlimited
+                   streaming. A sample implementation of Samba is publicly
+                   available in https://github.com/microsoft/Samba.",
+  month         =  jun,
+  year          =  2024,
+  archivePrefix = "arXiv",
+  language      = "en"
+}
+
+@ARTICLE{Ungless2023-xb,
+  title     = "Potential pitfalls with automatic sentiment analysis: The example
+               of queerphobic bias",
+  author    = "Ungless, Eddie L and Ross, Bj{\"{o}}rn and Belle, Vaishak",
+  journal   = "Soc. Sci. Comput. Rev.",
+  publisher = "SAGE Publications",
+  volume    =  41,
+  number    =  6,
+  pages     = "2211--2229",
+  abstract  = "Automated sentiment analysis can help efficiently detect trends
+               in patients' moods, consumer preferences, political attitudes and
+               more. Unfortunately, like many natural language processing
+               techniques, sentiment analysis can show bias against marginalised
+               groups. We illustrate this point by showing how six popular
+               sentiment analysis tools respond to sentences about queer
+               identities, expanding on existing work on gender, ethnicity and
+               disability. We find evidence of bias against several marginalised
+               queer identities, including in the two models from Google and
+               Amazon that seem to have been subject to superficial debiasing.
+               We conclude with guidance on selecting a sentiment analysis tool
+               to minimise the risk of model bias skewing results.",
+  month     =  dec,
+  year      =  2023,
+  keywords  = "AI bias; natural language processing; queerphobia; sentiment
+               analysis",
+  language  = "en"
+}
+
+@INCOLLECTION{An2024-lo,
+  title     = "Eliminating contextual bias in aspect-based sentiment analysis",
+  author    = "An, Ruize and Zhang, Chen and Song, Dawei",
+  editor    = "Goharian, Nazli and Tonellotto, Nicola and He, Yulan and Lipani,
+               Aldo and McDonald, Graham and Macdonald, Craig and Ounis, Iadh",
+  booktitle = "Lecture Notes in Computer Science",
+  publisher = "Springer Nature Switzerland",
+  address   = "Cham",
+  volume    =  14608,
+  pages     = "90--107",
+  series    = "Lecture notes in computer science",
+  year      =  2024,
+  language  = "en"
+}
+
+@MISC{Maas_undated-ng,
+  title        = "Learning word vectors for sentiment analysis",
+  author       = "Maas, Andrew L and Daly, Raymond E and Pham, Peter T and
+                  Huang, Dan and Ng, Andrew Y and Potts, Christopher",
+  howpublished = "\url{https://ai.stanford.edu/~amaas/papers/wvSent\_acl2011.pdf}",
+  note         = "Accessed: 2024-12-13"
+}
+
+@ARTICLE{UnknownUnknown-ot,
+  title    = "interpreting {GPT}: the logit lens",
+  abstract = "This post relates an observation I've made in my work with GPT-2,
+              which I have not seen made elsewhere. \ldots{}"
+}
+
+@INPROCEEDINGS{Kotzias2015-nn,
+  title     = "From group to individual labels using deep features",
+  author    = "Kotzias, Dimitrios and Denil, Misha and de Freitas, Nando and
+               Smyth, Padhraic",
+  booktitle = "Proceedings of the 21th ACM SIGKDD International Conference on
+               Knowledge Discovery and Data Mining",
+  publisher = "ACM",
+  address   = "New York, NY, USA",
+  month     =  aug,
+  year      =  2015
+}
+
+@MISC{noauthor_undated-jx,
+  howpublished = "\url{https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html}",
+  note         = "Accessed: 2025-3-3"
+}
+
+@MISC{Shelpuk2024-sl,
+  title        = "{LLM} practitioner's guide: How multilingual Falcon, Mistral,
+                  Smaug, and other {LLMs} are?",
+  author       = "Shelpuk, Sergii",
+  booktitle    = "Sergii Shelpuk",
+  abstract     = "So, you want to fine-tune a large language model for your own
+                  language. What model should you use? We compare the
+                  multilingual performance of Llama-2, Mistral, Mixtral, Falcon,
+                  Smaug, and mt5 LLMs | Shelpuk AI Technology Consulting",
+  month        =  feb,
+  year         =  2024,
+  howpublished = "\url{https://www.shelpuk.com/post/llm-practitioner-s-guide-how-multilingual-falcon-mistral-smaug-and-other-llms-are}",
+  note         = "Accessed: 2025-3-3",
+  language     = "en"
+}
+
+@ARTICLE{Wei2024-nx,
+  title         = "Assessing the brittleness of safety alignment via pruning and
+                   low-rank modifications",
+  author        = "Wei, Boyi and Huang, Kaixuan and Huang, Yangsibo and Xie,
+                   Tinghao and Qi, Xiangyu and Xia, Mengzhou and Mittal, Prateek
+                   and Wang, Mengdi and Henderson, Peter",
+  journal       = "arXiv [cs.LG]",
+  abstract      = "Large language models (LLMs) show inherent brittleness in
+                   their safety mechanisms, as evidenced by their susceptibility
+                   to jailbreaking and even non-malicious fine-tuning. This
+                   study explores this brittleness of safety alignment by
+                   leveraging pruning and low-rank modifications. We develop
+                   methods to identify critical regions that are vital for
+                   safety guardrails, and that are disentangled from
+                   utility-relevant regions at both the neuron and rank levels.
+                   Surprisingly, the isolated regions we find are sparse,
+                   comprising about $3\%$ at the parameter level and $2.5\%$ at
+                   the rank level. Removing these regions compromises safety
+                   without significantly impacting utility, corroborating the
+                   inherent brittleness of the model's safety mechanisms.
+                   Moreover, we show that LLMs remain vulnerable to low-cost
+                   fine-tuning attacks even when modifications to the
+                   safety-critical regions are restricted. These findings
+                   underscore the urgent need for more robust safety strategies
+                   in LLMs.",
+  month         =  feb,
+  year          =  2024,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG"
+}
+
 @ARTICLE{Tao2024-cl,
   title         = "Scaling laws with vocabulary: Larger models deserve larger
                    vocabularies",
@@ -314,34 +470,6 @@
   language  = "en"
 }
 
-@ARTICLE{Ungless2023-xb,
-  title     = "Potential pitfalls with automatic sentiment analysis: The example
-               of queerphobic bias",
-  author    = "Ungless, Eddie L and Ross, Bj{\"{o}}rn and Belle, Vaishak",
-  journal   = "Soc. Sci. Comput. Rev.",
-  publisher = "SAGE Publications",
-  volume    =  41,
-  number    =  6,
-  pages     = "2211--2229",
-  abstract  = "Automated sentiment analysis can help efficiently detect trends
-               in patients' moods, consumer preferences, political attitudes and
-               more. Unfortunately, like many natural language processing
-               techniques, sentiment analysis can show bias against marginalised
-               groups. We illustrate this point by showing how six popular
-               sentiment analysis tools respond to sentences about queer
-               identities, expanding on existing work on gender, ethnicity and
-               disability. We find evidence of bias against several marginalised
-               queer identities, including in the two models from Google and
-               Amazon that seem to have been subject to superficial debiasing.
-               We conclude with guidance on selecting a sentiment analysis tool
-               to minimise the risk of model bias skewing results.",
-  month     =  dec,
-  year      =  2023,
-  keywords  = "AI bias; natural language processing; queerphobia; sentiment
-               analysis",
-  language  = "en"
-}
-
 @ARTICLE{Ge2023-nf,
   title         = "Entailment as Robust Self-Learner",
   author        = "Ge, Jiaxin and Luo, Hongyin and Kim, Yoon and Glass, James",
@@ -416,21 +544,6 @@
   year      =  2019
 }
 
-@INCOLLECTION{An2024-lo,
-  title     = "Eliminating contextual bias in aspect-based sentiment analysis",
-  author    = "An, Ruize and Zhang, Chen and Song, Dawei",
-  editor    = "Goharian, Nazli and Tonellotto, Nicola and He, Yulan and Lipani,
-               Aldo and McDonald, Graham and Macdonald, Craig and Ounis, Iadh",
-  booktitle = "Lecture Notes in Computer Science",
-  publisher = "Springer Nature Switzerland",
-  address   = "Cham",
-  volume    =  14608,
-  pages     = "90--107",
-  series    = "Lecture notes in computer science",
-  year      =  2024,
-  language  = "en"
-}
-
 @INPROCEEDINGS{Conneau2020-aw,
   title     = "Unsupervised cross-lingual representation learning at scale",
   author    = "Conneau, Alexis and Khandelwal, Kartikay and Goyal, Naman and
@@ -448,14 +561,6 @@
                58th Annual Meeting of the Association for Computational
                Linguistics. 2020.",
   year      =  2020
-}
-
-@MISC{Maas_undated-ng,
-  title        = "Learning word vectors for sentiment analysis",
-  author       = "Maas, Andrew L and Daly, Raymond E and Pham, Peter T and
-                  Huang, Dan and Ng, Andrew Y and Potts, Christopher",
-  howpublished = "\url{https://ai.stanford.edu/~amaas/papers/wvSent\_acl2011.pdf}",
-  note         = "Accessed: 2024-12-13"
 }
 
 @INPROCEEDINGS{Subedi2024-ae,
@@ -621,41 +726,6 @@
   year          =  2023,
   archivePrefix = "arXiv",
   primaryClass  = "cs.CL"
-}
-
-@ARTICLE{Ren2024-dp,
-  title         = "Samba: Simple hybrid state space models for efficient
-                   unlimited context language modeling",
-  author        = "Ren, Liliang and Liu, Yang and Lu, Yadong and Shen, Yelong
-                   and Liang, Chen and Chen, Weizhu",
-  journal       = "ArXiv",
-  volume        = "abs/2406.07522",
-  abstract      = "Efficiently modeling sequences with infinite context length
-                   has been a long-standing problem. Past works suffer from
-                   either the quadratic computation complexity or the limited
-                   extrapolation ability on length generalization. In this work,
-                   we present Samba, a simple hybrid architecture that
-                   layer-wise combines Mamba, a selective State Space Model
-                   (SSM), with Sliding Window Attention (SWA). Samba selectively
-                   compresses a given sequence into recurrent hidden states
-                   while still maintaining the ability to precisely recall
-                   memories with the attention mechanism. We scale Samba up to
-                   3.8B parameters with 3.2T training tokens and show that Samba
-                   substantially outperforms the state-of-the-art models based
-                   on pure attention or SSMs on a wide range of benchmarks. When
-                   trained on 4K length sequences, Samba can be efficiently
-                   extrapolated to 256K context length with perfect memory
-                   recall and show improved token predictions up to 1M context
-                   length. As a linear-time sequence model, Samba enjoys a 3.73x
-                   higher throughput compared to Transformers with grouped-query
-                   attention when processing user prompts of 128K length, and
-                   3.64x speedup when generating 64K tokens with unlimited
-                   streaming. A sample implementation of Samba is publicly
-                   available in https://github.com/microsoft/Samba.",
-  month         =  jun,
-  year          =  2024,
-  archivePrefix = "arXiv",
-  language      = "en"
 }
 
 @INPROCEEDINGS{Libovicky2020-hh,
@@ -1932,12 +2002,6 @@
   year      =  2024
 }
 
-@ARTICLE{UnknownUnknown-ot,
-  title    = "interpreting {GPT}: the logit lens",
-  abstract = "This post relates an observation I've made in my work with GPT-2,
-              which I have not seen made elsewhere. \ldots{}"
-}
-
 @ARTICLE{Huttebraucker2024-or,
   title         = "Latent space alignment for semantic channel equalization",
   author        = "H{\"{u}}ttebr{\"{a}}ucker, Tom\'{a}s and Sana, Mohamed and
@@ -2720,18 +2784,6 @@
                Association for Computational Linguistics: Human Language
                Technologies (Volume 1: Long Papers). 2024.",
   year      =  2024
-}
-
-@INPROCEEDINGS{Kotzias2015-nn,
-  title     = "From group to individual labels using deep features",
-  author    = "Kotzias, Dimitrios and Denil, Misha and de Freitas, Nando and
-               Smyth, Padhraic",
-  booktitle = "Proceedings of the 21th ACM SIGKDD International Conference on
-               Knowledge Discovery and Data Mining",
-  publisher = "ACM",
-  address   = "New York, NY, USA",
-  month     =  aug,
-  year      =  2015
 }
 
 @ARTICLE{Zhao2022-ce,
@@ -3968,27 +4020,6 @@
   pages     = "11855--11881",
   month     =  nov,
   year      =  2024
-}
-
-@MISC{noauthor_undated-jx,
-  howpublished = "\url{https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html}",
-  note         = "Accessed: 2025-3-3"
-}
-
-@MISC{Shelpuk2024-sl,
-  title        = "{LLM} practitioner's guide: How multilingual Falcon, Mistral,
-                  Smaug, and other {LLMs} are?",
-  author       = "Shelpuk, Sergii",
-  booktitle    = "Sergii Shelpuk",
-  abstract     = "So, you want to fine-tune a large language model for your own
-                  language. What model should you use? We compare the
-                  multilingual performance of Llama-2, Mistral, Mixtral, Falcon,
-                  Smaug, and mt5 LLMs | Shelpuk AI Technology Consulting",
-  month        =  feb,
-  year         =  2024,
-  howpublished = "\url{https://www.shelpuk.com/post/llm-practitioner-s-guide-how-multilingual-falcon-mistral-smaug-and-other-llms-are}",
-  note         = "Accessed: 2025-3-3",
-  language     = "en"
 }
 
 @INPROCEEDINGS{Tang2024-fd,
