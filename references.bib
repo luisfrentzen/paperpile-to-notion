@@ -163,18 +163,36 @@
   language  = "en"
 }
 
-@INPROCEEDINGS{Saphra2019-rd,
-  title     = "Understanding learning dynamics of language models with",
-  author    = "Saphra, Naomi and Lopez, Adam",
-  booktitle = "Proceedings of the 2019 Conference of the North",
-  publisher = "Association for Computational Linguistics",
-  address   = "Stroudsburg, PA, USA",
-  pages     = "3257--3267",
-  abstract  = "Download Citation | On Jan 1, 2019, Naomi Saphra and others
-               published Understanding Learning Dynamics Of Language Models with
-               | Find, read and cite all the research you need on ResearchGate",
-  month     =  jan,
-  year      =  2019
+@ARTICLE{Voita2019-va,
+  title        = "The bottom-up evolution of representations in the Transformer:
+                  A study with machine translation and language modeling
+                  objectives",
+  author       = "Voita, Elena and Sennrich, Rico and Titov, Ivan",
+  journal      = "arXiv [cs.CL]",
+  abstract     = "We seek to understand how the representations of individual
+                  tokens and the structure of the learned feature space evolve
+                  between layers in deep neural networks under different
+                  learning objectives. We focus on the Transformers for our
+                  analysis as they have been shown effective on various tasks,
+                  including machine translation (MT), standard left-to-right
+                  language models (LM) and masked language modeling (MLM).
+                  Previous work used black-box probing tasks to show that the
+                  representations learned by the Transformer differ
+                  significantly depending on the objective. In this work, we use
+                  canonical correlation analysis and mutual information
+                  estimators to study how information flows across Transformer
+                  layers and how this process depends on the choice of learning
+                  objective. For example, as you go from bottom to top layers,
+                  information about the past in left-to-right language models
+                  gets vanished and predictions about the future get formed. In
+                  contrast, for MLM, representations initially acquire
+                  information about the context around the token, partially
+                  forgetting the token identity and producing a more generalized
+                  token representation. The token identity then gets recreated
+                  at the top MLM layers.",
+  month        =  sep,
+  year         =  2019,
+  primaryClass = "cs.CL"
 }
 
 @ARTICLE{Tao2024-cl,
@@ -4834,4 +4852,18 @@
   year          =  2021,
   archivePrefix = "arXiv",
   primaryClass  = "cs.CL"
+}
+
+@INPROCEEDINGS{Saphra2019-rd,
+  title     = "Understanding learning dynamics of language models with",
+  author    = "Saphra, Naomi and Lopez, Adam",
+  booktitle = "Proceedings of the 2019 Conference of the North",
+  publisher = "Association for Computational Linguistics",
+  address   = "Stroudsburg, PA, USA",
+  pages     = "3257--3267",
+  abstract  = "Download Citation | On Jan 1, 2019, Naomi Saphra and others
+               published Understanding Learning Dynamics Of Language Models with
+               | Find, read and cite all the research you need on ResearchGate",
+  month     =  jan,
+  year      =  2019
 }
