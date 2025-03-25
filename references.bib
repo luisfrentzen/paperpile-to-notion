@@ -163,22 +163,41 @@
   language  = "en"
 }
 
-@INPROCEEDINGS{Voita2019-of,
-  title     = "The bottom-up evolution of representations in the transformer: A
-               study with machine translation and language modeling objectives",
-  author    = "Voita, Elena and Sennrich, Rico and Titov, Ivan",
-  booktitle = "Proceedings of the 2019 Conference on Empirical Methods in
-               Natural Language Processing and the 9th International Joint
-               Conference on Natural Language Processing (EMNLP-IJCNLP)",
-  publisher = "Association for Computational Linguistics",
-  address   = "Stroudsburg, PA, USA",
-  pages     = "4396--4406",
-  abstract  = "Elena Voita, Rico Sennrich, Ivan Titov. Proceedings of the 2019
-               Conference on Empirical Methods in Natural Language Processing
-               and the 9th International Joint Conference on Natural Language
-               Processing (EMNLP-IJCNLP). 2019.",
-  month     =  nov,
-  year      =  2019
+@ARTICLE{Hombaiah2021-sp,
+  title         = "Dynamic language models for continuously evolving content",
+  author        = "Hombaiah, Spurthi Amba and Chen, Tao and Zhang, Mingyang and
+                   Bendersky, Michael and Najork, Marc",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "The content on the web is in a constant state of flux. New
+                   entities, issues, and ideas continuously emerge, while the
+                   semantics of the existing conversation topics gradually
+                   shift. In recent years, pre-trained language models like BERT
+                   greatly improved the state-of-the-art for a large spectrum of
+                   content understanding tasks. Therefore, in this paper, we aim
+                   to study how these language models can be adapted to better
+                   handle continuously evolving web content. In our study, we
+                   first analyze the evolution of 2013 - 2019 Twitter data, and
+                   unequivocally confirm that a BERT model trained on past
+                   tweets would heavily deteriorate when directly applied to
+                   data from later years. Then, we investigate two possible
+                   sources of the deterioration: the semantic shift of existing
+                   tokens and the sub-optimal or failed understanding of new
+                   tokens. To this end, we both explore two different vocabulary
+                   composition methods, as well as propose three sampling
+                   methods which help in efficient incremental training for
+                   BERT-like models. Compared to a new model trained from
+                   scratch offline, our incremental training (a) reduces the
+                   training costs, (b) achieves better performance on evolving
+                   content, and (c) is suitable for online deployment. The
+                   superiority of our methods is validated using two downstream
+                   tasks. We demonstrate significant improvements when
+                   incrementally evolving the model from a particular base year,
+                   on the task of Country Hashtag Prediction, as well as on the
+                   OffensEval 2019 task.",
+  month         =  jun,
+  year          =  2021,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL"
 }
 
 @ARTICLE{Tao2024-cl,
@@ -4783,4 +4802,22 @@
   year          =  2017,
   archivePrefix = "arXiv",
   primaryClass  = "cs.LG"
+}
+
+@INPROCEEDINGS{Voita2019-of,
+  title     = "The bottom-up evolution of representations in the transformer: A
+               study with machine translation and language modeling objectives",
+  author    = "Voita, Elena and Sennrich, Rico and Titov, Ivan",
+  booktitle = "Proceedings of the 2019 Conference on Empirical Methods in
+               Natural Language Processing and the 9th International Joint
+               Conference on Natural Language Processing (EMNLP-IJCNLP)",
+  publisher = "Association for Computational Linguistics",
+  address   = "Stroudsburg, PA, USA",
+  pages     = "4396--4406",
+  abstract  = "Elena Voita, Rico Sennrich, Ivan Titov. Proceedings of the 2019
+               Conference on Empirical Methods in Natural Language Processing
+               and the 9th International Joint Conference on Natural Language
+               Processing (EMNLP-IJCNLP). 2019.",
+  month     =  nov,
+  year      =  2019
 }
