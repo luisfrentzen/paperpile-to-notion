@@ -163,6 +163,36 @@
   language  = "en"
 }
 
+@ARTICLE{Ferrando2024-pa,
+  title         = "On the similarity of circuits across languages: A case study
+                   on the subject-verb agreement task",
+  author        = "Ferrando, Javier and Costa-juss\`{a}, Marta R",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "Several algorithms implemented by language models have
+                   recently been successfully reversed-engineered. However,
+                   these findings have been concentrated on specific tasks and
+                   models, leaving it unclear how universal circuits are across
+                   different settings. In this paper, we study the circuits
+                   implemented by Gemma 2B for solving the subject-verb
+                   agreement task across two different languages, English and
+                   Spanish. We discover that both circuits are highly
+                   consistent, being mainly driven by a particular attention
+                   head writing a `subject number' signal to the last residual
+                   stream, which is read by a small set of neurons in the final
+                   MLPs. Notably, this subject number signal is represented as a
+                   direction in the residual stream space, and is
+                   language-independent. We demonstrate that this direction has
+                   a causal effect on the model predictions, effectively
+                   flipping the Spanish predicted verb number by intervening
+                   with the direction found in English. Finally, we present
+                   evidence of similar behavior in other models within the Gemma
+                   1 and Gemma 2 families.",
+  month         =  oct,
+  year          =  2024,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL"
+}
+
 @ARTICLE{Tao2024-cl,
   title         = "Scaling laws with vocabulary: Larger models deserve larger
                    vocabularies",
