@@ -163,36 +163,6 @@
   language  = "en"
 }
 
-@ARTICLE{Langedijk2023-gk,
-  title         = "{DecoderLens}: Layerwise interpretation of encoder-decoder
-                   Transformers",
-  author        = "Langedijk, Anna and Mohebbi, Hosein and Sarti, Gabriele and
-                   Zuidema, Willem and Jumelet, Jaap",
-  journal       = "arXiv [cs.CL]",
-  abstract      = "In recent years, many interpretability methods have been
-                   proposed to help interpret the internal states of
-                   Transformer-models, at different levels of precision and
-                   complexity. Here, to analyze encoder-decoder Transformers, we
-                   propose a simple, new method: DecoderLens. Inspired by the
-                   LogitLens (for decoder-only Transformers), this method
-                   involves allowing the decoder to cross-attend representations
-                   of intermediate encoder layers instead of using the final
-                   encoder output, as is normally done in encoder-decoder
-                   models. The method thus maps previously uninterpretable
-                   vector representations to human-interpretable sequences of
-                   words or symbols. We report results from the DecoderLens
-                   applied to models trained on question answering, logical
-                   reasoning, speech recognition and machine translation. The
-                   DecoderLens reveals several specific subtasks that are solved
-                   at low or intermediate layers, shedding new light on the
-                   information flow inside the encoder component of this
-                   important class of models.",
-  month         =  oct,
-  year          =  2023,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL"
-}
-
 @ARTICLE{Tao2024-cl,
   title         = "Scaling laws with vocabulary: Larger models deserve larger
                    vocabularies",
@@ -5019,4 +4989,34 @@
                Linguistics: Human Language Technologies (Volume 2: Short
                Papers). 2024.",
   year      =  2024
+}
+
+@ARTICLE{Langedijk2023-gk,
+  title         = "{DecoderLens}: Layerwise interpretation of encoder-decoder
+                   Transformers",
+  author        = "Langedijk, Anna and Mohebbi, Hosein and Sarti, Gabriele and
+                   Zuidema, Willem and Jumelet, Jaap",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "In recent years, many interpretability methods have been
+                   proposed to help interpret the internal states of
+                   Transformer-models, at different levels of precision and
+                   complexity. Here, to analyze encoder-decoder Transformers, we
+                   propose a simple, new method: DecoderLens. Inspired by the
+                   LogitLens (for decoder-only Transformers), this method
+                   involves allowing the decoder to cross-attend representations
+                   of intermediate encoder layers instead of using the final
+                   encoder output, as is normally done in encoder-decoder
+                   models. The method thus maps previously uninterpretable
+                   vector representations to human-interpretable sequences of
+                   words or symbols. We report results from the DecoderLens
+                   applied to models trained on question answering, logical
+                   reasoning, speech recognition and machine translation. The
+                   DecoderLens reveals several specific subtasks that are solved
+                   at low or intermediate layers, shedding new light on the
+                   information flow inside the encoder component of this
+                   important class of models.",
+  month         =  oct,
+  year          =  2023,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL"
 }
