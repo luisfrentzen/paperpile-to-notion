@@ -1,3 +1,272 @@
+@ARTICLE{Ren2024-dp,
+  title         = "Samba: Simple hybrid state space models for efficient
+                   unlimited context language modeling",
+  author        = "Ren, Liliang and Liu, Yang and Lu, Yadong and Shen, Yelong
+                   and Liang, Chen and Chen, Weizhu",
+  journal       = "ArXiv",
+  volume        = "abs/2406.07522",
+  abstract      = "Efficiently modeling sequences with infinite context length
+                   has been a long-standing problem. Past works suffer from
+                   either the quadratic computation complexity or the limited
+                   extrapolation ability on length generalization. In this work,
+                   we present Samba, a simple hybrid architecture that
+                   layer-wise combines Mamba, a selective State Space Model
+                   (SSM), with Sliding Window Attention (SWA). Samba selectively
+                   compresses a given sequence into recurrent hidden states
+                   while still maintaining the ability to precisely recall
+                   memories with the attention mechanism. We scale Samba up to
+                   3.8B parameters with 3.2T training tokens and show that Samba
+                   substantially outperforms the state-of-the-art models based
+                   on pure attention or SSMs on a wide range of benchmarks. When
+                   trained on 4K length sequences, Samba can be efficiently
+                   extrapolated to 256K context length with perfect memory
+                   recall and show improved token predictions up to 1M context
+                   length. As a linear-time sequence model, Samba enjoys a 3.73x
+                   higher throughput compared to Transformers with grouped-query
+                   attention when processing user prompts of 128K length, and
+                   3.64x speedup when generating 64K tokens with unlimited
+                   streaming. A sample implementation of Samba is publicly
+                   available in https://github.com/microsoft/Samba.",
+  month         =  jun,
+  year          =  2024,
+  archivePrefix = "arXiv",
+  language      = "en"
+}
+
+@ARTICLE{Ungless2023-xb,
+  title     = "Potential pitfalls with automatic sentiment analysis: The example
+               of queerphobic bias",
+  author    = "Ungless, Eddie L and Ross, Bj{\"{o}}rn and Belle, Vaishak",
+  journal   = "Soc. Sci. Comput. Rev.",
+  publisher = "SAGE Publications",
+  volume    =  41,
+  number    =  6,
+  pages     = "2211--2229",
+  abstract  = "Automated sentiment analysis can help efficiently detect trends
+               in patients' moods, consumer preferences, political attitudes and
+               more. Unfortunately, like many natural language processing
+               techniques, sentiment analysis can show bias against marginalised
+               groups. We illustrate this point by showing how six popular
+               sentiment analysis tools respond to sentences about queer
+               identities, expanding on existing work on gender, ethnicity and
+               disability. We find evidence of bias against several marginalised
+               queer identities, including in the two models from Google and
+               Amazon that seem to have been subject to superficial debiasing.
+               We conclude with guidance on selecting a sentiment analysis tool
+               to minimise the risk of model bias skewing results.",
+  month     =  dec,
+  year      =  2023,
+  keywords  = "AI bias; natural language processing; queerphobia; sentiment
+               analysis",
+  language  = "en"
+}
+
+@INCOLLECTION{An2024-lo,
+  title     = "Eliminating contextual bias in aspect-based sentiment analysis",
+  author    = "An, Ruize and Zhang, Chen and Song, Dawei",
+  editor    = "Goharian, Nazli and Tonellotto, Nicola and He, Yulan and Lipani,
+               Aldo and McDonald, Graham and Macdonald, Craig and Ounis, Iadh",
+  booktitle = "Lecture Notes in Computer Science",
+  publisher = "Springer Nature Switzerland",
+  address   = "Cham",
+  volume    =  14608,
+  pages     = "90--107",
+  series    = "Lecture notes in computer science",
+  year      =  2024,
+  language  = "en"
+}
+
+@MISC{Maas_undated-ng,
+  title        = "Learning word vectors for sentiment analysis",
+  author       = "Maas, Andrew L and Daly, Raymond E and Pham, Peter T and
+                  Huang, Dan and Ng, Andrew Y and Potts, Christopher",
+  howpublished = "\url{https://ai.stanford.edu/~amaas/papers/wvSent\_acl2011.pdf}",
+  note         = "Accessed: 2024-12-13"
+}
+
+@ARTICLE{Peng2024-xh,
+  title         = "Concept space alignment in multilingual {LLMs}",
+  author        = "Peng, Qiwei and S\o{}gaard, Anders",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "Multilingual large language models (LLMs) seem to generalize
+                   somewhat across languages. We hypothesize this is a result of
+                   implicit vector space alignment. Evaluating such alignment,
+                   we see that larger models exhibit very high-quality linear
+                   alignments between corresponding concepts in different
+                   languages. Our experiments show that multilingual LLMs suffer
+                   from two familiar weaknesses: generalization works best for
+                   languages with similar typology, and for abstract concepts.
+                   For some models, e.g., the Llama-2 family of models,
+                   prompt-based embeddings align better than word embeddings,
+                   but the projections are less linear -- an observation that
+                   holds across almost all model families, indicating that some
+                   of the implicitly learned alignments are broken somewhat by
+                   prompt-based methods.",
+  month         =  oct,
+  year          =  2024,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL"
+}
+
+@ARTICLE{Hayou2024-wr,
+  title         = "{LoRA+}: Efficient Low Rank Adaptation of large models",
+  author        = "Hayou, Soufiane and Ghosh, Nikhil and Yu, Bin",
+  journal       = "arXiv [cs.LG]",
+  abstract      = "In this paper, we show that Low Rank Adaptation (LoRA) as
+                   originally introduced in Hu et al. (2021) leads to suboptimal
+                   finetuning of models with large width (embedding dimension).
+                   This is due to the fact that adapter matrices A and B in LoRA
+                   are updated with the same learning rate. Using scaling
+                   arguments for large width networks, we demonstrate that using
+                   the same learning rate for A and B does not allow efficient
+                   feature learning. We then show that this suboptimality of
+                   LoRA can be corrected simply by setting different learning
+                   rates for the LoRA adapter matrices A and B with a
+                   well-chosen ratio. We call this proposed algorithm LoRA$+$.
+                   In our extensive experiments, LoRA$+$ improves performance
+                   (1-2 $\%$ improvements) and finetuning speed (up to $\sim$ 2X
+                   SpeedUp), at the same computational cost as LoRA.",
+  month         =  feb,
+  year          =  2024,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG"
+}
+
+@ARTICLE{Pires2019-qm,
+  title         = "How multilingual is Multilingual {BERT}?",
+  author        = "Pires, Telmo and Schlinger, Eva and Garrette, Dan",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "In this paper, we show that Multilingual BERT (M-BERT),
+                   released by Devlin et al. (2018) as a single language model
+                   pre-trained from monolingual corpora in 104 languages, is
+                   surprisingly good at zero-shot cross-lingual model transfer,
+                   in which task-specific annotations in one language are used
+                   to fine-tune the model for evaluation in another language. To
+                   understand why, we present a large number of probing
+                   experiments, showing that transfer is possible even to
+                   languages in different scripts, that transfer works best
+                   between typologically similar languages, that monolingual
+                   corpora can train models for code-switching, and that the
+                   model can find translation pairs. From these results, we can
+                   conclude that M-BERT does create multilingual
+                   representations, but that these representations exhibit
+                   systematic deficiencies affecting certain language pairs.",
+  month         =  jun,
+  year          =  2019,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL"
+}
+
+@ARTICLE{UnknownUnknown-ot,
+  title    = "interpreting {GPT}: the logit lens",
+  abstract = "This post relates an observation I've made in my work with GPT-2,
+              which I have not seen made elsewhere. \ldots{}"
+}
+
+@INPROCEEDINGS{Kotzias2015-nn,
+  title     = "From group to individual labels using deep features",
+  author    = "Kotzias, Dimitrios and Denil, Misha and de Freitas, Nando and
+               Smyth, Padhraic",
+  booktitle = "Proceedings of the 21th ACM SIGKDD International Conference on
+               Knowledge Discovery and Data Mining",
+  publisher = "ACM",
+  address   = "New York, NY, USA",
+  month     =  aug,
+  year      =  2015
+}
+
+@MISC{noauthor_undated-jx,
+  howpublished = "\url{https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html}",
+  note         = "Accessed: 2025-3-3"
+}
+
+@MISC{Shelpuk2024-sl,
+  title        = "{LLM} practitioner's guide: How multilingual Falcon, Mistral,
+                  Smaug, and other {LLMs} are?",
+  author       = "Shelpuk, Sergii",
+  booktitle    = "Sergii Shelpuk",
+  abstract     = "So, you want to fine-tune a large language model for your own
+                  language. What model should you use? We compare the
+                  multilingual performance of Llama-2, Mistral, Mixtral, Falcon,
+                  Smaug, and mt5 LLMs | Shelpuk AI Technology Consulting",
+  month        =  feb,
+  year         =  2024,
+  howpublished = "\url{https://www.shelpuk.com/post/llm-practitioner-s-guide-how-multilingual-falcon-mistral-smaug-and-other-llms-are}",
+  note         = "Accessed: 2025-3-3",
+  language     = "en"
+}
+
+@ARTICLE{Amari2018-nm,
+  title     = "Dynamics of learning in {MLP}: Natural gradient and singularity
+               revisited",
+  author    = "Amari, Shun-Ichi and Ozeki, Tomoko and Karakida, Ryo and Yoshida,
+               Yuki and Okada, Masato",
+  journal   = "Neural Comput.",
+  publisher = "MIT Press - Journals",
+  volume    =  30,
+  number    =  1,
+  pages     = "1--33",
+  abstract  = "The dynamics of supervised learning play a main role in deep
+               learning, which takes place in the parameter space of a
+               multilayer perceptron (MLP). We review the history of supervised
+               stochastic gradient learning, focusing on its singular structure
+               and natural gradient. The parameter space includes singular
+               regions in which parameters are not identifiable. One of our
+               results is a full exploration of the dynamical behaviors of
+               stochastic gradient learning in an elementary singular network.
+               The bad news is its pathological nature, in which part of the
+               singular region becomes an attractor and another part a repulser
+               at the same time, forming a Milnor attractor. A learning
+               trajectory is attracted by the attractor region, staying in it
+               for a long time, before it escapes the singular region through
+               the repulser region. This is typical of plateau phenomena in
+               learning. We demonstrate the strange topology of a singular
+               region by introducing blow-down coordinates, which are useful for
+               analyzing the natural gradient dynamics. We confirm that the
+               natural gradient dynamics are free of critical slowdown. The
+               second main result is the good news: the interactions of
+               elementary singular networks eliminate the attractor part and the
+               Milnor-type attractors disappear. This explains why large-scale
+               networks do not suffer from serious critical slowdowns due to
+               singularities. We finally show that the unit-wise natural
+               gradient is effective for learning in spite of its low
+               computational cost.",
+  month     =  jan,
+  year      =  2018,
+  language  = "en"
+}
+
+@ARTICLE{Chua2024-ll,
+  title         = "Crosslingual capabilities and knowledge barriers in
+                   multilingual large language models",
+  author        = "Chua, Lynn and Ghazi, Badih and Huang, Yangsibo and Kamath,
+                   Pritish and Kumar, Ravi and Manurangsi, Pasin and Sinha, Amer
+                   and Xie, Chulin and Zhang, Chiyuan",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "Large language models (LLMs) are typically multilingual due
+                   to pretraining on diverse multilingual corpora. But can these
+                   models relate corresponding concepts across languages, i.e.,
+                   be crosslingual? This study evaluates state-of-the-art LLMs
+                   on inherently crosslingual tasks. We observe that while these
+                   models show promising surface-level crosslingual abilities on
+                   machine translation and embedding space analyses, they
+                   struggle with deeper crosslingual knowledge transfer,
+                   revealing a crosslingual knowledge barrier in both general
+                   (MMLU benchmark) and domain-specific (Harry Potter quiz and
+                   TOFU benchmark) contexts. Since simple inference-time
+                   mitigation methods offer only limited improvement, we propose
+                   fine-tuning of LLMs on mixed-language data, which effectively
+                   reduces these gaps, even when using out-of-domain datasets
+                   like WikiText. Our findings suggest the need for explicit
+                   optimization to unlock the full crosslingual potential of
+                   LLMs. Our code is publicly available at
+                   https://github.com/google-research/crosslingual-knowledge-barriers.",
+  month         =  jun,
+  year          =  2024,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL"
+}
+
 @ARTICLE{Tao2024-cl,
   title         = "Scaling laws with vocabulary: Larger models deserve larger
                    vocabularies",
@@ -314,34 +583,6 @@
   language  = "en"
 }
 
-@ARTICLE{Ungless2023-xb,
-  title     = "Potential pitfalls with automatic sentiment analysis: The example
-               of queerphobic bias",
-  author    = "Ungless, Eddie L and Ross, Bj{\"{o}}rn and Belle, Vaishak",
-  journal   = "Soc. Sci. Comput. Rev.",
-  publisher = "SAGE Publications",
-  volume    =  41,
-  number    =  6,
-  pages     = "2211--2229",
-  abstract  = "Automated sentiment analysis can help efficiently detect trends
-               in patients' moods, consumer preferences, political attitudes and
-               more. Unfortunately, like many natural language processing
-               techniques, sentiment analysis can show bias against marginalised
-               groups. We illustrate this point by showing how six popular
-               sentiment analysis tools respond to sentences about queer
-               identities, expanding on existing work on gender, ethnicity and
-               disability. We find evidence of bias against several marginalised
-               queer identities, including in the two models from Google and
-               Amazon that seem to have been subject to superficial debiasing.
-               We conclude with guidance on selecting a sentiment analysis tool
-               to minimise the risk of model bias skewing results.",
-  month     =  dec,
-  year      =  2023,
-  keywords  = "AI bias; natural language processing; queerphobia; sentiment
-               analysis",
-  language  = "en"
-}
-
 @ARTICLE{Ge2023-nf,
   title         = "Entailment as Robust Self-Learner",
   author        = "Ge, Jiaxin and Luo, Hongyin and Kim, Yoon and Glass, James",
@@ -416,21 +657,6 @@
   year      =  2019
 }
 
-@INCOLLECTION{An2024-lo,
-  title     = "Eliminating contextual bias in aspect-based sentiment analysis",
-  author    = "An, Ruize and Zhang, Chen and Song, Dawei",
-  editor    = "Goharian, Nazli and Tonellotto, Nicola and He, Yulan and Lipani,
-               Aldo and McDonald, Graham and Macdonald, Craig and Ounis, Iadh",
-  booktitle = "Lecture Notes in Computer Science",
-  publisher = "Springer Nature Switzerland",
-  address   = "Cham",
-  volume    =  14608,
-  pages     = "90--107",
-  series    = "Lecture notes in computer science",
-  year      =  2024,
-  language  = "en"
-}
-
 @INPROCEEDINGS{Conneau2020-aw,
   title     = "Unsupervised cross-lingual representation learning at scale",
   author    = "Conneau, Alexis and Khandelwal, Kartikay and Goyal, Naman and
@@ -448,14 +674,6 @@
                58th Annual Meeting of the Association for Computational
                Linguistics. 2020.",
   year      =  2020
-}
-
-@MISC{Maas_undated-ng,
-  title        = "Learning word vectors for sentiment analysis",
-  author       = "Maas, Andrew L and Daly, Raymond E and Pham, Peter T and
-                  Huang, Dan and Ng, Andrew Y and Potts, Christopher",
-  howpublished = "\url{https://ai.stanford.edu/~amaas/papers/wvSent\_acl2011.pdf}",
-  note         = "Accessed: 2024-12-13"
 }
 
 @INPROCEEDINGS{Subedi2024-ae,
@@ -621,41 +839,6 @@
   year          =  2023,
   archivePrefix = "arXiv",
   primaryClass  = "cs.CL"
-}
-
-@ARTICLE{Ren2024-dp,
-  title         = "Samba: Simple hybrid state space models for efficient
-                   unlimited context language modeling",
-  author        = "Ren, Liliang and Liu, Yang and Lu, Yadong and Shen, Yelong
-                   and Liang, Chen and Chen, Weizhu",
-  journal       = "ArXiv",
-  volume        = "abs/2406.07522",
-  abstract      = "Efficiently modeling sequences with infinite context length
-                   has been a long-standing problem. Past works suffer from
-                   either the quadratic computation complexity or the limited
-                   extrapolation ability on length generalization. In this work,
-                   we present Samba, a simple hybrid architecture that
-                   layer-wise combines Mamba, a selective State Space Model
-                   (SSM), with Sliding Window Attention (SWA). Samba selectively
-                   compresses a given sequence into recurrent hidden states
-                   while still maintaining the ability to precisely recall
-                   memories with the attention mechanism. We scale Samba up to
-                   3.8B parameters with 3.2T training tokens and show that Samba
-                   substantially outperforms the state-of-the-art models based
-                   on pure attention or SSMs on a wide range of benchmarks. When
-                   trained on 4K length sequences, Samba can be efficiently
-                   extrapolated to 256K context length with perfect memory
-                   recall and show improved token predictions up to 1M context
-                   length. As a linear-time sequence model, Samba enjoys a 3.73x
-                   higher throughput compared to Transformers with grouped-query
-                   attention when processing user prompts of 128K length, and
-                   3.64x speedup when generating 64K tokens with unlimited
-                   streaming. A sample implementation of Samba is publicly
-                   available in https://github.com/microsoft/Samba.",
-  month         =  jun,
-  year          =  2024,
-  archivePrefix = "arXiv",
-  language      = "en"
 }
 
 @ARTICLE{Hammerl2024-fo,
@@ -1227,54 +1410,6 @@
   primaryClass  = "cs.LG"
 }
 
-@ARTICLE{Peng2024-xh,
-  title         = "Concept space alignment in multilingual {LLMs}",
-  author        = "Peng, Qiwei and S\o{}gaard, Anders",
-  journal       = "arXiv [cs.CL]",
-  abstract      = "Multilingual large language models (LLMs) seem to generalize
-                   somewhat across languages. We hypothesize this is a result of
-                   implicit vector space alignment. Evaluating such alignment,
-                   we see that larger models exhibit very high-quality linear
-                   alignments between corresponding concepts in different
-                   languages. Our experiments show that multilingual LLMs suffer
-                   from two familiar weaknesses: generalization works best for
-                   languages with similar typology, and for abstract concepts.
-                   For some models, e.g., the Llama-2 family of models,
-                   prompt-based embeddings align better than word embeddings,
-                   but the projections are less linear -- an observation that
-                   holds across almost all model families, indicating that some
-                   of the implicitly learned alignments are broken somewhat by
-                   prompt-based methods.",
-  month         =  oct,
-  year          =  2024,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL"
-}
-
-@ARTICLE{Hayou2024-wr,
-  title         = "{LoRA+}: Efficient Low Rank Adaptation of large models",
-  author        = "Hayou, Soufiane and Ghosh, Nikhil and Yu, Bin",
-  journal       = "arXiv [cs.LG]",
-  abstract      = "In this paper, we show that Low Rank Adaptation (LoRA) as
-                   originally introduced in Hu et al. (2021) leads to suboptimal
-                   finetuning of models with large width (embedding dimension).
-                   This is due to the fact that adapter matrices A and B in LoRA
-                   are updated with the same learning rate. Using scaling
-                   arguments for large width networks, we demonstrate that using
-                   the same learning rate for A and B does not allow efficient
-                   feature learning. We then show that this suboptimality of
-                   LoRA can be corrected simply by setting different learning
-                   rates for the LoRA adapter matrices A and B with a
-                   well-chosen ratio. We call this proposed algorithm LoRA$+$.
-                   In our extensive experiments, LoRA$+$ improves performance
-                   (1-2 $\%$ improvements) and finetuning speed (up to $\sim$ 2X
-                   SpeedUp), at the same computational cost as LoRA.",
-  month         =  feb,
-  year          =  2024,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.LG"
-}
-
 @INPROCEEDINGS{Waheed2024-ha,
   title     = "To distill or not to distill? On the robustness of robust
                knowledge distillation",
@@ -1830,31 +1965,6 @@
   primaryClass  = "cs.LG"
 }
 
-@ARTICLE{Pires2019-qm,
-  title         = "How multilingual is Multilingual {BERT}?",
-  author        = "Pires, Telmo and Schlinger, Eva and Garrette, Dan",
-  journal       = "arXiv [cs.CL]",
-  abstract      = "In this paper, we show that Multilingual BERT (M-BERT),
-                   released by Devlin et al. (2018) as a single language model
-                   pre-trained from monolingual corpora in 104 languages, is
-                   surprisingly good at zero-shot cross-lingual model transfer,
-                   in which task-specific annotations in one language are used
-                   to fine-tune the model for evaluation in another language. To
-                   understand why, we present a large number of probing
-                   experiments, showing that transfer is possible even to
-                   languages in different scripts, that transfer works best
-                   between typologically similar languages, that monolingual
-                   corpora can train models for code-switching, and that the
-                   model can find translation pairs. From these results, we can
-                   conclude that M-BERT does create multilingual
-                   representations, but that these representations exhibit
-                   systematic deficiencies affecting certain language pairs.",
-  month         =  jun,
-  year          =  2019,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL"
-}
-
 @ARTICLE{Zhipeng2024-xz,
   title         = "Extracting and transferring abilities for building
                    multi-lingual ability-enhanced large language models",
@@ -2121,12 +2231,6 @@
                on Empirical Methods in Natural Language Processing. 2024.",
   month     =  nov,
   year      =  2024
-}
-
-@ARTICLE{UnknownUnknown-ot,
-  title    = "interpreting {GPT}: the logit lens",
-  abstract = "This post relates an observation I've made in my work with GPT-2,
-              which I have not seen made elsewhere. \ldots{}"
 }
 
 @ARTICLE{Huttebraucker2024-or,
@@ -2911,18 +3015,6 @@
                Association for Computational Linguistics: Human Language
                Technologies (Volume 1: Long Papers). 2024.",
   year      =  2024
-}
-
-@INPROCEEDINGS{Kotzias2015-nn,
-  title     = "From group to individual labels using deep features",
-  author    = "Kotzias, Dimitrios and Denil, Misha and de Freitas, Nando and
-               Smyth, Padhraic",
-  booktitle = "Proceedings of the 21th ACM SIGKDD International Conference on
-               Knowledge Discovery and Data Mining",
-  publisher = "ACM",
-  address   = "New York, NY, USA",
-  month     =  aug,
-  year      =  2015
 }
 
 @ARTICLE{Zhao2022-ce,
@@ -4177,27 +4269,6 @@
   year      =  2024
 }
 
-@MISC{noauthor_undated-jx,
-  howpublished = "\url{https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html}",
-  note         = "Accessed: 2025-3-3"
-}
-
-@MISC{Shelpuk2024-sl,
-  title        = "{LLM} practitioner's guide: How multilingual Falcon, Mistral,
-                  Smaug, and other {LLMs} are?",
-  author       = "Shelpuk, Sergii",
-  booktitle    = "Sergii Shelpuk",
-  abstract     = "So, you want to fine-tune a large language model for your own
-                  language. What model should you use? We compare the
-                  multilingual performance of Llama-2, Mistral, Mixtral, Falcon,
-                  Smaug, and mt5 LLMs | Shelpuk AI Technology Consulting",
-  month        =  feb,
-  year         =  2024,
-  howpublished = "\url{https://www.shelpuk.com/post/llm-practitioner-s-guide-how-multilingual-falcon-mistral-smaug-and-other-llms-are}",
-  note         = "Accessed: 2025-3-3",
-  language     = "en"
-}
-
 @ARTICLE{Zhou2024-ba,
   title         = "On the role of attention heads in large language model safety",
   author        = "Zhou, Zhenhong and Yu, Haiyang and Zhang, Xinghua and Xu,
@@ -4820,46 +4891,6 @@
   year      =  2023
 }
 
-@ARTICLE{Amari2018-nm,
-  title     = "Dynamics of learning in {MLP}: Natural gradient and singularity
-               revisited",
-  author    = "Amari, Shun-Ichi and Ozeki, Tomoko and Karakida, Ryo and Yoshida,
-               Yuki and Okada, Masato",
-  journal   = "Neural Comput.",
-  publisher = "MIT Press - Journals",
-  volume    =  30,
-  number    =  1,
-  pages     = "1--33",
-  abstract  = "The dynamics of supervised learning play a main role in deep
-               learning, which takes place in the parameter space of a
-               multilayer perceptron (MLP). We review the history of supervised
-               stochastic gradient learning, focusing on its singular structure
-               and natural gradient. The parameter space includes singular
-               regions in which parameters are not identifiable. One of our
-               results is a full exploration of the dynamical behaviors of
-               stochastic gradient learning in an elementary singular network.
-               The bad news is its pathological nature, in which part of the
-               singular region becomes an attractor and another part a repulser
-               at the same time, forming a Milnor attractor. A learning
-               trajectory is attracted by the attractor region, staying in it
-               for a long time, before it escapes the singular region through
-               the repulser region. This is typical of plateau phenomena in
-               learning. We demonstrate the strange topology of a singular
-               region by introducing blow-down coordinates, which are useful for
-               analyzing the natural gradient dynamics. We confirm that the
-               natural gradient dynamics are free of critical slowdown. The
-               second main result is the good news: the interactions of
-               elementary singular networks eliminate the attractor part and the
-               Milnor-type attractors disappear. This explains why large-scale
-               networks do not suffer from serious critical slowdowns due to
-               singularities. We finally show that the unit-wise natural
-               gradient is effective for learning in spite of its low
-               computational cost.",
-  month     =  jan,
-  year      =  2018,
-  language  = "en"
-}
-
 @INPROCEEDINGS{John2019-fg,
   title     = "Disentangled representation learning for non-parallel text style
                transfer",
@@ -5362,37 +5393,6 @@
   primaryClass  = "cs.CL"
 }
 
-@ARTICLE{Chua2024-ll,
-  title         = "Crosslingual capabilities and knowledge barriers in
-                   multilingual large language models",
-  author        = "Chua, Lynn and Ghazi, Badih and Huang, Yangsibo and Kamath,
-                   Pritish and Kumar, Ravi and Manurangsi, Pasin and Sinha, Amer
-                   and Xie, Chulin and Zhang, Chiyuan",
-  journal       = "arXiv [cs.CL]",
-  abstract      = "Large language models (LLMs) are typically multilingual due
-                   to pretraining on diverse multilingual corpora. But can these
-                   models relate corresponding concepts across languages, i.e.,
-                   be crosslingual? This study evaluates state-of-the-art LLMs
-                   on inherently crosslingual tasks. We observe that while these
-                   models show promising surface-level crosslingual abilities on
-                   machine translation and embedding space analyses, they
-                   struggle with deeper crosslingual knowledge transfer,
-                   revealing a crosslingual knowledge barrier in both general
-                   (MMLU benchmark) and domain-specific (Harry Potter quiz and
-                   TOFU benchmark) contexts. Since simple inference-time
-                   mitigation methods offer only limited improvement, we propose
-                   fine-tuning of LLMs on mixed-language data, which effectively
-                   reduces these gaps, even when using out-of-domain datasets
-                   like WikiText. Our findings suggest the need for explicit
-                   optimization to unlock the full crosslingual potential of
-                   LLMs. Our code is publicly available at
-                   https://github.com/google-research/crosslingual-knowledge-barriers.",
-  month         =  jun,
-  year          =  2024,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL"
-}
-
 @INPROCEEDINGS{Fan2021-rm,
   title     = "Layer-wise Model Pruning based on Mutual Information",
   author    = "Fan, Chun and Li, Jiwei and Zhang, Tianwei and Ao, Xiang and Wu,
@@ -5547,6 +5547,84 @@
                    efficiency.",
   month         =  apr,
   year          =  2025,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL"
+}
+
+@ARTICLE{He2024-gu,
+  title         = "Scaling laws for multilingual language models",
+  author        = "He, Yifei and Benhaim, Alon and Patra, Barun and Vaddamanu,
+                   Praneetha and Ahuja, Sanchit and Chopra, Parul and Chaudhary,
+                   Vishrav and Zhao, Han and Song, Xia",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "We propose a novel scaling law for general-purpose
+                   decoder-only language models (LMs) trained on multilingual
+                   data, tackling the problem of balancing languages during
+                   multilingual pretraining. A primary challenge in studying
+                   multilingual scaling is the difficulty of analyzing
+                   individual language performance due to cross-lingual
+                   transfer. To address this, we shift the focus from individual
+                   languages to language families. We introduce and validate a
+                   hypothesis that the test cross-entropy loss for each language
+                   family is determined solely by its own sampling ratio,
+                   independent of other languages in the mixture. This insight
+                   simplifies the complexity of multilingual scaling and make
+                   the analysis scalable to an arbitrary number of languages.
+                   Building on this hypothesis, we derive a power-law
+                   relationship that links performance with dataset size, model
+                   size and sampling ratios. This relationship enables us to
+                   predict performance across various combinations of the above
+                   three quantities, and derive the optimal sampling ratios at
+                   different model scales. To demonstrate the effectiveness and
+                   accuracy of our proposed scaling law, we perform a
+                   large-scale empirical study, training more than 100 models on
+                   23 languages spanning 5 language families. Our experiments
+                   show that the optimal sampling ratios derived from small
+                   models (85M parameters) generalize effectively to models that
+                   are several orders of magnitude larger (1.2B parameters),
+                   offering a resource-efficient approach for multilingual LM
+                   training at scale.",
+  month         =  oct,
+  year          =  2024,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL"
+}
+
+@ARTICLE{Hoffmann2022-uf,
+  title         = "Training Compute-Optimal Large Language Models",
+  author        = "Hoffmann, Jordan and Borgeaud, Sebastian and Mensch, Arthur
+                   and Buchatskaya, Elena and Cai, Trevor and Rutherford, Eliza
+                   and Casas, Diego de Las and Hendricks, Lisa Anne and Welbl,
+                   Johannes and Clark, Aidan and Hennigan, Tom and Noland, Eric
+                   and Millican, Katie and van den Driessche, George and Damoc,
+                   Bogdan and Guy, Aurelia and Osindero, Simon and Simonyan,
+                   Karen and Elsen, Erich and Rae, Jack W and Vinyals, Oriol and
+                   Sifre, Laurent",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "We investigate the optimal model size and number of tokens
+                   for training a transformer language model under a given
+                   compute budget. We find that current large language models
+                   are significantly undertrained, a consequence of the recent
+                   focus on scaling language models whilst keeping the amount of
+                   training data constant. By training over 400 language models
+                   ranging from 70 million to over 16 billion parameters on 5 to
+                   500 billion tokens, we find that for compute-optimal
+                   training, the model size and the number of training tokens
+                   should be scaled equally: for every doubling of model size
+                   the number of training tokens should also be doubled. We test
+                   this hypothesis by training a predicted compute-optimal
+                   model, Chinchilla, that uses the same compute budget as
+                   Gopher but with 70B parameters and 4$\times$ more more data.
+                   Chinchilla uniformly and significantly outperforms Gopher
+                   (280B), GPT-3 (175B), Jurassic-1 (178B), and Megatron-Turing
+                   NLG (530B) on a large range of downstream evaluation tasks.
+                   This also means that Chinchilla uses substantially less
+                   compute for fine-tuning and inference, greatly facilitating
+                   downstream usage. As a highlight, Chinchilla reaches a
+                   state-of-the-art average accuracy of 67.5\% on the MMLU
+                   benchmark, greater than a 7\% improvement over Gopher.",
+  month         =  mar,
+  year          =  2022,
   archivePrefix = "arXiv",
   primaryClass  = "cs.CL"
 }
