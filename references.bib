@@ -243,36 +243,49 @@
   primaryClass  = "cs.CL"
 }
 
-@ARTICLE{Zweiger2025-wn,
-  title         = "Self-adapting language models",
-  author        = "Zweiger, Adam and Pari, Jyothish and Guo, Han and
-                   Aky{\"{u}}rek, Ekin and Kim, Yoon and Agrawal, Pulkit",
-  journal       = "arXiv [cs.LG]",
-  abstract      = "Large language models (LLMs) are powerful but static; they
-                   lack mechanisms to adapt their weights in response to new
-                   tasks, knowledge, or examples. We introduce Self-Adapting
-                   LLMs (SEAL), a framework that enables LLMs to self-adapt by
-                   generating their own finetuning data and update directives.
-                   Given a new input, the model produces a self-edit-a
-                   generation that may restructure the information in different
-                   ways, specify optimization hyperparameters, or invoke tools
-                   for data augmentation and gradient-based updates. Through
-                   supervised finetuning (SFT), these self-edits result in
-                   persistent weight updates, enabling lasting adaptation. To
-                   train the model to produce effective self-edits, we use a
-                   reinforcement learning loop with the downstream performance
-                   of the updated model as the reward signal. Unlike prior
-                   approaches that rely on separate adaptation modules or
-                   auxiliary networks, SEAL directly uses the model's own
-                   generation to control its adaptation process. Experiments on
-                   knowledge incorporation and few-shot generalization show that
-                   SEAL is a promising step toward language models capable of
-                   self-directed adaptation. Our website and code is available
-                   at https://jyopari.github.io/posts/seal.",
-  month         =  jun,
-  year          =  2025,
+@ARTICLE{Wang2024-zu,
+  title         = "Visually Descriptive Language Model for vector graphics
+                   reasoning",
+  author        = "Wang, Zhenhailong and Hsu, Joy and Wang, Xingyao and Huang,
+                   Kuan-Hao and Li, Manling and Wu, Jiajun and Ji, Heng",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "Despite significant advancements, large multimodal models
+                   (LMMs) still struggle to bridge the gap between low-level
+                   visual perception -- focusing on shapes, sizes, and layouts
+                   -- and high-level language reasoning, such as semantics and
+                   logic. This limitation is evident in tasks that require
+                   precise visual perception, like comparing geometric
+                   properties or solving visual reasoning problems. To study
+                   this failure mode, we focus on vector graphics -- images
+                   composed of 2D objects and shapes, prevalent in LMM-based
+                   tasks in web, design, and OS environments. We identify two
+                   key research questions: how can we enable precise visual
+                   perception, and how can we facilitate high-level reasoning
+                   based on such low-level perceptions? To capture fine visual
+                   details, we use Scalable Vector Graphics (SVG) for accurate
+                   encoding of visual scenes. However, SVGs are not readily
+                   interpretable by LMMs in a zero-shot manner. To tackle this,
+                   we propose the Visually Descriptive Language Model (VDLM),
+                   which introduces a Primal Visual Description (PVD) as an
+                   intermediate textual representation. PVD translates SVGs into
+                   a text-based abstraction consisting of primitive attributes
+                   (e.g., shape, position, measurement) and their corresponding
+                   values. PVD can be learned using task-agnostic synthesized
+                   data and represents visual primitives that are universal
+                   across vector graphics. This abstraction is more structured,
+                   allowing for direct interpretation by foundation models for
+                   zero-shot generalization. Without human-annotated data,
+                   empirical results show that VDLM significantly improves
+                   state-of-the-art LMMs like GPT-4o on various multimodal
+                   perception and reasoning tasks. Extensive analyses of VDLM
+                   show improved interpretability due to its disentangled
+                   perception and reasoning. We also demonstrate a positive
+                   correlation between PVD quality and task performance. Project
+                   page: https://mikewangwzhl.github.io/VDLM/",
+  month         =  apr,
+  year          =  2024,
   archivePrefix = "arXiv",
-  primaryClass  = "cs.LG"
+  primaryClass  = "cs.CL"
 }
 
 @ARTICLE{Tao2024-cl,
@@ -5832,6 +5845,38 @@
                    trains 100\% of the parameters per task.",
   month         =  feb,
   year          =  2019,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG"
+}
+
+@ARTICLE{Zweiger2025-wn,
+  title         = "Self-adapting language models",
+  author        = "Zweiger, Adam and Pari, Jyothish and Guo, Han and
+                   Aky{\"{u}}rek, Ekin and Kim, Yoon and Agrawal, Pulkit",
+  journal       = "arXiv [cs.LG]",
+  abstract      = "Large language models (LLMs) are powerful but static; they
+                   lack mechanisms to adapt their weights in response to new
+                   tasks, knowledge, or examples. We introduce Self-Adapting
+                   LLMs (SEAL), a framework that enables LLMs to self-adapt by
+                   generating their own finetuning data and update directives.
+                   Given a new input, the model produces a self-edit-a
+                   generation that may restructure the information in different
+                   ways, specify optimization hyperparameters, or invoke tools
+                   for data augmentation and gradient-based updates. Through
+                   supervised finetuning (SFT), these self-edits result in
+                   persistent weight updates, enabling lasting adaptation. To
+                   train the model to produce effective self-edits, we use a
+                   reinforcement learning loop with the downstream performance
+                   of the updated model as the reward signal. Unlike prior
+                   approaches that rely on separate adaptation modules or
+                   auxiliary networks, SEAL directly uses the model's own
+                   generation to control its adaptation process. Experiments on
+                   knowledge incorporation and few-shot generalization show that
+                   SEAL is a promising step toward language models capable of
+                   self-directed adaptation. Our website and code is available
+                   at https://jyopari.github.io/posts/seal.",
+  month         =  jun,
+  year          =  2025,
   archivePrefix = "arXiv",
   primaryClass  = "cs.LG"
 }
