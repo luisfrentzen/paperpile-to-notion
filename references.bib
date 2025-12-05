@@ -4863,6 +4863,42 @@
   keywords      = "Sinica;multilinguality;reading-list;to-read"
 }
 
+@MISC{Chen2025-lm,
+  title         = "{EAC}-{MoE}: Expert-Selection Aware Compressor for
+                   mixture-of-experts large language models",
+  author        = "Chen, Yuanteng and Shao, Yuantian and Wang, Peisong and
+                   Cheng, Jian",
+  abstract      = "Mixture-of-Experts (MoE) has demonstrated promising potential
+                   in scaling LLMs. However, it is hindered by two critical
+                   challenges: (1) substantial GPU memory consumption to load
+                   all experts; (2) low activated parameters cannot be
+                   equivalently translated into inference acceleration effects.
+                   In this work, we propose EAC-MoE, an Expert-Selection Aware
+                   Compressor for MoE-LLMs, which deeply aligns with the
+                   characteristics of MoE from the perspectives of quantization
+                   and pruning, and introduces two modules to address these two
+                   challenges respectively: (1) The expert selection bias caused
+                   by low-bit quantization is a major factor contributing to the
+                   performance degradation in MoE-LLMs. Based on this, we
+                   propose Quantization with Expert-Selection Calibration
+                   (QESC), which mitigates the expert selection bias by
+                   calibrating the routers within the MoE; (2) There are always
+                   certain experts that are not crucial for the corresponding
+                   tasks, yet causing inference latency. Therefore, we propose
+                   Pruning based on Expert-Selection Frequency (PESF), which
+                   significantly improves inference speed by pruning less
+                   frequently used experts for current task. Extensive
+                   experiments demonstrate that our approach significantly
+                   reduces memory usage and improves inference speed with
+                   minimal performance degradation.",
+  month         =  "3~" # aug,
+  year          =  2025,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "2508.01625",
+  keywords      = "distillation;reading-list"
+}
+
 @MISC{OpenAI2025-yh,
   title     = "gpt-oss-{120b} \& gpt-oss-{20b} Model Card",
   author    = "{OpenAI} and {:} and Agarwal, Sandhini and Ahmad, Lama and Ai,
