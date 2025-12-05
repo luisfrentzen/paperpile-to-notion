@@ -4863,6 +4863,53 @@
   keywords      = "Sinica;multilinguality;reading-list;to-read"
 }
 
+@MISC{Li2025-ad,
+  title         = "{SlimMoE}: Structured compression of large {MoE} models via
+                   expert slimming and distillation",
+  author        = "Li, Zichong and Liang, Chen and Zhang, Zixuan and Hong, Ilgee
+                   and Kim, Young Jin and Chen, Weizhu and Zhao, Tuo",
+  abstract      = "The Mixture of Experts (MoE) architecture has emerged as a
+                   powerful paradigm for scaling large language models (LLMs)
+                   while maintaining inference efficiency. However, their
+                   enormous memory requirements make them prohibitively
+                   expensive to fine-tune or deploy in resource-constrained
+                   environments. To address this challenge, we introduce
+                   SlimMoE, a multi-stage compression framework for transforming
+                   large MoE models into much smaller, efficient variants
+                   without incurring the prohibitive costs of training from
+                   scratch. Our method systematically reduces parameter counts
+                   by slimming experts and transferring knowledge through
+                   intermediate stages, effectively mitigating the performance
+                   degradation common in one-shot pruning approaches. Using this
+                   framework, we compress Phi 3.5-MoE (41.9B total/6.6B
+                   activated parameters) to create Phi-mini-MoE (7.6B total/2.4B
+                   activated parameters) and Phi-tiny-MoE (3.8B total/1.1B
+                   activated parameters) using only 400B tokens--less than 10\%
+                   of the original model's training data. These compressed
+                   models can be fine-tuned on a single GPU (A100 for
+                   Phi-mini-MoE, A6000 for Phi-tiny-MoE), making them highly
+                   suitable for academic and resource-limited settings. Our
+                   experiments demonstrate that these compressed models
+                   outperform others of similar size and remain competitive with
+                   larger models. For instance, Phi-mini-MoE achieves similar or
+                   better performance to Phi-3-mini using only 2/3 of the
+                   activated parameters and yields comparable MMLU scores to
+                   Llama 3.1 8B despite having significantly lower latency. Our
+                   findings demonstrate that structured pruning combined with
+                   staged distillation offers an effective path to creating
+                   high-quality, compact MoE models, paving the way for broader
+                   adoption of MoE architectures. We make our models publicly
+                   available at
+                   https://huggingface.co/microsoft/Phi-mini-MoE-instruct and
+                   https://huggingface.co/microsoft/Phi-tiny-MoE-instruct .",
+  month         =  "23~" # jun,
+  year          =  2025,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "2506.18349",
+  keywords      = "distillation;reading-list"
+}
+
 @MISC{Chen2025-lm,
   title         = "{EAC}-{MoE}: Expert-Selection Aware Compressor for
                    mixture-of-experts large language models",
