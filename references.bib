@@ -1,1404 +1,3 @@
-@INPROCEEDINGS{Conneau2018-dv,
-  title     = "What you can cram into a single \$\&!\#* vector: Probing sentence
-               embeddings for linguistic properties",
-  author    = "Conneau, Alexis and Kruszewski, German and Lample, Guillaume and
-               Barrault, Lo\"{\i}c and Baroni, Marco",
-  booktitle = "Proceedings of the 56th Annual Meeting of the Association for
-               Computational Linguistics (Volume 1: Long Papers)",
-  publisher = "Association for Computational Linguistics",
-  address   = "Stroudsburg, PA, USA",
-  pages     = "2126--2136",
-  abstract  = "Alexis Conneau, German Kruszewski, Guillaume Lample, Lo\"{\i}c
-               Barrault, Marco Baroni. Proceedings of the 56th Annual Meeting of
-               the Association for Computational Linguistics (Volume 1: Long
-               Papers). 2018.",
-  year      =  2018,
-  keywords  = "interpretability"
-}
-
-@MISC{Li2022-gm,
-  title         = "Emergent world representations: Exploring a sequence model
-                   trained on a synthetic task",
-  author        = "Li, Kenneth and Hopkins, Aspen K and Bau, David and
-                   Vi\'{e}gas, Fernanda and Pfister, Hanspeter and Wattenberg,
-                   Martin",
-  abstract      = "Language models show a surprising range of capabilities, but
-                   the source of their apparent competence is unclear. Do these
-                   networks just memorize a collection of surface statistics, or
-                   do they rely on internal representations of the process that
-                   generates the sequences they see? We investigate this
-                   question by applying a variant of the GPT model to the task
-                   of predicting legal moves in a simple board game, Othello.
-                   Although the network has no a priori knowledge of the game or
-                   its rules, we uncover evidence of an emergent nonlinear
-                   internal representation of the board state. Interventional
-                   experiments indicate this representation can be used to
-                   control the output of the network and create ``latent
-                   saliency maps'' that can help explain predictions in human
-                   terms.",
-  month         =  "24~" # oct,
-  year          =  2022,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.LG",
-  eprint        = "2210.13382",
-  keywords      = "interpretability"
-}
-
-@MISC{Agarwal2024-qh,
-  title         = "Many-shot in-context learning",
-  author        = "Agarwal, Rishabh and Singh, Avi and Zhang, Lei M and Bohnet,
-                   Bernd and Rosias, Luis and Chan, Stephanie and Zhang, Biao
-                   and Anand, Ankesh and Abbas, Zaheer and Nova, Azade and
-                   Co-Reyes, John D and Chu, Eric and Behbahani, Feryal and
-                   Faust, Aleksandra and Larochelle, Hugo",
-  abstract      = "Large language models (LLMs) excel at few-shot in-context
-                   learning (ICL) -- learning from a few examples provided in
-                   context at inference, without any weight updates. Newly
-                   expanded context windows allow us to investigate ICL with
-                   hundreds or thousands of examples -- the many-shot regime.
-                   Going from few-shot to many-shot, we observe significant
-                   performance gains across a wide variety of generative and
-                   discriminative tasks. While promising, many-shot ICL can be
-                   bottlenecked by the available amount of human-generated
-                   examples. To mitigate this limitation, we explore two new
-                   settings: Reinforced and Unsupervised ICL. Reinforced ICL
-                   uses model-generated chain-of-thought rationales in place of
-                   human examples. Unsupervised ICL removes rationales from the
-                   prompt altogether, and prompts the model only with
-                   domain-specific questions. We find that both Reinforced and
-                   Unsupervised ICL can be quite effective in the many-shot
-                   regime, particularly on complex reasoning tasks. Finally, we
-                   demonstrate that, unlike few-shot learning, many-shot
-                   learning is effective at overriding pretraining biases, can
-                   learn high-dimensional functions with numerical inputs, and
-                   performs comparably to fine-tuning. We also find that
-                   inference cost increases linearly in the many-shot regime,
-                   and frontier LLMs benefit from many-shot ICL to varying
-                   degrees. Our analysis also reveals the limitations of
-                   next-token prediction loss as an indicator of downstream ICL
-                   performance.",
-  month         =  "16~" # apr,
-  year          =  2024,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.LG",
-  eprint        = "2404.11018",
-  keywords      = "icl"
-}
-
-@MISC{Zou2024-tc,
-  title         = "On many-shot in-context learning for long-context evaluation",
-  author        = "Zou, Kaijian and Khalifa, Muhammad and Wang, Lu",
-  abstract      = "Many-shot in-context learning (ICL) has emerged as a unique
-                   setup to both utilize and test the ability of large language
-                   models to handle long context. This paper delves into
-                   long-context language model (LCLM) evaluation through
-                   many-shot ICL. We first ask: what types of ICL tasks benefit
-                   from additional demonstrations, and how effective are they in
-                   evaluating LCLMs? We find that classification and
-                   summarization tasks show performance improvements with
-                   additional demonstrations, while translation and reasoning
-                   tasks do not exhibit clear trends. Next, we investigate the
-                   extent to which different tasks necessitate retrieval versus
-                   global context understanding. We develop metrics to
-                   categorize ICL tasks into two groups: (i) similar-sample
-                   learning (SSL): tasks where retrieval of the most similar
-                   examples is sufficient for good performance, and (ii)
-                   all-sample learning (ASL): tasks that necessitate a deeper
-                   comprehension of all examples in the prompt. Lastly, we
-                   introduce a new many-shot ICL benchmark, MANYICLBENCH, to
-                   characterize model's ability on both fronts and benchmark 12
-                   LCLMs using MANYICLBENCH. We find that while state-of-the-art
-                   models demonstrate good performance up to 64k tokens in SSL
-                   tasks, many models experience significant performance drops
-                   at only 16k tokens in ASL tasks.",
-  month         =  "11~" # nov,
-  year          =  2024,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  eprint        = "2411.07130",
-  keywords      = "icl"
-}
-
-@MISC{Eyuboglu2025-lh,
-  title         = "Cartridges: Lightweight and general-purpose long context
-                   representations via self-study",
-  author        = "Eyuboglu, Sabri and Ehrlich, Ryan and Arora, Simran and Guha,
-                   Neel and Zinsley, Dylan and Liu, Emily and Tennien, Will and
-                   Rudra, Atri and Zou, James and Mirhoseini, Azalia and Re,
-                   Christopher",
-  abstract      = "Large language models are often used to answer queries
-                   grounded in large text corpora (e.g. codebases, legal
-                   documents, or chat histories) by placing the entire corpus in
-                   the context window and leveraging in-context learning (ICL).
-                   Although current models support contexts of 100K-1M tokens,
-                   this setup is costly to serve because the memory consumption
-                   of the KV cache scales with input length. We explore an
-                   alternative: training a smaller KV cache offline on each
-                   corpus. At inference time, we load this trained KV cache,
-                   which we call a Cartridge, and decode a response. Critically,
-                   the cost of training a Cartridge can be amortized across all
-                   the queries referencing the same corpus. However, we find
-                   that the naive approach of training the Cartridge with
-                   next-token prediction on the corpus is not competitive with
-                   ICL. Instead, we propose self-study, a training recipe in
-                   which we generate synthetic conversations about the corpus
-                   and train the Cartridge with a context-distillation
-                   objective. We find that Cartridges trained with self-study
-                   replicate the functionality of ICL, while being significantly
-                   cheaper to serve. On challenging long-context benchmarks,
-                   Cartridges trained with self-study match ICL performance
-                   while using 38.6x less memory and enabling 26.4x higher
-                   throughput. Self-study also extends the model's effective
-                   context length (e.g. from 128k to 484k tokens on MTOB) and
-                   surprisingly, leads to Cartridges that can be composed at
-                   inference time without retraining.",
-  month         =  "6~" # jun,
-  year          =  2025,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  eprint        = "2506.06266",
-  keywords      = "icl"
-}
-
-@MISC{Zebaze2024-oa,
-  title         = "In-context example selection via similarity search improves
-                   low-resource machine translation",
-  author        = "Zebaze, Armel and Sagot, Beno\^{\i}t and Bawden, Rachel",
-  abstract      = "The ability of generative large language models (LLMs) to
-                   perform in-context learning has given rise to a large body of
-                   research into how best to prompt models for various natural
-                   language processing tasks. In this paper, we focus on machine
-                   translation (MT), a task that has been shown to benefit from
-                   in-context translation examples. However no systematic
-                   studies have been published on how best to select examples,
-                   and mixed results have been reported on the usefulness of
-                   similarity-based selection over random selection. We provide
-                   a study covering multiple LLMs and multiple in-context
-                   example retrieval strategies, comparing multilingual sentence
-                   embeddings. We cover several language directions,
-                   representing different levels of language resourcedness
-                   (English into French, German, Swahili and Wolof). Contrarily
-                   to previously published results, we find that sentence
-                   embedding similarity can improve MT, especially for
-                   low-resource language directions, and discuss the balance
-                   between selection pool diversity and quality. We also
-                   highlight potential problems with the evaluation of LLM-based
-                   MT and suggest a more appropriate evaluation protocol,
-                   adapting the COMET metric to the evaluation of LLMs. Code and
-                   outputs are freely available at
-                   https://github.com/ArmelRandy/ICL-MT.",
-  month         =  "1~" # aug,
-  year          =  2024,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  eprint        = "2408.00397",
-  keywords      = "icl"
-}
-
-@INPROCEEDINGS{Zanzotto2025-hu,
-  title     = "Position paper: {MeMo}: Towards language models with associative
-               memory mechanisms",
-  author    = "Zanzotto, Fabio Massimo and Ruzzetti, Elena Sofia and Xompero,
-               Giancarlo A and Ranaldi, Leonardo and Venditti, Davide and
-               Ranaldi, Federico and Giannone, Cristina and Favalli, Andrea and
-               Romagnoli, Raniero",
-  booktitle = "Findings of the Association for Computational Linguistics: ACL
-               2025",
-  publisher = "Association for Computational Linguistics",
-  address   = "Stroudsburg, PA, USA",
-  pages     = "15169--15180",
-  abstract  = "Fabio Massimo Zanzotto, Elena Sofia Ruzzetti, Giancarlo A.
-               Xompero, Leonardo Ranaldi, Davide Venditti, Federico Ranaldi,
-               Cristina Giannone, Andrea Favalli, Raniero Romagnoli. Findings of
-               the Association for Computational Linguistics: ACL 2025. 2025.",
-  year      =  2025,
-  keywords  = "memory"
-}
-
-@MISC{Huh2024-gr,
-  title         = "The platonic representation hypothesis",
-  author        = "Huh, Minyoung and Cheung, Brian and Wang, Tongzhou and Isola,
-                   Phillip",
-  abstract      = "We argue that representations in AI models, particularly deep
-                   networks, are converging. First, we survey many examples of
-                   convergence in the literature: over time and across multiple
-                   domains, the ways by which different neural networks
-                   represent data are becoming more aligned. Next, we
-                   demonstrate convergence across data modalities: as vision
-                   models and language models get larger, they measure distance
-                   between datapoints in a more and more alike way. We
-                   hypothesize that this convergence is driving toward a shared
-                   statistical model of reality, akin to Plato's concept of an
-                   ideal reality. We term such a representation the platonic
-                   representation and discuss several possible selective
-                   pressures toward it. Finally, we discuss the implications of
-                   these trends, their limitations, and counterexamples to our
-                   analysis.",
-  month         =  "13~" # may,
-  year          =  2024,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.LG",
-  eprint        = "2405.07987",
-  keywords      = "model-learning"
-}
-
-@MISC{OpenAI2025-yh,
-  title     = "gpt-oss-{120b} \& gpt-oss-{20b} Model Card",
-  author    = "{OpenAI} and {:} and Agarwal, Sandhini and Ahmad, Lama and Ai,
-               Jason and Altman, Sam and Applebaum, Andy and Arbus, Edwin and
-               Arora, Rahul K and Bai, Yu and Baker, Bowen and Bao, Haiming and
-               Barak, Boaz and Bennett, Ally and Bertao, Tyler and Brett,
-               Nivedita and Brevdo, Eugene and Brockman, Greg and Bubeck,
-               Sebastien and Chang, Che and Chen, Kai and Chen, Mark and Cheung,
-               Enoch and Clark, Aidan and Cook, Dan and Dukhan, Marat and
-               Dvorak, Casey and Fives, Kevin and Fomenko, Vlad and Garipov,
-               Timur and Georgiev, Kristian and Glaese, Mia and Gogineni, Tarun
-               and Goucher, Adam and Gross, Lukas and Guzman, Katia Gil and
-               Hallman, John and Hehir, Jackie and Heidecke, Johannes and
-               Helyar, Alec and Hu, Haitang and Huet, Romain and Huh, Jacob and
-               Jain, Saachi and Johnson, Zach and Koch, Chris and Kofman, Irina
-               and Kundel, Dominik and Kwon, Jason and Kyrylov, Volodymyr and
-               Le, Elaine Ya and Leclerc, Guillaume and Lennon, James Park and
-               Lessans, Scott and Lezcano-Casado, Mario and Li, Yuanzhi and Li,
-               Zhuohan and Lin, Ji and Liss, Jordan and {Lily} and {Liu} and
-               Liu, Jiancheng and Lu, Kevin and Lu, Chris and Martinovic, Zoran
-               and McCallum, Lindsay and McGrath, Josh and McKinney, Scott and
-               McLaughlin, Aidan and Mei, Song and Mostovoy, Steve and Mu, Tong
-               and Myles, Gideon and Neitz, Alexander and Nichol, Alex and
-               Pachocki, Jakub and Paino, Alex and Palmie, Dana and Pantuliano,
-               Ashley and Parascandolo, Giambattista and Park, Jongsoo and
-               Pathak, Leher and Paz, Carolina and Peran, Ludovic and Pimenov,
-               Dmitry and Pokrass, Michelle and Proehl, Elizabeth and Qiu, Huida
-               and Raila, Gaby and Raso, Filippo and Ren, Hongyu and Richardson,
-               Kimmy and Robinson, David and Rotsted, Bob and Salman, Hadi and
-               Sanjeev, Suvansh and Schwarzer, Max and Sculley, D and Sikchi,
-               Harshit and Simon, Kendal and Singhal, Karan and Song, Yang and
-               Stuckey, Dane and Sun, Zhiqing and Tillet, Philippe and Toizer,
-               Sam and Tsimpourlas, Foivos and Vyas, Nikhil and Wallace, Eric
-               and Wang, Xin and Wang, Miles and Watkins, Olivia and Weil, Kevin
-               and Wendling, Amy and Whinnery, Kevin and Whitney, Cedric and
-               Wong, Hannah and Yang, Lin and Yang, Yu and Yasunaga, Michihiro
-               and Ying, Kristen and Zaremba, Wojciech and Zhan, Wenting and
-               Zhang, Cyril and Zhang, Brian and Zhang, Eddie and Zhao, Shengjia",
-  publisher = "arXiv",
-  abstract  = "We present gpt-oss-120b and gpt-oss-20b, two open-weight
-               reasoning models that push the frontier of accuracy and inference
-               cost. The models use an efficient mixture-of-expert transformer
-               architecture and are trained using large-scale distillation and
-               reinforcement learning. We optimize the models to have strong
-               agentic capabilities (deep research browsing, python tool use,
-               and support for developer-provided functions), all while using a
-               rendered chat format that enables clear instruction following and
-               role delineation. Both models achieve strong results on
-               benchmarks ranging from mathematics, coding, and safety. We
-               release the model weights, inference implementations, tool
-               environments, and tokenizers under an Apache 2.0 license to
-               enable broad use and further research.",
-  month     =  "8~" # aug,
-  year      =  2025,
-  eprint    = "2508.10925",
-  keywords  = "Computation and Language (cs.CL); Artificial Intelligence
-               (cs.AI); FOS: Computer and information sciences; FOS: Computer
-               and information sciences;training"
-}
-
-@MISC{Casto2025-vu,
-  title         = "What does it mean to understand language?",
-  author        = "Casto, Colton and Ivanova, Anna and Fedorenko, Evelina and
-                   Kanwisher, Nancy",
-  abstract      = "Language understanding entails not just extracting the
-                   surface-level meaning of the linguistic input, but
-                   constructing rich mental models of the situation it
-                   describes. Here we propose that because processing within the
-                   brain's core language system is fundamentally limited, deeply
-                   understanding language requires exporting information from
-                   the language system to other brain regions that compute
-                   perceptual and motor representations, construct mental
-                   models, and store our world knowledge and autobiographical
-                   memories. We review the existing evidence for this
-                   hypothesis, and argue that recent progress in cognitive
-                   neuroscience provides both the conceptual foundation and the
-                   methods to directly test it, thus opening up a new strategy
-                   to reveal what it means, cognitively and neurally, to
-                   understand language.",
-  month         =  "24~" # nov,
-  year          =  2025,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  eprint        = "2511.19757",
-  keywords      = "understanding"
-}
-
-@MISC{Kim2025-ns,
-  title         = "Every expert matters: Towards effective knowledge
-                   distillation for Mixture-of-experts language models",
-  author        = "Kim, Gyeongman and Chu, Gyouk and Yang, Eunho",
-  abstract      = "With the emergence of Mixture-of-Experts (MoE), the efficient
-                   scaling of model size has accelerated the development of
-                   large language models in recent years. However, their high
-                   memory requirements prevent their use in resource-constrained
-                   environments. While knowledge distillation (KD) has been a
-                   proven method for model compression, its application to MoE
-                   teacher models remains underexplored. Through our
-                   investigation, we discover that non-activated experts in MoE
-                   models possess valuable knowledge that benefits student
-                   models. We further demonstrate that existing KD methods are
-                   not optimal for compressing MoE models, as they fail to
-                   leverage this knowledge effectively. To address this, we
-                   propose two intuitive MoE-specific KD methods for the first
-                   time: Knowledge Augmentation (KA) and Student-Aware Router
-                   (SAR), both designed to effectively extract knowledge from
-                   all experts. Specifically, KA augments knowledge by sampling
-                   experts multiple times, while SAR uses all experts and
-                   adjusts the expert weights through router training to provide
-                   optimal knowledge. Extensive experiments show that our
-                   methods outperform conventional KD methods, demonstrating
-                   their effectiveness for MoE teacher models.",
-  month         =  "18~" # feb,
-  year          =  2025,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  eprint        = "2502.12947",
-  keywords      = "distillation"
-}
-
-@MISC{Li2023-hw,
-  title         = "Merge, then compress: Demystify efficient {SMoE} with hints
-                   from its routing policy",
-  author        = "Li, Pingzhi and Zhang, Zhenyu and Yadav, Prateek and Sung,
-                   Yi-Lin and Cheng, Yu and Bansal, Mohit and Chen, Tianlong",
-  abstract      = "Sparsely activated Mixture-of-Experts (SMoE) has shown
-                   promise to scale up the learning capacity of neural networks,
-                   however, they have issues like (a) High Memory Usage, due to
-                   duplication of the network layers into multiple copies as
-                   experts; and (b) Redundancy in Experts, as common
-                   learning-based routing policies suffer from representational
-                   collapse. Therefore, vanilla SMoE models are memory
-                   inefficient and non-scalable, especially for
-                   resource-constrained downstream scenarios. In this paper, we
-                   ask: Can we craft a compact SMoE model by consolidating
-                   expert information? What is the best recipe to merge multiple
-                   experts into fewer but more knowledgeable experts? Our pilot
-                   investigation reveals that conventional model merging methods
-                   fail to be effective in such expert merging for SMoE. The
-                   potential reasons are: (1) redundant information overshadows
-                   critical experts; (2) appropriate neuron permutation for each
-                   expert is missing to bring all of them in alignment. To
-                   address this, we propose M-SMoE, which leverages routing
-                   statistics to guide expert merging. Specifically, it starts
-                   with neuron permutation alignment for experts; then, dominant
-                   experts and their ``group members'' are formed; lastly, every
-                   expert group is merged into a single expert by utilizing each
-                   expert's activation frequency as their weight for merging,
-                   thus diminishing the impact of insignificant experts.
-                   Moreover, we observed that our proposed merging promotes a
-                   low dimensionality in the merged expert's weight space,
-                   naturally paving the way for additional compression. Hence,
-                   our final method, MC-SMoE (i.e., Merge, then Compress SMoE),
-                   further decomposes the merged experts into low-rank and
-                   structural sparse alternatives. Extensive experiments across
-                   8 benchmarks validate the effectiveness of MC-SMoE. For
-                   instance, our MC-SMoE achieves up to 80\% memory and a 20\%
-                   FLOPs reduction, with virtually no loss in performance.",
-  month         =  "2~" # oct,
-  year          =  2023,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.LG",
-  eprint        = "2310.01334",
-  keywords      = "distillation"
-}
-
-@MISC{Chen2025-lm,
-  title         = "{EAC}-{MoE}: Expert-Selection Aware Compressor for
-                   mixture-of-experts large language models",
-  author        = "Chen, Yuanteng and Shao, Yuantian and Wang, Peisong and
-                   Cheng, Jian",
-  abstract      = "Mixture-of-Experts (MoE) has demonstrated promising potential
-                   in scaling LLMs. However, it is hindered by two critical
-                   challenges: (1) substantial GPU memory consumption to load
-                   all experts; (2) low activated parameters cannot be
-                   equivalently translated into inference acceleration effects.
-                   In this work, we propose EAC-MoE, an Expert-Selection Aware
-                   Compressor for MoE-LLMs, which deeply aligns with the
-                   characteristics of MoE from the perspectives of quantization
-                   and pruning, and introduces two modules to address these two
-                   challenges respectively: (1) The expert selection bias caused
-                   by low-bit quantization is a major factor contributing to the
-                   performance degradation in MoE-LLMs. Based on this, we
-                   propose Quantization with Expert-Selection Calibration
-                   (QESC), which mitigates the expert selection bias by
-                   calibrating the routers within the MoE; (2) There are always
-                   certain experts that are not crucial for the corresponding
-                   tasks, yet causing inference latency. Therefore, we propose
-                   Pruning based on Expert-Selection Frequency (PESF), which
-                   significantly improves inference speed by pruning less
-                   frequently used experts for current task. Extensive
-                   experiments demonstrate that our approach significantly
-                   reduces memory usage and improves inference speed with
-                   minimal performance degradation.",
-  month         =  "3~" # aug,
-  year          =  2025,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.LG",
-  eprint        = "2508.01625",
-  keywords      = "distillation"
-}
-
-@MISC{Li2025-ad,
-  title         = "{SlimMoE}: Structured compression of large {MoE} models via
-                   expert slimming and distillation",
-  author        = "Li, Zichong and Liang, Chen and Zhang, Zixuan and Hong, Ilgee
-                   and Kim, Young Jin and Chen, Weizhu and Zhao, Tuo",
-  abstract      = "The Mixture of Experts (MoE) architecture has emerged as a
-                   powerful paradigm for scaling large language models (LLMs)
-                   while maintaining inference efficiency. However, their
-                   enormous memory requirements make them prohibitively
-                   expensive to fine-tune or deploy in resource-constrained
-                   environments. To address this challenge, we introduce
-                   SlimMoE, a multi-stage compression framework for transforming
-                   large MoE models into much smaller, efficient variants
-                   without incurring the prohibitive costs of training from
-                   scratch. Our method systematically reduces parameter counts
-                   by slimming experts and transferring knowledge through
-                   intermediate stages, effectively mitigating the performance
-                   degradation common in one-shot pruning approaches. Using this
-                   framework, we compress Phi 3.5-MoE (41.9B total/6.6B
-                   activated parameters) to create Phi-mini-MoE (7.6B total/2.4B
-                   activated parameters) and Phi-tiny-MoE (3.8B total/1.1B
-                   activated parameters) using only 400B tokens--less than 10\%
-                   of the original model's training data. These compressed
-                   models can be fine-tuned on a single GPU (A100 for
-                   Phi-mini-MoE, A6000 for Phi-tiny-MoE), making them highly
-                   suitable for academic and resource-limited settings. Our
-                   experiments demonstrate that these compressed models
-                   outperform others of similar size and remain competitive with
-                   larger models. For instance, Phi-mini-MoE achieves similar or
-                   better performance to Phi-3-mini using only 2/3 of the
-                   activated parameters and yields comparable MMLU scores to
-                   Llama 3.1 8B despite having significantly lower latency. Our
-                   findings demonstrate that structured pruning combined with
-                   staged distillation offers an effective path to creating
-                   high-quality, compact MoE models, paving the way for broader
-                   adoption of MoE architectures. We make our models publicly
-                   available at
-                   https://huggingface.co/microsoft/Phi-mini-MoE-instruct and
-                   https://huggingface.co/microsoft/Phi-tiny-MoE-instruct .",
-  month         =  "23~" # jun,
-  year          =  2025,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.LG",
-  eprint        = "2506.18349",
-  keywords      = "distillation"
-}
-
-@MISC{Xie2024-wy,
-  title         = "{MoE}-Pruner: Pruning mixture-of-experts large language model
-                   using the hints from its router",
-  author        = "Xie, Yanyue and Zhang, Zhi and Zhou, Ding and Xie, Cong and
-                   Song, Ziang and Liu, Xin and Wang, Yanzhi and Lin, Xue and
-                   Xu, An",
-  abstract      = "Mixture-of-Experts (MoE) architectures face challenges such
-                   as high memory consumption and redundancy in experts. Pruning
-                   MoE can reduce network weights while maintaining model
-                   performance. Motivated by the recent observation of emergent
-                   large magnitude features in Large Language Models (LLM) and
-                   MoE routing policy, we propose MoE-Pruner, a method that
-                   prunes weights with the smallest magnitudes multiplied by the
-                   corresponding input activations and router weights, on each
-                   output neuron. Our pruning method is one-shot, requiring no
-                   retraining or weight updates. We evaluate our method on
-                   Mixtral-8x7B and Mixtral-8x22B across multiple language
-                   benchmarks. Experimental results show that our pruning method
-                   significantly outperforms state-of-the-art LLM pruning
-                   methods. Furthermore, our pruned MoE models can benefit from
-                   a pretrained teacher model through expert-wise knowledge
-                   distillation, improving performance post-pruning.
-                   Experimental results demonstrate that the Mixtral-8x7B model
-                   with 50\% sparsity maintains 99\% of the performance of the
-                   original model after the expert-wise knowledge distillation.",
-  month         =  "15~" # oct,
-  year          =  2024,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  eprint        = "2410.12013",
-  keywords      = "distillation"
-}
-
-@ARTICLE{Regier2018-wh,
-  title     = "The Sapir-Whorf hypothesis and inference under uncertainty",
-  author    = "Regier, Terry and Xu, Yang",
-  journal   = "Wiley Interdiscip. Rev. Cogn. Sci.",
-  publisher = "Wiley",
-  volume    =  9,
-  number    =  3,
-  pages     = "e1464",
-  abstract  = "Click on the article title to read more.",
-  month     =  "1~" # may,
-  year      =  2018,
-  keywords  = "linguistics",
-  language  = "en"
-}
-
-@ARTICLE{Ramos2011-ov,
-  title     = "What constrains grammatical gender effects on semantic
-               judgements? Evidence from Portuguese",
-  author    = "Ramos, Sara and Roberson, Debi",
-  journal   = "J. Cogn. Psychol. (Hove)",
-  publisher = "Informa UK Limited",
-  volume    =  23,
-  number    =  1,
-  pages     = "102--111",
-  abstract  = "Four studies investigated whether grammatical gender biases the
-               semantic judgements of Portuguese speakers, relative to speakers
-               of English. Some research reports that grammatical gender has a
-               pervasive influence on speakers' cognitive representations (e.g.,
-               Boroditsky, Schmidt, \& Philips, 2003; Sera, Elieff, Forbes,
-               Burch, \& Rodriguez, 2002). Others argue that effects of grammar
-               arise through linguistic processing (e.g., Vigliocco, Vinson,
-               Paganelli, \& Dworzynski, 2005) and are restricted to animate
-               categories for which gender is a pertinent feature. The present
-               results found effects of gender in Portuguese speakers'
-               judgements of inanimate objects, but only when gender was task
-               relevant and/or when the stimuli were words, rather than
-               pictures. These findings support the view that gender effects on
-               cognitive judgements arise as a function of linguistic processing
-               and/or task demands, rather than directly influencing conceptual
-               or semantic representations.",
-  month     =  feb,
-  year      =  2011,
-  keywords  = "linguistics",
-  language  = "en"
-}
-
-@ARTICLE{Vigliocco2005-cz,
-  title     = "Grammatical gender effects on cognition: implications for
-               language learning and language use",
-  author    = "Vigliocco, Gabriella and Vinson, David P and Paganelli, Federica
-               and Dworzynski, Katharina",
-  journal   = "J. Exp. Psychol. Gen.",
-  publisher = "American Psychological Association (APA)",
-  volume    =  134,
-  number    =  4,
-  pages     = "501--520",
-  abstract  = "In 4 experiments, the authors addressed the mechanisms by which
-               grammatical gender (in Italian and German) may come to affect
-               meaning. In Experiments 1 (similarity judgments) and 2 (semantic
-               substitution errors), the authors found Italian gender effects
-               for animals but not for artifacts; Experiment 3 revealed no
-               comparable effects in German. These results suggest that gender
-               effects arise as a generalization from an established association
-               between gender of nouns and sex of human referents, extending to
-               nouns referring to sexuated entities. Across languages, such
-               effects are found when the language allows for easy mapping
-               between gender of nouns and sex of human referents (Italian) but
-               not when the mapping is less transparent (German). A final
-               experiment provided further constraints: These effects during
-               processing arise at a lexical-semantic level rather than at a
-               conceptual level.",
-  month     =  nov,
-  year      =  2005,
-  keywords  = "linguistics",
-  language  = "en"
-}
-
-@ARTICLE{Sera2002-ii,
-  title     = "When language affects cognition and when it does not: an analysis
-               of grammatical gender and classification",
-  author    = "Sera, Maria D and Elieff, Chryle and Forbes, James and Burch,
-               Melissa Clark and Rodr\'{\i}guez, Wanda and Dubois, Diane Poulin",
-  journal   = "J. Exp. Psychol. Gen.",
-  publisher = "American Psychological Association (APA)",
-  volume    =  131,
-  number    =  3,
-  pages     = "377--397",
-  abstract  = "The focus of this work was on the relation between grammatical
-               gender and categorization. In one set of studies, monolingual
-               English-, Spanish-, French-, and German-speaking children and
-               adults assigned male and female voices to inanimate objects.
-               Results from Spanish and French speakers indicated effects of
-               grammatical gender on classification; results from German
-               speakers did not. A connectionist model simulated the
-               contradicting findings. The connectionist networks were also used
-               to investigate which aspect of grammatical gender was responsible
-               for the different pattern of findings. The predictions from the
-               connectionist simulations were supported by the results from an
-               artificial language-learning task. The results from this work
-               demonstrate how connectionist networks can be used to identify
-               the differences between languages that affect categorization.",
-  month     =  sep,
-  year      =  2002,
-  keywords  = "linguistics",
-  language  = "en"
-}
-
-@ARTICLE{Sapir1929-ky,
-  title     = "The status of linguistics as a science",
-  author    = "Sapir, E",
-  journal   = "Language (Baltim.)",
-  publisher = "JSTOR",
-  volume    =  5,
-  number    =  4,
-  pages     =  207,
-  abstract  = "E. Sapir, The Status of Linguistics as a Science, Language, Vol.
-               5, No. 4 (Dec., 1929), pp. 207-214",
-  month     =  dec,
-  year      =  1929,
-  keywords  = "linguistics",
-  language  = "en"
-}
-
-@INCOLLECTION{Whorf1997-zx,
-  title     = "The relation of habitual thought and behavior to language",
-  author    = "Whorf, Benjamin Lee",
-  booktitle = "Sociolinguistics",
-  publisher = "Macmillan Education UK",
-  address   = "London",
-  pages     = "443--463",
-  year      =  1997,
-  keywords  = "linguistics"
-}
-
-@ARTICLE{Wolff2011-qo,
-  title     = "Linguistic relativity",
-  author    = "Wolff, Phillip and Holmes, Kevin J",
-  journal   = "Wiley Interdiscip. Rev. Cogn. Sci.",
-  publisher = "John Wiley \& Sons, Ltd",
-  volume    =  2,
-  number    =  3,
-  pages     = "253--265",
-  abstract  = "The central question in research on linguistic relativity, or the
-               Whorfian hypothesis, is whether people who speak different
-               languages think differently. The recent resurgence of research on
-               this question can be attributed, in part, to new insights about
-               the ways in which language might impact thought. We identify
-               seven categories of hypotheses about the possible effects of
-               language on thought across a wide range of domains, including
-               motion, color, spatial relations, number, and false belief
-               understanding. While we do not find support for the idea that
-               language determines the basic categories of thought or that it
-               overwrites preexisting conceptual distinctions, we do find
-               support for the proposal that language can make some distinctions
-               difficult to avoid, as well as for the proposal that language can
-               augment certain types of thinking. Further, we highlight recent
-               evidence suggesting that language may induce a relatively
-               schematic mode of thinking. Although the literature on linguistic
-               relativity remains contentious, there is growing support for the
-               view that language has a profound effect on thought. WIREs Cogni
-               Sci 2011 2 253-265 DOI: 10.1002/wcs.104 For further resources
-               related to this article, please visit the WIREs website.",
-  month     =  "1~" # may,
-  year      =  2011,
-  keywords  = "linguistics",
-  language  = "en"
-}
-
-@INCOLLECTION{Boroditsky2003-du,
-  title     = "Sex, Syntax, and Semantics",
-  author    = "Boroditsky, Lera and Schmidt, Lauren A and Phillips, Webb",
-  booktitle = "Language in Mind",
-  publisher = "The MIT Press",
-  pages     = "61--80",
-  month     =  "14~" # mar,
-  year      =  2003,
-  keywords  = "linguistics"
-}
-
-@ARTICLE{Bae2015-vk,
-  title     = "Why some colors appear more memorable than others: A model
-               combining categories and particulars in color working memory",
-  author    = "Bae, Gi-Yeul and Olkkonen, Maria and Allred, Sarah R and
-               Flombaum, Jonathan I",
-  journal   = "J. Exp. Psychol. Gen.",
-  publisher = "American Psychological Association (APA)",
-  volume    =  144,
-  number    =  4,
-  pages     = "744--763",
-  abstract  = "Categorization with basic color terms is an intuitive and
-               universal aspect of color perception. Yet research on visual
-               working memory capacity has largely assumed that only continuous
-               estimates within color space are relevant to memory. As a result,
-               the influence of color categories on working memory remains
-               unknown. We propose a dual content model of color representation
-               in which color matches to objects that are either present
-               (perception) or absent (memory) integrate category
-               representations along with estimates of specific values on a
-               continuous scale (``particulars''). We develop and test the model
-               through 4 experiments. In a first experiment pair, participants
-               reproduce a color target, both with and without a delay, using a
-               recently influential estimation paradigm. In a second experiment
-               pair, we use standard methods in color perception to identify
-               boundary and focal colors in the stimulus set. The main results
-               are that responses drawn from working memory are significantly
-               biased away from category boundaries and toward category centers.
-               Importantly, the same pattern of results is present without a
-               memory delay. The proposed dual content model parsimoniously
-               explains these results, and it should replace prevailing single
-               content models in studies of visual working memory. More broadly,
-               the model and the results demonstrate how the main consequence of
-               visual working memory maintenance is the amplification of
-               category related biases and stimulus-specific variability that
-               originate in perception.",
-  month     =  aug,
-  year      =  2015,
-  keywords  = "linguistics",
-  language  = "en"
-}
-
-@ARTICLE{Ernst2002-mp,
-  title     = "Humans integrate visual and haptic information in a statistically
-               optimal fashion",
-  author    = "Ernst, Marc O and Banks, Martin S",
-  journal   = "Nature",
-  publisher = "Springer Science and Business Media LLC",
-  volume    =  415,
-  number    =  6870,
-  pages     = "429--433",
-  abstract  = "When a person looks at an object while exploring it with their
-               hand, vision and touch both provide information for estimating
-               the properties of the object. Vision frequently dominates the
-               integrated visual-haptic percept, for example when judging size,
-               shape or position, but in some circumstances the percept is
-               clearly affected by haptics. Here we propose that a general
-               principle, which minimizes variance in the final estimate,
-               determines the degree to which vision or haptics dominates. This
-               principle is realized by using maximum-likelihood estimation to
-               combine the inputs. To investigate cue combination
-               quantitatively, we first measured the variances associated with
-               visual and haptic estimation of height. We then used these
-               measurements to construct a maximum-likelihood integrator. This
-               model behaved very similarly to humans in a visual-haptic task.
-               Thus, the nervous system seems to combine visual and haptic
-               information in a fashion that is similar to a maximum-likelihood
-               integrator. Visual dominance occurs when the variance associated
-               with visual estimation is lower than that associated with haptic
-               estimation.",
-  month     =  "24~" # jan,
-  year      =  2002,
-  keywords  = "linguistics",
-  language  = "en"
-}
-
-@ARTICLE{Cibelli2016-sj,
-  title     = "The Sapir-Whorf hypothesis and probabilistic inference: Evidence
-               from the domain of color",
-  author    = "Cibelli, Emily and Xu, Yang and Austerweil, Joseph L and
-               Griffiths, Thomas L and Regier, Terry",
-  journal   = "PLoS One",
-  publisher = "Public Library of Science (PLoS)",
-  volume    =  11,
-  number    =  7,
-  pages     = "e0158725",
-  abstract  = "The Sapir-Whorf hypothesis holds that our thoughts are shaped by
-               our native language, and that speakers of different languages
-               therefore think differently. This hypothesis is controversial in
-               part because it appears to deny the possibility of a universal
-               groundwork for human cognition, and in part because some findings
-               taken to support it have not reliably replicated. We argue that
-               considering this hypothesis through the lens of probabilistic
-               inference has the potential to resolve both issues, at least with
-               respect to certain prominent findings in the domain of color
-               cognition. We explore a probabilistic model that is grounded in a
-               presumed universal perceptual color space and in
-               language-specific categories over that space. The model predicts
-               that categories will most clearly affect color memory when
-               perceptual information is uncertain. In line with earlier
-               studies, we show that this model accounts for language-consistent
-               biases in color reconstruction from memory in English speakers,
-               modulated by uncertainty. We also show, to our knowledge for the
-               first time, that such a model accounts for influential existing
-               data on cross-language differences in color discrimination from
-               memory, both within and across categories. We suggest that these
-               ideas may help to clarify the debate over the Sapir-Whorf
-               hypothesis.",
-  month     =  "19~" # jul,
-  year      =  2016,
-  keywords  = "linguistics",
-  language  = "en"
-}
-
-@MISC{Xu2025-kp,
-  title         = "Can language models learn typologically implausible
-                   languages?",
-  author        = "Xu, Tianyang and Kuribayashi, Tatsuki and Oseki, Yohei and
-                   Cotterell, Ryan and Warstadt, Alex",
-  abstract      = "Grammatical features across human languages show intriguing
-                   correlations often attributed to learning biases in humans.
-                   However, empirical evidence has been limited to experiments
-                   with highly simplified artificial languages, and whether
-                   these correlations arise from domain-general or
-                   language-specific biases remains a matter of debate. Language
-                   models (LMs) provide an opportunity to study artificial
-                   language learning at a large scale and with a high degree of
-                   naturalism. In this paper, we begin with an in-depth
-                   discussion of how LMs allow us to better determine the role
-                   of domain-general learning biases in language universals. We
-                   then assess learnability differences for LMs resulting from
-                   typologically plausible and implausible languages closely
-                   following the word-order universals identified by linguistic
-                   typologists. We conduct a symmetrical cross-lingual study
-                   training and testing LMs on an array of highly naturalistic
-                   but counterfactual versions of the English (head-initial) and
-                   Japanese (head-final) languages. Compared to similar work,
-                   our datasets are more naturalistic and fall closer to the
-                   boundary of plausibility. Our experiments show that these LMs
-                   are often slower to learn these subtly implausible languages,
-                   while ultimately achieving similar performance on some
-                   metrics regardless of typological plausibility. These
-                   findings lend credence to the conclusion that LMs do show
-                   some typologically-aligned learning preferences, and that the
-                   typological patterns may result from, at least to some
-                   degree, domain-general learning biases.",
-  month         =  "17~" # feb,
-  year          =  2025,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  eprint        = "2502.12317",
-  keywords      = "linguistics;multilinguality"
-}
-
-@INPROCEEDINGS{Bandarkar2025-tv,
-  title     = "Multilingual Routing in Mixture-of-Experts",
-  author    = "Bandarkar, Lucas and Yang, Chenyuan and Fayyaz, Mohsen and Hu,
-               Junlin and Peng, Nanyun",
-  booktitle = "The Fourteenth International Conference on Learning
-               Representations",
-  abstract  = "Mixture-of-Experts (MoE) architectures have become the key to
-               scaling modern LLMs, yet little is understood about how their
-               sparse routing dynamics respond to multilingual data. In this
-               work, we analyze expert routing patterns using parallel
-               multilingual datasets and present highly interpretable layer-wise
-               phenomena. We find that MoE models route tokens in
-               language-specific ways in the early and late decoder layers but
-               exhibit significant cross-lingual routing alignment in middle
-               layers, mirroring parameter-sharing trends observed in dense
-               LLMs. In particular, we reveal a clear, strong correlation
-               between a model's performance in a given language and how
-               similarly its tokens are routed to English in these layers.
-               Extending beyond correlation, we explore inference-time
-               interventions that induce higher cross-lingual routing alignment.
-               We introduce a method that steers the router by promoting
-               middle-layer task experts frequently activated in English, and it
-               successfully increases multilingual performance. These 1-2\%
-               gains are remarkably consistent across two evaluation tasks,
-               three models, and 15+ languages, especially given that these
-               simple interventions override routers of extensively trained,
-               state-of-the-art LLMs. In comparison, interventions outside of
-               the middle layers or targeting multilingual-specialized experts
-               only yield performance degradation. Altogether, we present
-               numerous findings that explain how MoEs process non-English text
-               and demonstrate that generalization is limited by the model's
-               ability to leverage language-universal experts in all languages.",
-  month     =  "8~" # oct,
-  year      =  2025,
-  keywords  = "Reading List;multilinguality"
-}
-
-@INPROCEEDINGS{Bandarkar2025-qj,
-  title     = "The unreasonable effectiveness of model merging for cross-lingual
-               transfer in {LLMs}",
-  author    = "Bandarkar, Lucas and Peng, Nanyun",
-  booktitle = "Proceedings of the 5th Workshop on Multilingual Representation
-               Learning (MRL 2025)",
-  publisher = "Association for Computational Linguistics",
-  address   = "Stroudsburg, PA, USA",
-  pages     = "131--148",
-  abstract  = "Lucas Bandarkar, Nanyun Peng. Proceedings of the 5th Workshop on
-               Multilingual Representation Learning (MRL 2025). 2025.",
-  month     =  nov,
-  year      =  2025,
-  keywords  = "Reading List;multilinguality"
-}
-
-@INPROCEEDINGS{Bandarkar2024-mb,
-  title     = "Layer Swapping for Zero-Shot Cross-Lingual Transfer in Large
-               Language Models",
-  author    = "Bandarkar, Lucas and Muller, Benjamin and Yuvraj, Pritish and
-               Hou, Rui and Singhal, Nayan and Lv, Hongjiang and Liu, Bing",
-  booktitle = "The Thirteenth International Conference on Learning
-               Representations",
-  abstract  = "Model merging, such as model souping, is the practice of
-               combining different models with the same architecture together
-               without further training. In this work, we present a model
-               merging methodology that addresses the difficulty of fine-tuning
-               Large Language Models (LLMs) for target tasks in non-English
-               languages, where task-specific data is often unavailable. We
-               focus on mathematical reasoning and without in-language math
-               data, facilitate cross-lingual transfer by composing language and
-               math capabilities. Starting from the same pretrained model, we
-               fine-tune separate ``experts'' on math instruction data in
-               English and on generic instruction data in the target language.
-               We then replace the top and bottom transformer layers of the math
-               expert directly with layers from the language expert, which
-               consequently enhances math performance in the target language.
-               The resulting merged models outperform the individual experts and
-               other merging methods on the math benchmark, MGSM, by 10\% across
-               four major languages where math instruction data is scarce. In
-               addition, this layer swapping is simple, inexpensive, and
-               intuitive, as it is based on an interpretative analysis of the
-               most important parameter changes during the fine-tuning of each
-               expert. The ability to successfully re-compose LLMs for
-               cross-lingual transfer in this manner opens up future
-               possibilities to combine model expertise, create modular
-               solutions, and transfer reasoning capabilities across languages
-               all post hoc.",
-  month     =  "4~" # oct,
-  year      =  2024,
-  keywords  = "Reading List;multilinguality"
-}
-
-@INPROCEEDINGS{Lu2024-ol,
-  title     = "Not all experts are equal: Efficient expert pruning and skipping
-               for mixture-of-experts large language models",
-  author    = "Lu, Xudong and Liu, Qi and Xu, Yuhui and Zhou, Aojun and Huang,
-               Siyuan and Zhang, Bo and Yan, Junchi and Li, Hongsheng",
-  booktitle = "Proceedings of the 62nd Annual Meeting of the Association for
-               Computational Linguistics (Volume 1: Long Papers)",
-  publisher = "Association for Computational Linguistics",
-  address   = "Stroudsburg, PA, USA",
-  pages     = "6159--6172",
-  abstract  = "Xudong Lu, Qi Liu, Yuhui Xu, Aojun Zhou, Siyuan Huang, Bo Zhang,
-               Junchi Yan, Hongsheng Li. Proceedings of the 62nd Annual Meeting
-               of the Association for Computational Linguistics (Volume 1: Long
-               Papers). 2024.",
-  year      =  2024,
-  keywords  = "pruning"
-}
-
-@MISC{Agarwal2023-lt,
-  title         = "On-policy distillation of language models: Learning from
-                   self-generated mistakes",
-  author        = "Agarwal, Rishabh and Vieillard, Nino and Zhou, Yongchao and
-                   Stanczyk, Piotr and Ramos, Sabela and Geist, Matthieu and
-                   Bachem, Olivier",
-  abstract      = "Knowledge distillation (KD) is widely used for compressing a
-                   teacher model to reduce its inference cost and memory
-                   footprint, by training a smaller student model. However,
-                   current KD methods for auto-regressive sequence models suffer
-                   from distribution mismatch between output sequences seen
-                   during training and those generated by the student during
-                   inference. To address this issue, we introduce Generalized
-                   Knowledge Distillation (GKD). Instead of solely relying on a
-                   fixed set of output sequences, GKD trains the student on its
-                   self-generated output sequences by leveraging feedback from
-                   the teacher on such sequences. Unlike supervised KD
-                   approaches, GKD also offers the flexibility to employ
-                   alternative loss functions between the student and teacher,
-                   which can be useful when the student lacks the expressivity
-                   to mimic the teacher's distribution. Furthermore, GKD
-                   facilitates the seamless integration of distillation with RL
-                   fine-tuning (RLHF). We demonstrate the efficacy of GKD for
-                   distilling auto-regressive language models on summarization,
-                   translation, and arithmetic reasoning tasks, and
-                   task-agnostic distillation for instruction-tuning.",
-  month         =  "23~" # jun,
-  year          =  2023,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.LG",
-  eprint        = "2306.13649",
-  language      = "en"
-}
-
-@MISC{Frantar2023-si,
-  title         = "{SparseGPT}: Massive language models can be accurately pruned
-                   in one-shot",
-  author        = "Frantar, Elias and Alistarh, Dan",
-  abstract      = "We show for the first time that large-scale generative
-                   pretrained transformer (GPT) family models can be pruned to
-                   at least 50\% sparsity in one-shot, without any retraining,
-                   at minimal loss of accuracy. This is achieved via a new
-                   pruning method called SparseGPT, specifically designed to
-                   work efficiently and accurately on massive GPT-family models.
-                   We can execute SparseGPT on the largest available open-source
-                   models, OPT-175B and BLOOM-176B, in under 4.5 hours, and can
-                   reach 60\% unstructured sparsity with negligible increase in
-                   perplexity: remarkably, more than 100 billion weights from
-                   these models can be ignored at inference time. SparseGPT
-                   generalizes to semi-structured (2:4 and 4:8) patterns, and is
-                   compatible with weight quantization approaches. The code is
-                   available at: https://github.com/IST-DASLab/sparsegpt.",
-  month         =  "2~" # jan,
-  year          =  2023,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.LG",
-  eprint        = "2301.00774"
-}
-
-@MISC{Dettmers2023-si,
-  title         = "{QLoRA}: Efficient Finetuning of Quantized {LLMs}",
-  author        = "Dettmers, Tim and Pagnoni, Artidoro and Holtzman, Ari and
-                   Zettlemoyer, Luke",
-  abstract      = "We present QLoRA, an efficient finetuning approach that
-                   reduces memory usage enough to finetune a 65B parameter model
-                   on a single 48GB GPU while preserving full 16-bit finetuning
-                   task performance. QLoRA backpropagates gradients through a
-                   frozen, 4-bit quantized pretrained language model into Low
-                   Rank Adapters~(LoRA). Our best model family, which we name
-                   Guanaco, outperforms all previous openly released models on
-                   the Vicuna benchmark, reaching 99.3\% of the performance
-                   level of ChatGPT while only requiring 24 hours of finetuning
-                   on a single GPU. QLoRA introduces a number of innovations to
-                   save memory without sacrificing performance: (a) 4-bit
-                   NormalFloat (NF4), a new data type that is information
-                   theoretically optimal for normally distributed weights (b)
-                   double quantization to reduce the average memory footprint by
-                   quantizing the quantization constants, and (c) paged
-                   optimziers to manage memory spikes. We use QLoRA to finetune
-                   more than 1,000 models, providing a detailed analysis of
-                   instruction following and chatbot performance across 8
-                   instruction datasets, multiple model types (LLaMA, T5), and
-                   model scales that would be infeasible to run with regular
-                   finetuning (e.g. 33B and 65B parameter models). Our results
-                   show that QLoRA finetuning on a small high-quality dataset
-                   leads to state-of-the-art results, even when using smaller
-                   models than the previous SoTA. We provide a detailed analysis
-                   of chatbot performance based on both human and GPT-4
-                   evaluations showing that GPT-4 evaluations are a cheap and
-                   reasonable alternative to human evaluation. Furthermore, we
-                   find that current chatbot benchmarks are not trustworthy to
-                   accurately evaluate the performance levels of chatbots. A
-                   lemon-picked analysis demonstrates where Guanaco fails
-                   compared to ChatGPT. We release all of our models and code,
-                   including CUDA kernels for 4-bit training.",
-  month         =  "23~" # may,
-  year          =  2023,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.LG",
-  eprint        = "2305.14314"
-}
-
-@MISC{Magister2022-zi,
-  title         = "Teaching small language models to reason",
-  author        = "Magister, Lucie Charlotte and Mallinson, Jonathan and Adamek,
-                   Jakub and Malmi, Eric and Severyn, Aliaksei",
-  abstract      = "Chain of thought prompting successfully improves the
-                   reasoning capabilities of large language models, achieving
-                   state of the art results on a range of datasets. However,
-                   these reasoning capabilities only appear to emerge in models
-                   with a size of over 100 billion parameters. In this paper, we
-                   explore the transfer of such reasoning capabilities to models
-                   with less than 100 billion parameters via knowledge
-                   distillation. Specifically, we finetune a student model on
-                   the chain of thought outputs generated by a larger teacher
-                   model. Our experiments show that the proposed method improves
-                   task performance across arithmetic, commonsense and symbolic
-                   reasoning datasets. For example, the accuracy of T5 XXL on
-                   GSM8K improves from 8.11\% to 21.99\% when finetuned on
-                   PaLM-540B generated chains of thought.",
-  month         =  "16~" # dec,
-  year          =  2022,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  eprint        = "2212.08410",
-  keywords      = "distillation"
-}
-
-@INPROCEEDINGS{Boguraev2025-ib,
-  title     = "Causal interventions reveal shared structure across English
-               filler--gap constructions",
-  author    = "Boguraev, Sasha and Potts, Christopher and Mahowald, Kyle",
-  booktitle = "Proceedings of the 2025 Conference on Empirical Methods in
-               Natural Language Processing",
-  publisher = "Association for Computational Linguistics",
-  address   = "Stroudsburg, PA, USA",
-  pages     = "25032--25053",
-  abstract  = "Sasha Boguraev, Christopher Potts, Kyle Mahowald. Proceedings of
-               the 2025 Conference on Empirical Methods in Natural Language
-               Processing. 2025.",
-  month     =  nov,
-  year      =  2025,
-  keywords  = "Reading List;linguistics"
-}
-
-@ARTICLE{Ren2024-dp,
-  title         = "Samba: Simple hybrid state space models for efficient
-                   unlimited context language modeling",
-  author        = "Ren, Liliang and Liu, Yang and Lu, Yadong and Shen, Yelong
-                   and Liang, Chen and Chen, Weizhu",
-  journal       = "ArXiv",
-  volume        = "abs/2406.07522",
-  abstract      = "Efficiently modeling sequences with infinite context length
-                   has been a long-standing problem. Past works suffer from
-                   either the quadratic computation complexity or the limited
-                   extrapolation ability on length generalization. In this work,
-                   we present Samba, a simple hybrid architecture that
-                   layer-wise combines Mamba, a selective State Space Model
-                   (SSM), with Sliding Window Attention (SWA). Samba selectively
-                   compresses a given sequence into recurrent hidden states
-                   while still maintaining the ability to precisely recall
-                   memories with the attention mechanism. We scale Samba up to
-                   3.8B parameters with 3.2T training tokens and show that Samba
-                   substantially outperforms the state-of-the-art models based
-                   on pure attention or SSMs on a wide range of benchmarks. When
-                   trained on 4K length sequences, Samba can be efficiently
-                   extrapolated to 256K context length with perfect memory
-                   recall and show improved token predictions up to 1M context
-                   length. As a linear-time sequence model, Samba enjoys a 3.73x
-                   higher throughput compared to Transformers with grouped-query
-                   attention when processing user prompts of 128K length, and
-                   3.64x speedup when generating 64K tokens with unlimited
-                   streaming. A sample implementation of Samba is publicly
-                   available in https://github.com/microsoft/Samba.",
-  month         =  "11~" # jun,
-  year          =  2024,
-  archivePrefix = "arXiv",
-  eprint        = "2406.07522",
-  keywords      = "mamba",
-  language      = "en"
-}
-
-@MISC{Peng2024-xh,
-  title         = "Concept space alignment in multilingual {LLMs}",
-  author        = "Peng, Qiwei and S\o{}gaard, Anders",
-  abstract      = "Multilingual large language models (LLMs) seem to generalize
-                   somewhat across languages. We hypothesize this is a result of
-                   implicit vector space alignment. Evaluating such alignment,
-                   we see that larger models exhibit very high-quality linear
-                   alignments between corresponding concepts in different
-                   languages. Our experiments show that multilingual LLMs suffer
-                   from two familiar weaknesses: generalization works best for
-                   languages with similar typology, and for abstract concepts.
-                   For some models, e.g., the Llama-2 family of models,
-                   prompt-based embeddings align better than word embeddings,
-                   but the projections are less linear -- an observation that
-                   holds across almost all model families, indicating that some
-                   of the implicitly learned alignments are broken somewhat by
-                   prompt-based methods.",
-  month         =  "1~" # oct,
-  year          =  2024,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  eprint        = "2410.01079"
-}
-
-@ARTICLE{Moro2023-ra,
-  title     = "Large languages, impossible languages and human brains",
-  author    = "Moro, Andrea and Greco, Matteo and Cappa, Stefano F",
-  journal   = "Cortex",
-  publisher = "Elsevier BV",
-  volume    =  167,
-  pages     = "82--85",
-  abstract  = "We aim at offering a contribution to highlight the essential
-               differences between Large Language Models (LLM) and the human
-               language faculty. More explicitly, we claim that the existence of
-               impossible languages for humans does not have any equivalent for
-               LLM making them unsuitable models of the human language faculty,
-               especially for a neurobiological point of view. The core part is
-               preceded by two premises bearing on the distinction between
-               machines and humans and the distinction between competence and
-               performance.",
-  month     =  "1~" # oct,
-  year      =  2023,
-  keywords  = "Impossible Languages; Large Language Models",
-  language  = "en"
-}
-
-@ARTICLE{UnknownUnknown-ot,
-  title    = "interpreting {GPT}: the logit lens",
-  abstract = "This post relates an observation I've made in my work with GPT-2,
-              which I have not seen made elsewhere. \ldots{}",
-  keywords = "understanding"
-}
-
-@MISC{Maas_undated-ng,
-  title        = "Learning word vectors for sentiment analysis",
-  author       = "Maas, Andrew L and Daly, Raymond E and Pham, Peter T and
-                  Huang, Dan and Ng, Andrew Y and Potts, Christopher",
-  howpublished = "\url{https://ai.stanford.edu/~amaas/papers/wvSent\_acl2011.pdf}",
-  note         = "Accessed: 2024-12-13"
-}
-
-@INCOLLECTION{An2024-lo,
-  title     = "Eliminating contextual bias in aspect-based sentiment analysis",
-  author    = "An, Ruize and Zhang, Chen and Song, Dawei",
-  editor    = "Goharian, Nazli and Tonellotto, Nicola and He, Yulan and Lipani,
-               Aldo and McDonald, Graham and Macdonald, Craig and Ounis, Iadh",
-  booktitle = "Lecture Notes in Computer Science",
-  publisher = "Springer Nature Switzerland",
-  address   = "Cham",
-  volume    =  14608,
-  pages     = "90--107",
-  series    = "Lecture notes in computer science",
-  year      =  2024,
-  language  = "en"
-}
-
-@ARTICLE{Ungless2023-xb,
-  title     = "Potential pitfalls with automatic sentiment analysis: The example
-               of queerphobic bias",
-  author    = "Ungless, Eddie L and Ross, Bj{\"{o}}rn and Belle, Vaishak",
-  journal   = "Soc. Sci. Comput. Rev.",
-  publisher = "SAGE Publications",
-  volume    =  41,
-  number    =  6,
-  pages     = "2211--2229",
-  abstract  = "Automated sentiment analysis can help efficiently detect trends
-               in patients' moods, consumer preferences, political attitudes and
-               more. Unfortunately, like many natural language processing
-               techniques, sentiment analysis can show bias against marginalised
-               groups. We illustrate this point by showing how six popular
-               sentiment analysis tools respond to sentences about queer
-               identities, expanding on existing work on gender, ethnicity and
-               disability. We find evidence of bias against several marginalised
-               queer identities, including in the two models from Google and
-               Amazon that seem to have been subject to superficial debiasing.
-               We conclude with guidance on selecting a sentiment analysis tool
-               to minimise the risk of model bias skewing results.",
-  month     =  dec,
-  year      =  2023,
-  keywords  = "AI bias; natural language processing; queerphobia; sentiment
-               analysis",
-  language  = "en"
-}
-
-@INPROCEEDINGS{Kotzias2015-nn,
-  title     = "From group to individual labels using deep features",
-  author    = "Kotzias, Dimitrios and Denil, Misha and de Freitas, Nando and
-               Smyth, Padhraic",
-  booktitle = "Proceedings of the 21th ACM SIGKDD International Conference on
-               Knowledge Discovery and Data Mining",
-  publisher = "ACM",
-  address   = "New York, NY, USA",
-  month     =  "10~" # aug,
-  year      =  2015
-}
-
-@MISC{noauthor_undated-jx,
-  howpublished = "\url{https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html}",
-  note         = "Accessed: 2025-3-3",
-  keywords     = "multilinguality"
-}
-
-@MISC{Shelpuk2024-sl,
-  title        = "{LLM} practitioner's guide: How multilingual Falcon, Mistral,
-                  Smaug, and other {LLMs} are?",
-  author       = "Shelpuk, Sergii",
-  booktitle    = "Sergii Shelpuk",
-  abstract     = "So, you want to fine-tune a large language model for your own
-                  language. What model should you use? We compare the
-                  multilingual performance of Llama-2, Mistral, Mixtral, Falcon,
-                  Smaug, and mt5 LLMs | Shelpuk AI Technology Consulting",
-  month        =  "12~" # feb,
-  year         =  2024,
-  howpublished = "\url{https://www.shelpuk.com/post/llm-practitioner-s-guide-how-multilingual-falcon-mistral-smaug-and-other-llms-are}",
-  note         = "Accessed: 2025-3-3",
-  keywords     = "multilinguality",
-  language     = "en"
-}
-
-@ARTICLE{Amari2018-nm,
-  title     = "Dynamics of learning in {MLP}: Natural gradient and singularity
-               revisited",
-  author    = "Amari, Shun-Ichi and Ozeki, Tomoko and Karakida, Ryo and Yoshida,
-               Yuki and Okada, Masato",
-  journal   = "Neural Comput.",
-  publisher = "MIT Press - Journals",
-  volume    =  30,
-  number    =  1,
-  pages     = "1--33",
-  abstract  = "The dynamics of supervised learning play a main role in deep
-               learning, which takes place in the parameter space of a
-               multilayer perceptron (MLP). We review the history of supervised
-               stochastic gradient learning, focusing on its singular structure
-               and natural gradient. The parameter space includes singular
-               regions in which parameters are not identifiable. One of our
-               results is a full exploration of the dynamical behaviors of
-               stochastic gradient learning in an elementary singular network.
-               The bad news is its pathological nature, in which part of the
-               singular region becomes an attractor and another part a repulser
-               at the same time, forming a Milnor attractor. A learning
-               trajectory is attracted by the attractor region, staying in it
-               for a long time, before it escapes the singular region through
-               the repulser region. This is typical of plateau phenomena in
-               learning. We demonstrate the strange topology of a singular
-               region by introducing blow-down coordinates, which are useful for
-               analyzing the natural gradient dynamics. We confirm that the
-               natural gradient dynamics are free of critical slowdown. The
-               second main result is the good news: the interactions of
-               elementary singular networks eliminate the attractor part and the
-               Milnor-type attractors disappear. This explains why large-scale
-               networks do not suffer from serious critical slowdowns due to
-               singularities. We finally show that the unit-wise natural
-               gradient is effective for learning in spite of its low
-               computational cost.",
-  month     =  jan,
-  year      =  2018,
-  keywords  = "training",
-  language  = "en"
-}
-
-@MISC{Chua2024-ll,
-  title         = "Crosslingual capabilities and knowledge barriers in
-                   multilingual large language models",
-  author        = "Chua, Lynn and Ghazi, Badih and Huang, Yangsibo and Kamath,
-                   Pritish and Kumar, Ravi and Manurangsi, Pasin and Sinha, Amer
-                   and Xie, Chulin and Zhang, Chiyuan",
-  abstract      = "Large language models (LLMs) are typically multilingual due
-                   to pretraining on diverse multilingual corpora. But can these
-                   models relate corresponding concepts across languages, i.e.,
-                   be crosslingual? This study evaluates state-of-the-art LLMs
-                   on inherently crosslingual tasks. We observe that while these
-                   models show promising surface-level crosslingual abilities on
-                   machine translation and embedding space analyses, they
-                   struggle with deeper crosslingual knowledge transfer,
-                   revealing a crosslingual knowledge barrier in both general
-                   (MMLU benchmark) and domain-specific (Harry Potter quiz and
-                   TOFU benchmark) contexts. Since simple inference-time
-                   mitigation methods offer only limited improvement, we propose
-                   fine-tuning of LLMs on mixed-language data, which effectively
-                   reduces these gaps, even when using out-of-domain datasets
-                   like WikiText. Our findings suggest the need for explicit
-                   optimization to unlock the full crosslingual potential of
-                   LLMs. Our code is publicly available at
-                   https://github.com/google-research/crosslingual-knowledge-barriers.",
-  month         =  "23~" # jun,
-  year          =  2024,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  eprint        = "2406.16135"
-}
-
-@MISC{Arnett2024-dp,
-  title         = "A bit of a problem: Measurement disparities in dataset sizes
-                   across languages",
-  author        = "Arnett, Catherine and Chang, Tyler A and Bergen, Benjamin K",
-  abstract      = "How should text dataset sizes be compared across languages?
-                   Even for content-matched (parallel) corpora, UTF-8 encoded
-                   text can require a dramatically different number of bytes for
-                   different languages. In our work, we define the byte premium
-                   between two languages as the ratio of bytes used to encode
-                   content-matched text in those languages. We compute byte
-                   premiums for 1155 languages, and we use linear regressions to
-                   estimate byte premiums for other languages. We release a tool
-                   to obtain byte premiums for any two languages, enabling
-                   comparisons of dataset sizes across languages for more
-                   equitable multilingual model development and data practices.",
-  month         =  "1~" # mar,
-  year          =  2024,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  eprint        = "2403.00686"
-}
-
-@INPROCEEDINGS{Gamallo2017-gi,
-  title     = "A Perplexity-Based Method for Similar Languages Discrimination",
-  author    = "Gamallo, Pablo and Campos, Jos\'{e} Ramom Pichel and
-               Alegr\'{\i}a, I\~{n}aki",
-  booktitle = "Proceedings of the Fourth Workshop on NLP for Similar Languages,
-               Varieties and Dialects (VarDial)",
-  pages     = "109--114",
-  abstract  = "This article describes the system submitted by the Citius Ixa
-               Imaxin team to the VarDial 2017 (DSL and GDI tasks). The strategy
-               underlying our system is based on a language distance computed by
-               means of model perplexity. The best model configuration we have
-               tested is a voting system making use of several n-grams models of
-               both words and characters, even if word unigrams turned out to be
-               a very competitive model with reasonable results in the tasks we
-               have participated. An error analysis has been performed in which
-               we identified many test examples with no linguistic evidences to
-               distinguish among the variants.",
-  year      =  2017
-}
-
 @ARTICLE{Bender2011-bm,
   title     = "On achieving and evaluating language-independence in {NLP}",
   author    = "Bender, Emily M",
@@ -1800,6 +399,30 @@
   month     =  "20~" # nov,
   year      =  2023,
   language  = "en"
+}
+
+@MISC{Peng2024-xh,
+  title         = "Concept space alignment in multilingual {LLMs}",
+  author        = "Peng, Qiwei and S\o{}gaard, Anders",
+  abstract      = "Multilingual large language models (LLMs) seem to generalize
+                   somewhat across languages. We hypothesize this is a result of
+                   implicit vector space alignment. Evaluating such alignment,
+                   we see that larger models exhibit very high-quality linear
+                   alignments between corresponding concepts in different
+                   languages. Our experiments show that multilingual LLMs suffer
+                   from two familiar weaknesses: generalization works best for
+                   languages with similar typology, and for abstract concepts.
+                   For some models, e.g., the Llama-2 family of models,
+                   prompt-based embeddings align better than word embeddings,
+                   but the projections are less linear -- an observation that
+                   holds across almost all model families, indicating that some
+                   of the implicitly learned alignments are broken somewhat by
+                   prompt-based methods.",
+  month         =  "1~" # oct,
+  year          =  2024,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2410.01079"
 }
 
 @MISC{Hayou2024-wr,
@@ -2441,6 +1064,24 @@
   keywords      = "understanding"
 }
 
+@INPROCEEDINGS{Conneau2018-dv,
+  title     = "What you can cram into a single \$\&!\#* vector: Probing sentence
+               embeddings for linguistic properties",
+  author    = "Conneau, Alexis and Kruszewski, German and Lample, Guillaume and
+               Barrault, Lo\"{\i}c and Baroni, Marco",
+  booktitle = "Proceedings of the 56th Annual Meeting of the Association for
+               Computational Linguistics (Volume 1: Long Papers)",
+  publisher = "Association for Computational Linguistics",
+  address   = "Stroudsburg, PA, USA",
+  pages     = "2126--2136",
+  abstract  = "Alexis Conneau, German Kruszewski, Guillaume Lample, Lo\"{\i}c
+               Barrault, Marco Baroni. Proceedings of the 56th Annual Meeting of
+               the Association for Computational Linguistics (Volume 1: Long
+               Papers). 2018.",
+  year      =  2018,
+  keywords  = "interpretability"
+}
+
 @MISC{Bousmalis2016-pt,
   title         = "Domain Separation Networks",
   author        = "Bousmalis, Konstantinos and Trigeorgis, George and Silberman,
@@ -2530,6 +1171,65 @@
   archivePrefix = "arXiv",
   primaryClass  = "cs.LG",
   eprint        = "2211.11754"
+}
+
+@ARTICLE{Ren2024-dp,
+  title         = "Samba: Simple hybrid state space models for efficient
+                   unlimited context language modeling",
+  author        = "Ren, Liliang and Liu, Yang and Lu, Yadong and Shen, Yelong
+                   and Liang, Chen and Chen, Weizhu",
+  journal       = "ArXiv",
+  volume        = "abs/2406.07522",
+  abstract      = "Efficiently modeling sequences with infinite context length
+                   has been a long-standing problem. Past works suffer from
+                   either the quadratic computation complexity or the limited
+                   extrapolation ability on length generalization. In this work,
+                   we present Samba, a simple hybrid architecture that
+                   layer-wise combines Mamba, a selective State Space Model
+                   (SSM), with Sliding Window Attention (SWA). Samba selectively
+                   compresses a given sequence into recurrent hidden states
+                   while still maintaining the ability to precisely recall
+                   memories with the attention mechanism. We scale Samba up to
+                   3.8B parameters with 3.2T training tokens and show that Samba
+                   substantially outperforms the state-of-the-art models based
+                   on pure attention or SSMs on a wide range of benchmarks. When
+                   trained on 4K length sequences, Samba can be efficiently
+                   extrapolated to 256K context length with perfect memory
+                   recall and show improved token predictions up to 1M context
+                   length. As a linear-time sequence model, Samba enjoys a 3.73x
+                   higher throughput compared to Transformers with grouped-query
+                   attention when processing user prompts of 128K length, and
+                   3.64x speedup when generating 64K tokens with unlimited
+                   streaming. A sample implementation of Samba is publicly
+                   available in https://github.com/microsoft/Samba.",
+  month         =  "11~" # jun,
+  year          =  2024,
+  archivePrefix = "arXiv",
+  eprint        = "2406.07522",
+  keywords      = "mamba",
+  language      = "en"
+}
+
+@ARTICLE{Moro2023-ra,
+  title     = "Large languages, impossible languages and human brains",
+  author    = "Moro, Andrea and Greco, Matteo and Cappa, Stefano F",
+  journal   = "Cortex",
+  publisher = "Elsevier BV",
+  volume    =  167,
+  pages     = "82--85",
+  abstract  = "We aim at offering a contribution to highlight the essential
+               differences between Large Language Models (LLM) and the human
+               language faculty. More explicitly, we claim that the existence of
+               impossible languages for humans does not have any equivalent for
+               LLM making them unsuitable models of the human language faculty,
+               especially for a neurobiological point of view. The core part is
+               preceded by two premises bearing on the distinction between
+               machines and humans and the distinction between competence and
+               performance.",
+  month     =  "1~" # oct,
+  year      =  2023,
+  keywords  = "Impossible Languages; Large Language Models",
+  language  = "en"
 }
 
 @INPROCEEDINGS{Subedi2024-ae,
@@ -3531,6 +2231,13 @@
   eprint        = "2405.13511"
 }
 
+@ARTICLE{UnknownUnknown-ot,
+  title    = "interpreting {GPT}: the logit lens",
+  abstract = "This post relates an observation I've made in my work with GPT-2,
+              which I have not seen made elsewhere. \ldots{}",
+  keywords = "understanding"
+}
+
 @MISC{Meng2022-yy,
   title         = "Locating and editing factual associations in {GPT}",
   author        = "Meng, Kevin and Bau, David and Andonian, Alex and Belinkov,
@@ -3821,6 +2528,14 @@
   keywords  = "understanding"
 }
 
+@MISC{Maas_undated-ng,
+  title        = "Learning word vectors for sentiment analysis",
+  author       = "Maas, Andrew L and Daly, Raymond E and Pham, Peter T and
+                  Huang, Dan and Ng, Andrew Y and Potts, Christopher",
+  howpublished = "\url{https://ai.stanford.edu/~amaas/papers/wvSent\_acl2011.pdf}",
+  note         = "Accessed: 2024-12-13"
+}
+
 @ARTICLE{Jin2024-vd,
   title     = "{WordTransABSA}: Enhancing Aspect-based Sentiment Analysis with
                masked language modeling for affective token prediction",
@@ -3928,6 +2643,49 @@
   archivePrefix = "arXiv",
   primaryClass  = "cs.CL",
   eprint        = "2311.11077"
+}
+
+@INCOLLECTION{An2024-lo,
+  title     = "Eliminating contextual bias in aspect-based sentiment analysis",
+  author    = "An, Ruize and Zhang, Chen and Song, Dawei",
+  editor    = "Goharian, Nazli and Tonellotto, Nicola and He, Yulan and Lipani,
+               Aldo and McDonald, Graham and Macdonald, Craig and Ounis, Iadh",
+  booktitle = "Lecture Notes in Computer Science",
+  publisher = "Springer Nature Switzerland",
+  address   = "Cham",
+  volume    =  14608,
+  pages     = "90--107",
+  series    = "Lecture notes in computer science",
+  year      =  2024,
+  language  = "en"
+}
+
+@ARTICLE{Ungless2023-xb,
+  title     = "Potential pitfalls with automatic sentiment analysis: The example
+               of queerphobic bias",
+  author    = "Ungless, Eddie L and Ross, Bj{\"{o}}rn and Belle, Vaishak",
+  journal   = "Soc. Sci. Comput. Rev.",
+  publisher = "SAGE Publications",
+  volume    =  41,
+  number    =  6,
+  pages     = "2211--2229",
+  abstract  = "Automated sentiment analysis can help efficiently detect trends
+               in patients' moods, consumer preferences, political attitudes and
+               more. Unfortunately, like many natural language processing
+               techniques, sentiment analysis can show bias against marginalised
+               groups. We illustrate this point by showing how six popular
+               sentiment analysis tools respond to sentences about queer
+               identities, expanding on existing work on gender, ethnicity and
+               disability. We find evidence of bias against several marginalised
+               queer identities, including in the two models from Google and
+               Amazon that seem to have been subject to superficial debiasing.
+               We conclude with guidance on selecting a sentiment analysis tool
+               to minimise the risk of model bias skewing results.",
+  month     =  dec,
+  year      =  2023,
+  keywords  = "AI bias; natural language processing; queerphobia; sentiment
+               analysis",
+  language  = "en"
 }
 
 @MISC{Su2024-pp,
@@ -4360,6 +3118,18 @@
                Technologies (Volume 1: Long Papers). 2024.",
   year      =  2024,
   keywords  = "stash;multilinguality"
+}
+
+@INPROCEEDINGS{Kotzias2015-nn,
+  title     = "From group to individual labels using deep features",
+  author    = "Kotzias, Dimitrios and Denil, Misha and de Freitas, Nando and
+               Smyth, Padhraic",
+  booktitle = "Proceedings of the 21th ACM SIGKDD International Conference on
+               Knowledge Discovery and Data Mining",
+  publisher = "ACM",
+  address   = "New York, NY, USA",
+  month     =  "10~" # aug,
+  year      =  2015
 }
 
 @MISC{Zhao2022-ce,
@@ -5651,6 +4421,29 @@
   keywords  = "multilinguality"
 }
 
+@MISC{noauthor_undated-jx,
+  howpublished = "\url{https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html}",
+  note         = "Accessed: 2025-3-3",
+  keywords     = "multilinguality"
+}
+
+@MISC{Shelpuk2024-sl,
+  title        = "{LLM} practitioner's guide: How multilingual Falcon, Mistral,
+                  Smaug, and other {LLMs} are?",
+  author       = "Shelpuk, Sergii",
+  booktitle    = "Sergii Shelpuk",
+  abstract     = "So, you want to fine-tune a large language model for your own
+                  language. What model should you use? We compare the
+                  multilingual performance of Llama-2, Mistral, Mixtral, Falcon,
+                  Smaug, and mt5 LLMs | Shelpuk AI Technology Consulting",
+  month        =  "12~" # feb,
+  year         =  2024,
+  howpublished = "\url{https://www.shelpuk.com/post/llm-practitioner-s-guide-how-multilingual-falcon-mistral-smaug-and-other-llms-are}",
+  note         = "Accessed: 2025-3-3",
+  keywords     = "multilinguality",
+  language     = "en"
+}
+
 @MISC{Wei2024-nx,
   title         = "Assessing the brittleness of safety alignment via pruning and
                    low-rank modifications",
@@ -5818,7 +4611,8 @@
   year          =  2024,
   archivePrefix = "arXiv",
   primaryClass  = "cs.CL",
-  eprint        = "2402.18815"
+  eprint        = "2402.18815",
+  keywords      = "multilinguality"
 }
 
 @INPROCEEDINGS{Kojima2024-qb,
@@ -6368,6 +5162,47 @@
   keywords      = "pruning"
 }
 
+@ARTICLE{Amari2018-nm,
+  title     = "Dynamics of learning in {MLP}: Natural gradient and singularity
+               revisited",
+  author    = "Amari, Shun-Ichi and Ozeki, Tomoko and Karakida, Ryo and Yoshida,
+               Yuki and Okada, Masato",
+  journal   = "Neural Comput.",
+  publisher = "MIT Press - Journals",
+  volume    =  30,
+  number    =  1,
+  pages     = "1--33",
+  abstract  = "The dynamics of supervised learning play a main role in deep
+               learning, which takes place in the parameter space of a
+               multilayer perceptron (MLP). We review the history of supervised
+               stochastic gradient learning, focusing on its singular structure
+               and natural gradient. The parameter space includes singular
+               regions in which parameters are not identifiable. One of our
+               results is a full exploration of the dynamical behaviors of
+               stochastic gradient learning in an elementary singular network.
+               The bad news is its pathological nature, in which part of the
+               singular region becomes an attractor and another part a repulser
+               at the same time, forming a Milnor attractor. A learning
+               trajectory is attracted by the attractor region, staying in it
+               for a long time, before it escapes the singular region through
+               the repulser region. This is typical of plateau phenomena in
+               learning. We demonstrate the strange topology of a singular
+               region by introducing blow-down coordinates, which are useful for
+               analyzing the natural gradient dynamics. We confirm that the
+               natural gradient dynamics are free of critical slowdown. The
+               second main result is the good news: the interactions of
+               elementary singular networks eliminate the attractor part and the
+               Milnor-type attractors disappear. This explains why large-scale
+               networks do not suffer from serious critical slowdowns due to
+               singularities. We finally show that the unit-wise natural
+               gradient is effective for learning in spite of its low
+               computational cost.",
+  month     =  jan,
+  year      =  2018,
+  keywords  = "training",
+  language  = "en"
+}
+
 @MISC{Achille2017-bt,
   title         = "Critical learning periods in deep neural networks",
   author        = "Achille, Alessandro and Rovere, Matteo and Soatto, Stefano",
@@ -6729,6 +5564,34 @@
   language  = "en"
 }
 
+@MISC{Li2022-gm,
+  title         = "Emergent world representations: Exploring a sequence model
+                   trained on a synthetic task",
+  author        = "Li, Kenneth and Hopkins, Aspen K and Bau, David and
+                   Vi\'{e}gas, Fernanda and Pfister, Hanspeter and Wattenberg,
+                   Martin",
+  abstract      = "Language models show a surprising range of capabilities, but
+                   the source of their apparent competence is unclear. Do these
+                   networks just memorize a collection of surface statistics, or
+                   do they rely on internal representations of the process that
+                   generates the sequences they see? We investigate this
+                   question by applying a variant of the GPT model to the task
+                   of predicting legal moves in a simple board game, Othello.
+                   Although the network has no a priori knowledge of the game or
+                   its rules, we uncover evidence of an emergent nonlinear
+                   internal representation of the board state. Interventional
+                   experiments indicate this representation can be used to
+                   control the output of the network and create ``latent
+                   saliency maps'' that can help explain predictions in human
+                   terms.",
+  month         =  "24~" # oct,
+  year          =  2022,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "2210.13382",
+  keywords      = "interpretability"
+}
+
 @MISC{Langedijk2023-gk,
   title         = "{DecoderLens}: Layerwise interpretation of encoder-decoder
                    Transformers",
@@ -6812,6 +5675,37 @@
   primaryClass  = "cs.CL",
   eprint        = "1911.02116",
   keywords      = "understanding;multilinguality"
+}
+
+@MISC{Chua2024-ll,
+  title         = "Crosslingual capabilities and knowledge barriers in
+                   multilingual large language models",
+  author        = "Chua, Lynn and Ghazi, Badih and Huang, Yangsibo and Kamath,
+                   Pritish and Kumar, Ravi and Manurangsi, Pasin and Sinha, Amer
+                   and Xie, Chulin and Zhang, Chiyuan",
+  abstract      = "Large language models (LLMs) are typically multilingual due
+                   to pretraining on diverse multilingual corpora. But can these
+                   models relate corresponding concepts across languages, i.e.,
+                   be crosslingual? This study evaluates state-of-the-art LLMs
+                   on inherently crosslingual tasks. We observe that while these
+                   models show promising surface-level crosslingual abilities on
+                   machine translation and embedding space analyses, they
+                   struggle with deeper crosslingual knowledge transfer,
+                   revealing a crosslingual knowledge barrier in both general
+                   (MMLU benchmark) and domain-specific (Harry Potter quiz and
+                   TOFU benchmark) contexts. Since simple inference-time
+                   mitigation methods offer only limited improvement, we propose
+                   fine-tuning of LLMs on mixed-language data, which effectively
+                   reduces these gaps, even when using out-of-domain datasets
+                   like WikiText. Our findings suggest the need for explicit
+                   optimization to unlock the full crosslingual potential of
+                   LLMs. Our code is publicly available at
+                   https://github.com/google-research/crosslingual-knowledge-barriers.",
+  month         =  "23~" # jun,
+  year          =  2024,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2406.16135"
 }
 
 @INPROCEEDINGS{Fan2021-rm,
@@ -7767,6 +6661,28 @@
   year      =  2022
 }
 
+@MISC{Arnett2024-dp,
+  title         = "A bit of a problem: Measurement disparities in dataset sizes
+                   across languages",
+  author        = "Arnett, Catherine and Chang, Tyler A and Bergen, Benjamin K",
+  abstract      = "How should text dataset sizes be compared across languages?
+                   Even for content-matched (parallel) corpora, UTF-8 encoded
+                   text can require a dramatically different number of bytes for
+                   different languages. In our work, we define the byte premium
+                   between two languages as the ratio of bytes used to encode
+                   content-matched text in those languages. We compute byte
+                   premiums for 1155 languages, and we use linear regressions to
+                   estimate byte premiums for other languages. We release a tool
+                   to obtain byte premiums for any two languages, enabling
+                   comparisons of dataset sizes across languages for more
+                   equitable multilingual model development and data practices.",
+  month         =  "1~" # mar,
+  year          =  2024,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2403.00686"
+}
+
 @INPROCEEDINGS{Arnett2025-jq,
   title     = "On the acquisition of shared grammatical representations in
                bilingual language models",
@@ -8056,6 +6972,26 @@
   language  = "en"
 }
 
+@INPROCEEDINGS{Gamallo2017-gi,
+  title     = "A Perplexity-Based Method for Similar Languages Discrimination",
+  author    = "Gamallo, Pablo and Campos, Jos\'{e} Ramom Pichel and
+               Alegr\'{\i}a, I\~{n}aki",
+  booktitle = "Proceedings of the Fourth Workshop on NLP for Similar Languages,
+               Varieties and Dialects (VarDial)",
+  pages     = "109--114",
+  abstract  = "This article describes the system submitted by the Citius Ixa
+               Imaxin team to the VarDial 2017 (DSL and GDI tasks). The strategy
+               underlying our system is based on a language distance computed by
+               means of model perplexity. The best model configuration we have
+               tested is a voting system making use of several n-grams models of
+               both words and characters, even if word unigrams turned out to be
+               a very competitive model with reasonable results in the tasks we
+               have participated. An error analysis has been performed in which
+               we identified many test examples with no linguistic evidences to
+               distinguish among the variants.",
+  year      =  2017
+}
+
 @INPROCEEDINGS{Campos2018-ek,
   title     = "Measuring language distance among historical varieties using
                perplexity. Application to European Portuguese",
@@ -8343,4 +7279,1069 @@
   archivePrefix = "arXiv",
   primaryClass  = "cs.CL",
   eprint        = "2505.24689"
+}
+
+@MISC{Agarwal2024-qh,
+  title         = "Many-shot in-context learning",
+  author        = "Agarwal, Rishabh and Singh, Avi and Zhang, Lei M and Bohnet,
+                   Bernd and Rosias, Luis and Chan, Stephanie and Zhang, Biao
+                   and Anand, Ankesh and Abbas, Zaheer and Nova, Azade and
+                   Co-Reyes, John D and Chu, Eric and Behbahani, Feryal and
+                   Faust, Aleksandra and Larochelle, Hugo",
+  abstract      = "Large language models (LLMs) excel at few-shot in-context
+                   learning (ICL) -- learning from a few examples provided in
+                   context at inference, without any weight updates. Newly
+                   expanded context windows allow us to investigate ICL with
+                   hundreds or thousands of examples -- the many-shot regime.
+                   Going from few-shot to many-shot, we observe significant
+                   performance gains across a wide variety of generative and
+                   discriminative tasks. While promising, many-shot ICL can be
+                   bottlenecked by the available amount of human-generated
+                   examples. To mitigate this limitation, we explore two new
+                   settings: Reinforced and Unsupervised ICL. Reinforced ICL
+                   uses model-generated chain-of-thought rationales in place of
+                   human examples. Unsupervised ICL removes rationales from the
+                   prompt altogether, and prompts the model only with
+                   domain-specific questions. We find that both Reinforced and
+                   Unsupervised ICL can be quite effective in the many-shot
+                   regime, particularly on complex reasoning tasks. Finally, we
+                   demonstrate that, unlike few-shot learning, many-shot
+                   learning is effective at overriding pretraining biases, can
+                   learn high-dimensional functions with numerical inputs, and
+                   performs comparably to fine-tuning. We also find that
+                   inference cost increases linearly in the many-shot regime,
+                   and frontier LLMs benefit from many-shot ICL to varying
+                   degrees. Our analysis also reveals the limitations of
+                   next-token prediction loss as an indicator of downstream ICL
+                   performance.",
+  month         =  "16~" # apr,
+  year          =  2024,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "2404.11018",
+  keywords      = "icl"
+}
+
+@MISC{Zou2024-tc,
+  title         = "On many-shot in-context learning for long-context evaluation",
+  author        = "Zou, Kaijian and Khalifa, Muhammad and Wang, Lu",
+  abstract      = "Many-shot in-context learning (ICL) has emerged as a unique
+                   setup to both utilize and test the ability of large language
+                   models to handle long context. This paper delves into
+                   long-context language model (LCLM) evaluation through
+                   many-shot ICL. We first ask: what types of ICL tasks benefit
+                   from additional demonstrations, and how effective are they in
+                   evaluating LCLMs? We find that classification and
+                   summarization tasks show performance improvements with
+                   additional demonstrations, while translation and reasoning
+                   tasks do not exhibit clear trends. Next, we investigate the
+                   extent to which different tasks necessitate retrieval versus
+                   global context understanding. We develop metrics to
+                   categorize ICL tasks into two groups: (i) similar-sample
+                   learning (SSL): tasks where retrieval of the most similar
+                   examples is sufficient for good performance, and (ii)
+                   all-sample learning (ASL): tasks that necessitate a deeper
+                   comprehension of all examples in the prompt. Lastly, we
+                   introduce a new many-shot ICL benchmark, MANYICLBENCH, to
+                   characterize model's ability on both fronts and benchmark 12
+                   LCLMs using MANYICLBENCH. We find that while state-of-the-art
+                   models demonstrate good performance up to 64k tokens in SSL
+                   tasks, many models experience significant performance drops
+                   at only 16k tokens in ASL tasks.",
+  month         =  "11~" # nov,
+  year          =  2024,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2411.07130",
+  keywords      = "icl"
+}
+
+@MISC{Eyuboglu2025-lh,
+  title         = "Cartridges: Lightweight and general-purpose long context
+                   representations via self-study",
+  author        = "Eyuboglu, Sabri and Ehrlich, Ryan and Arora, Simran and Guha,
+                   Neel and Zinsley, Dylan and Liu, Emily and Tennien, Will and
+                   Rudra, Atri and Zou, James and Mirhoseini, Azalia and Re,
+                   Christopher",
+  abstract      = "Large language models are often used to answer queries
+                   grounded in large text corpora (e.g. codebases, legal
+                   documents, or chat histories) by placing the entire corpus in
+                   the context window and leveraging in-context learning (ICL).
+                   Although current models support contexts of 100K-1M tokens,
+                   this setup is costly to serve because the memory consumption
+                   of the KV cache scales with input length. We explore an
+                   alternative: training a smaller KV cache offline on each
+                   corpus. At inference time, we load this trained KV cache,
+                   which we call a Cartridge, and decode a response. Critically,
+                   the cost of training a Cartridge can be amortized across all
+                   the queries referencing the same corpus. However, we find
+                   that the naive approach of training the Cartridge with
+                   next-token prediction on the corpus is not competitive with
+                   ICL. Instead, we propose self-study, a training recipe in
+                   which we generate synthetic conversations about the corpus
+                   and train the Cartridge with a context-distillation
+                   objective. We find that Cartridges trained with self-study
+                   replicate the functionality of ICL, while being significantly
+                   cheaper to serve. On challenging long-context benchmarks,
+                   Cartridges trained with self-study match ICL performance
+                   while using 38.6x less memory and enabling 26.4x higher
+                   throughput. Self-study also extends the model's effective
+                   context length (e.g. from 128k to 484k tokens on MTOB) and
+                   surprisingly, leads to Cartridges that can be composed at
+                   inference time without retraining.",
+  month         =  "6~" # jun,
+  year          =  2025,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2506.06266",
+  keywords      = "icl"
+}
+
+@MISC{Zebaze2024-oa,
+  title         = "In-context example selection via similarity search improves
+                   low-resource machine translation",
+  author        = "Zebaze, Armel and Sagot, Beno\^{\i}t and Bawden, Rachel",
+  abstract      = "The ability of generative large language models (LLMs) to
+                   perform in-context learning has given rise to a large body of
+                   research into how best to prompt models for various natural
+                   language processing tasks. In this paper, we focus on machine
+                   translation (MT), a task that has been shown to benefit from
+                   in-context translation examples. However no systematic
+                   studies have been published on how best to select examples,
+                   and mixed results have been reported on the usefulness of
+                   similarity-based selection over random selection. We provide
+                   a study covering multiple LLMs and multiple in-context
+                   example retrieval strategies, comparing multilingual sentence
+                   embeddings. We cover several language directions,
+                   representing different levels of language resourcedness
+                   (English into French, German, Swahili and Wolof). Contrarily
+                   to previously published results, we find that sentence
+                   embedding similarity can improve MT, especially for
+                   low-resource language directions, and discuss the balance
+                   between selection pool diversity and quality. We also
+                   highlight potential problems with the evaluation of LLM-based
+                   MT and suggest a more appropriate evaluation protocol,
+                   adapting the COMET metric to the evaluation of LLMs. Code and
+                   outputs are freely available at
+                   https://github.com/ArmelRandy/ICL-MT.",
+  month         =  "1~" # aug,
+  year          =  2024,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2408.00397",
+  keywords      = "icl"
+}
+
+@INPROCEEDINGS{Zanzotto2025-hu,
+  title     = "Position paper: {MeMo}: Towards language models with associative
+               memory mechanisms",
+  author    = "Zanzotto, Fabio Massimo and Ruzzetti, Elena Sofia and Xompero,
+               Giancarlo A and Ranaldi, Leonardo and Venditti, Davide and
+               Ranaldi, Federico and Giannone, Cristina and Favalli, Andrea and
+               Romagnoli, Raniero",
+  booktitle = "Findings of the Association for Computational Linguistics: ACL
+               2025",
+  publisher = "Association for Computational Linguistics",
+  address   = "Stroudsburg, PA, USA",
+  pages     = "15169--15180",
+  abstract  = "Fabio Massimo Zanzotto, Elena Sofia Ruzzetti, Giancarlo A.
+               Xompero, Leonardo Ranaldi, Davide Venditti, Federico Ranaldi,
+               Cristina Giannone, Andrea Favalli, Raniero Romagnoli. Findings of
+               the Association for Computational Linguistics: ACL 2025. 2025.",
+  year      =  2025,
+  keywords  = "memory"
+}
+
+@MISC{Huh2024-gr,
+  title         = "The platonic representation hypothesis",
+  author        = "Huh, Minyoung and Cheung, Brian and Wang, Tongzhou and Isola,
+                   Phillip",
+  abstract      = "We argue that representations in AI models, particularly deep
+                   networks, are converging. First, we survey many examples of
+                   convergence in the literature: over time and across multiple
+                   domains, the ways by which different neural networks
+                   represent data are becoming more aligned. Next, we
+                   demonstrate convergence across data modalities: as vision
+                   models and language models get larger, they measure distance
+                   between datapoints in a more and more alike way. We
+                   hypothesize that this convergence is driving toward a shared
+                   statistical model of reality, akin to Plato's concept of an
+                   ideal reality. We term such a representation the platonic
+                   representation and discuss several possible selective
+                   pressures toward it. Finally, we discuss the implications of
+                   these trends, their limitations, and counterexamples to our
+                   analysis.",
+  month         =  "13~" # may,
+  year          =  2024,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "2405.07987",
+  keywords      = "model-learning"
+}
+
+@MISC{OpenAI2025-yh,
+  title     = "gpt-oss-{120b} \& gpt-oss-{20b} Model Card",
+  author    = "{OpenAI} and {:} and Agarwal, Sandhini and Ahmad, Lama and Ai,
+               Jason and Altman, Sam and Applebaum, Andy and Arbus, Edwin and
+               Arora, Rahul K and Bai, Yu and Baker, Bowen and Bao, Haiming and
+               Barak, Boaz and Bennett, Ally and Bertao, Tyler and Brett,
+               Nivedita and Brevdo, Eugene and Brockman, Greg and Bubeck,
+               Sebastien and Chang, Che and Chen, Kai and Chen, Mark and Cheung,
+               Enoch and Clark, Aidan and Cook, Dan and Dukhan, Marat and
+               Dvorak, Casey and Fives, Kevin and Fomenko, Vlad and Garipov,
+               Timur and Georgiev, Kristian and Glaese, Mia and Gogineni, Tarun
+               and Goucher, Adam and Gross, Lukas and Guzman, Katia Gil and
+               Hallman, John and Hehir, Jackie and Heidecke, Johannes and
+               Helyar, Alec and Hu, Haitang and Huet, Romain and Huh, Jacob and
+               Jain, Saachi and Johnson, Zach and Koch, Chris and Kofman, Irina
+               and Kundel, Dominik and Kwon, Jason and Kyrylov, Volodymyr and
+               Le, Elaine Ya and Leclerc, Guillaume and Lennon, James Park and
+               Lessans, Scott and Lezcano-Casado, Mario and Li, Yuanzhi and Li,
+               Zhuohan and Lin, Ji and Liss, Jordan and {Lily} and {Liu} and
+               Liu, Jiancheng and Lu, Kevin and Lu, Chris and Martinovic, Zoran
+               and McCallum, Lindsay and McGrath, Josh and McKinney, Scott and
+               McLaughlin, Aidan and Mei, Song and Mostovoy, Steve and Mu, Tong
+               and Myles, Gideon and Neitz, Alexander and Nichol, Alex and
+               Pachocki, Jakub and Paino, Alex and Palmie, Dana and Pantuliano,
+               Ashley and Parascandolo, Giambattista and Park, Jongsoo and
+               Pathak, Leher and Paz, Carolina and Peran, Ludovic and Pimenov,
+               Dmitry and Pokrass, Michelle and Proehl, Elizabeth and Qiu, Huida
+               and Raila, Gaby and Raso, Filippo and Ren, Hongyu and Richardson,
+               Kimmy and Robinson, David and Rotsted, Bob and Salman, Hadi and
+               Sanjeev, Suvansh and Schwarzer, Max and Sculley, D and Sikchi,
+               Harshit and Simon, Kendal and Singhal, Karan and Song, Yang and
+               Stuckey, Dane and Sun, Zhiqing and Tillet, Philippe and Toizer,
+               Sam and Tsimpourlas, Foivos and Vyas, Nikhil and Wallace, Eric
+               and Wang, Xin and Wang, Miles and Watkins, Olivia and Weil, Kevin
+               and Wendling, Amy and Whinnery, Kevin and Whitney, Cedric and
+               Wong, Hannah and Yang, Lin and Yang, Yu and Yasunaga, Michihiro
+               and Ying, Kristen and Zaremba, Wojciech and Zhan, Wenting and
+               Zhang, Cyril and Zhang, Brian and Zhang, Eddie and Zhao, Shengjia",
+  publisher = "arXiv",
+  abstract  = "We present gpt-oss-120b and gpt-oss-20b, two open-weight
+               reasoning models that push the frontier of accuracy and inference
+               cost. The models use an efficient mixture-of-expert transformer
+               architecture and are trained using large-scale distillation and
+               reinforcement learning. We optimize the models to have strong
+               agentic capabilities (deep research browsing, python tool use,
+               and support for developer-provided functions), all while using a
+               rendered chat format that enables clear instruction following and
+               role delineation. Both models achieve strong results on
+               benchmarks ranging from mathematics, coding, and safety. We
+               release the model weights, inference implementations, tool
+               environments, and tokenizers under an Apache 2.0 license to
+               enable broad use and further research.",
+  month     =  "8~" # aug,
+  year      =  2025,
+  eprint    = "2508.10925",
+  keywords  = "Computation and Language (cs.CL); Artificial Intelligence
+               (cs.AI); FOS: Computer and information sciences; FOS: Computer
+               and information sciences;training"
+}
+
+@MISC{Casto2025-vu,
+  title         = "What does it mean to understand language?",
+  author        = "Casto, Colton and Ivanova, Anna and Fedorenko, Evelina and
+                   Kanwisher, Nancy",
+  abstract      = "Language understanding entails not just extracting the
+                   surface-level meaning of the linguistic input, but
+                   constructing rich mental models of the situation it
+                   describes. Here we propose that because processing within the
+                   brain's core language system is fundamentally limited, deeply
+                   understanding language requires exporting information from
+                   the language system to other brain regions that compute
+                   perceptual and motor representations, construct mental
+                   models, and store our world knowledge and autobiographical
+                   memories. We review the existing evidence for this
+                   hypothesis, and argue that recent progress in cognitive
+                   neuroscience provides both the conceptual foundation and the
+                   methods to directly test it, thus opening up a new strategy
+                   to reveal what it means, cognitively and neurally, to
+                   understand language.",
+  month         =  "24~" # nov,
+  year          =  2025,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2511.19757",
+  keywords      = "understanding"
+}
+
+@MISC{Kim2025-ns,
+  title         = "Every expert matters: Towards effective knowledge
+                   distillation for Mixture-of-experts language models",
+  author        = "Kim, Gyeongman and Chu, Gyouk and Yang, Eunho",
+  abstract      = "With the emergence of Mixture-of-Experts (MoE), the efficient
+                   scaling of model size has accelerated the development of
+                   large language models in recent years. However, their high
+                   memory requirements prevent their use in resource-constrained
+                   environments. While knowledge distillation (KD) has been a
+                   proven method for model compression, its application to MoE
+                   teacher models remains underexplored. Through our
+                   investigation, we discover that non-activated experts in MoE
+                   models possess valuable knowledge that benefits student
+                   models. We further demonstrate that existing KD methods are
+                   not optimal for compressing MoE models, as they fail to
+                   leverage this knowledge effectively. To address this, we
+                   propose two intuitive MoE-specific KD methods for the first
+                   time: Knowledge Augmentation (KA) and Student-Aware Router
+                   (SAR), both designed to effectively extract knowledge from
+                   all experts. Specifically, KA augments knowledge by sampling
+                   experts multiple times, while SAR uses all experts and
+                   adjusts the expert weights through router training to provide
+                   optimal knowledge. Extensive experiments show that our
+                   methods outperform conventional KD methods, demonstrating
+                   their effectiveness for MoE teacher models.",
+  month         =  "18~" # feb,
+  year          =  2025,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2502.12947",
+  keywords      = "distillation"
+}
+
+@MISC{Li2023-hw,
+  title         = "Merge, then compress: Demystify efficient {SMoE} with hints
+                   from its routing policy",
+  author        = "Li, Pingzhi and Zhang, Zhenyu and Yadav, Prateek and Sung,
+                   Yi-Lin and Cheng, Yu and Bansal, Mohit and Chen, Tianlong",
+  abstract      = "Sparsely activated Mixture-of-Experts (SMoE) has shown
+                   promise to scale up the learning capacity of neural networks,
+                   however, they have issues like (a) High Memory Usage, due to
+                   duplication of the network layers into multiple copies as
+                   experts; and (b) Redundancy in Experts, as common
+                   learning-based routing policies suffer from representational
+                   collapse. Therefore, vanilla SMoE models are memory
+                   inefficient and non-scalable, especially for
+                   resource-constrained downstream scenarios. In this paper, we
+                   ask: Can we craft a compact SMoE model by consolidating
+                   expert information? What is the best recipe to merge multiple
+                   experts into fewer but more knowledgeable experts? Our pilot
+                   investigation reveals that conventional model merging methods
+                   fail to be effective in such expert merging for SMoE. The
+                   potential reasons are: (1) redundant information overshadows
+                   critical experts; (2) appropriate neuron permutation for each
+                   expert is missing to bring all of them in alignment. To
+                   address this, we propose M-SMoE, which leverages routing
+                   statistics to guide expert merging. Specifically, it starts
+                   with neuron permutation alignment for experts; then, dominant
+                   experts and their ``group members'' are formed; lastly, every
+                   expert group is merged into a single expert by utilizing each
+                   expert's activation frequency as their weight for merging,
+                   thus diminishing the impact of insignificant experts.
+                   Moreover, we observed that our proposed merging promotes a
+                   low dimensionality in the merged expert's weight space,
+                   naturally paving the way for additional compression. Hence,
+                   our final method, MC-SMoE (i.e., Merge, then Compress SMoE),
+                   further decomposes the merged experts into low-rank and
+                   structural sparse alternatives. Extensive experiments across
+                   8 benchmarks validate the effectiveness of MC-SMoE. For
+                   instance, our MC-SMoE achieves up to 80\% memory and a 20\%
+                   FLOPs reduction, with virtually no loss in performance.",
+  month         =  "2~" # oct,
+  year          =  2023,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "2310.01334",
+  keywords      = "distillation"
+}
+
+@MISC{Chen2025-lm,
+  title         = "{EAC}-{MoE}: Expert-Selection Aware Compressor for
+                   mixture-of-experts large language models",
+  author        = "Chen, Yuanteng and Shao, Yuantian and Wang, Peisong and
+                   Cheng, Jian",
+  abstract      = "Mixture-of-Experts (MoE) has demonstrated promising potential
+                   in scaling LLMs. However, it is hindered by two critical
+                   challenges: (1) substantial GPU memory consumption to load
+                   all experts; (2) low activated parameters cannot be
+                   equivalently translated into inference acceleration effects.
+                   In this work, we propose EAC-MoE, an Expert-Selection Aware
+                   Compressor for MoE-LLMs, which deeply aligns with the
+                   characteristics of MoE from the perspectives of quantization
+                   and pruning, and introduces two modules to address these two
+                   challenges respectively: (1) The expert selection bias caused
+                   by low-bit quantization is a major factor contributing to the
+                   performance degradation in MoE-LLMs. Based on this, we
+                   propose Quantization with Expert-Selection Calibration
+                   (QESC), which mitigates the expert selection bias by
+                   calibrating the routers within the MoE; (2) There are always
+                   certain experts that are not crucial for the corresponding
+                   tasks, yet causing inference latency. Therefore, we propose
+                   Pruning based on Expert-Selection Frequency (PESF), which
+                   significantly improves inference speed by pruning less
+                   frequently used experts for current task. Extensive
+                   experiments demonstrate that our approach significantly
+                   reduces memory usage and improves inference speed with
+                   minimal performance degradation.",
+  month         =  "3~" # aug,
+  year          =  2025,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "2508.01625",
+  keywords      = "distillation"
+}
+
+@MISC{Li2025-ad,
+  title         = "{SlimMoE}: Structured compression of large {MoE} models via
+                   expert slimming and distillation",
+  author        = "Li, Zichong and Liang, Chen and Zhang, Zixuan and Hong, Ilgee
+                   and Kim, Young Jin and Chen, Weizhu and Zhao, Tuo",
+  abstract      = "The Mixture of Experts (MoE) architecture has emerged as a
+                   powerful paradigm for scaling large language models (LLMs)
+                   while maintaining inference efficiency. However, their
+                   enormous memory requirements make them prohibitively
+                   expensive to fine-tune or deploy in resource-constrained
+                   environments. To address this challenge, we introduce
+                   SlimMoE, a multi-stage compression framework for transforming
+                   large MoE models into much smaller, efficient variants
+                   without incurring the prohibitive costs of training from
+                   scratch. Our method systematically reduces parameter counts
+                   by slimming experts and transferring knowledge through
+                   intermediate stages, effectively mitigating the performance
+                   degradation common in one-shot pruning approaches. Using this
+                   framework, we compress Phi 3.5-MoE (41.9B total/6.6B
+                   activated parameters) to create Phi-mini-MoE (7.6B total/2.4B
+                   activated parameters) and Phi-tiny-MoE (3.8B total/1.1B
+                   activated parameters) using only 400B tokens--less than 10\%
+                   of the original model's training data. These compressed
+                   models can be fine-tuned on a single GPU (A100 for
+                   Phi-mini-MoE, A6000 for Phi-tiny-MoE), making them highly
+                   suitable for academic and resource-limited settings. Our
+                   experiments demonstrate that these compressed models
+                   outperform others of similar size and remain competitive with
+                   larger models. For instance, Phi-mini-MoE achieves similar or
+                   better performance to Phi-3-mini using only 2/3 of the
+                   activated parameters and yields comparable MMLU scores to
+                   Llama 3.1 8B despite having significantly lower latency. Our
+                   findings demonstrate that structured pruning combined with
+                   staged distillation offers an effective path to creating
+                   high-quality, compact MoE models, paving the way for broader
+                   adoption of MoE architectures. We make our models publicly
+                   available at
+                   https://huggingface.co/microsoft/Phi-mini-MoE-instruct and
+                   https://huggingface.co/microsoft/Phi-tiny-MoE-instruct .",
+  month         =  "23~" # jun,
+  year          =  2025,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "2506.18349",
+  keywords      = "distillation"
+}
+
+@MISC{Xie2024-wy,
+  title         = "{MoE}-Pruner: Pruning mixture-of-experts large language model
+                   using the hints from its router",
+  author        = "Xie, Yanyue and Zhang, Zhi and Zhou, Ding and Xie, Cong and
+                   Song, Ziang and Liu, Xin and Wang, Yanzhi and Lin, Xue and
+                   Xu, An",
+  abstract      = "Mixture-of-Experts (MoE) architectures face challenges such
+                   as high memory consumption and redundancy in experts. Pruning
+                   MoE can reduce network weights while maintaining model
+                   performance. Motivated by the recent observation of emergent
+                   large magnitude features in Large Language Models (LLM) and
+                   MoE routing policy, we propose MoE-Pruner, a method that
+                   prunes weights with the smallest magnitudes multiplied by the
+                   corresponding input activations and router weights, on each
+                   output neuron. Our pruning method is one-shot, requiring no
+                   retraining or weight updates. We evaluate our method on
+                   Mixtral-8x7B and Mixtral-8x22B across multiple language
+                   benchmarks. Experimental results show that our pruning method
+                   significantly outperforms state-of-the-art LLM pruning
+                   methods. Furthermore, our pruned MoE models can benefit from
+                   a pretrained teacher model through expert-wise knowledge
+                   distillation, improving performance post-pruning.
+                   Experimental results demonstrate that the Mixtral-8x7B model
+                   with 50\% sparsity maintains 99\% of the performance of the
+                   original model after the expert-wise knowledge distillation.",
+  month         =  "15~" # oct,
+  year          =  2024,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2410.12013",
+  keywords      = "distillation"
+}
+
+@ARTICLE{Regier2018-wh,
+  title     = "The Sapir-Whorf hypothesis and inference under uncertainty",
+  author    = "Regier, Terry and Xu, Yang",
+  journal   = "Wiley Interdiscip. Rev. Cogn. Sci.",
+  publisher = "Wiley",
+  volume    =  9,
+  number    =  3,
+  pages     = "e1464",
+  abstract  = "Click on the article title to read more.",
+  month     =  "1~" # may,
+  year      =  2018,
+  keywords  = "linguistics",
+  language  = "en"
+}
+
+@ARTICLE{Ramos2011-ov,
+  title     = "What constrains grammatical gender effects on semantic
+               judgements? Evidence from Portuguese",
+  author    = "Ramos, Sara and Roberson, Debi",
+  journal   = "J. Cogn. Psychol. (Hove)",
+  publisher = "Informa UK Limited",
+  volume    =  23,
+  number    =  1,
+  pages     = "102--111",
+  abstract  = "Four studies investigated whether grammatical gender biases the
+               semantic judgements of Portuguese speakers, relative to speakers
+               of English. Some research reports that grammatical gender has a
+               pervasive influence on speakers' cognitive representations (e.g.,
+               Boroditsky, Schmidt, \& Philips, 2003; Sera, Elieff, Forbes,
+               Burch, \& Rodriguez, 2002). Others argue that effects of grammar
+               arise through linguistic processing (e.g., Vigliocco, Vinson,
+               Paganelli, \& Dworzynski, 2005) and are restricted to animate
+               categories for which gender is a pertinent feature. The present
+               results found effects of gender in Portuguese speakers'
+               judgements of inanimate objects, but only when gender was task
+               relevant and/or when the stimuli were words, rather than
+               pictures. These findings support the view that gender effects on
+               cognitive judgements arise as a function of linguistic processing
+               and/or task demands, rather than directly influencing conceptual
+               or semantic representations.",
+  month     =  feb,
+  year      =  2011,
+  keywords  = "linguistics",
+  language  = "en"
+}
+
+@ARTICLE{Vigliocco2005-cz,
+  title     = "Grammatical gender effects on cognition: implications for
+               language learning and language use",
+  author    = "Vigliocco, Gabriella and Vinson, David P and Paganelli, Federica
+               and Dworzynski, Katharina",
+  journal   = "J. Exp. Psychol. Gen.",
+  publisher = "American Psychological Association (APA)",
+  volume    =  134,
+  number    =  4,
+  pages     = "501--520",
+  abstract  = "In 4 experiments, the authors addressed the mechanisms by which
+               grammatical gender (in Italian and German) may come to affect
+               meaning. In Experiments 1 (similarity judgments) and 2 (semantic
+               substitution errors), the authors found Italian gender effects
+               for animals but not for artifacts; Experiment 3 revealed no
+               comparable effects in German. These results suggest that gender
+               effects arise as a generalization from an established association
+               between gender of nouns and sex of human referents, extending to
+               nouns referring to sexuated entities. Across languages, such
+               effects are found when the language allows for easy mapping
+               between gender of nouns and sex of human referents (Italian) but
+               not when the mapping is less transparent (German). A final
+               experiment provided further constraints: These effects during
+               processing arise at a lexical-semantic level rather than at a
+               conceptual level.",
+  month     =  nov,
+  year      =  2005,
+  keywords  = "linguistics",
+  language  = "en"
+}
+
+@ARTICLE{Sera2002-ii,
+  title     = "When language affects cognition and when it does not: an analysis
+               of grammatical gender and classification",
+  author    = "Sera, Maria D and Elieff, Chryle and Forbes, James and Burch,
+               Melissa Clark and Rodr\'{\i}guez, Wanda and Dubois, Diane Poulin",
+  journal   = "J. Exp. Psychol. Gen.",
+  publisher = "American Psychological Association (APA)",
+  volume    =  131,
+  number    =  3,
+  pages     = "377--397",
+  abstract  = "The focus of this work was on the relation between grammatical
+               gender and categorization. In one set of studies, monolingual
+               English-, Spanish-, French-, and German-speaking children and
+               adults assigned male and female voices to inanimate objects.
+               Results from Spanish and French speakers indicated effects of
+               grammatical gender on classification; results from German
+               speakers did not. A connectionist model simulated the
+               contradicting findings. The connectionist networks were also used
+               to investigate which aspect of grammatical gender was responsible
+               for the different pattern of findings. The predictions from the
+               connectionist simulations were supported by the results from an
+               artificial language-learning task. The results from this work
+               demonstrate how connectionist networks can be used to identify
+               the differences between languages that affect categorization.",
+  month     =  sep,
+  year      =  2002,
+  keywords  = "linguistics",
+  language  = "en"
+}
+
+@ARTICLE{Sapir1929-ky,
+  title     = "The status of linguistics as a science",
+  author    = "Sapir, E",
+  journal   = "Language (Baltim.)",
+  publisher = "JSTOR",
+  volume    =  5,
+  number    =  4,
+  pages     =  207,
+  abstract  = "E. Sapir, The Status of Linguistics as a Science, Language, Vol.
+               5, No. 4 (Dec., 1929), pp. 207-214",
+  month     =  dec,
+  year      =  1929,
+  keywords  = "linguistics",
+  language  = "en"
+}
+
+@INCOLLECTION{Whorf1997-zx,
+  title     = "The relation of habitual thought and behavior to language",
+  author    = "Whorf, Benjamin Lee",
+  booktitle = "Sociolinguistics",
+  publisher = "Macmillan Education UK",
+  address   = "London",
+  pages     = "443--463",
+  year      =  1997,
+  keywords  = "linguistics"
+}
+
+@ARTICLE{Wolff2011-qo,
+  title     = "Linguistic relativity",
+  author    = "Wolff, Phillip and Holmes, Kevin J",
+  journal   = "Wiley Interdiscip. Rev. Cogn. Sci.",
+  publisher = "John Wiley \& Sons, Ltd",
+  volume    =  2,
+  number    =  3,
+  pages     = "253--265",
+  abstract  = "The central question in research on linguistic relativity, or the
+               Whorfian hypothesis, is whether people who speak different
+               languages think differently. The recent resurgence of research on
+               this question can be attributed, in part, to new insights about
+               the ways in which language might impact thought. We identify
+               seven categories of hypotheses about the possible effects of
+               language on thought across a wide range of domains, including
+               motion, color, spatial relations, number, and false belief
+               understanding. While we do not find support for the idea that
+               language determines the basic categories of thought or that it
+               overwrites preexisting conceptual distinctions, we do find
+               support for the proposal that language can make some distinctions
+               difficult to avoid, as well as for the proposal that language can
+               augment certain types of thinking. Further, we highlight recent
+               evidence suggesting that language may induce a relatively
+               schematic mode of thinking. Although the literature on linguistic
+               relativity remains contentious, there is growing support for the
+               view that language has a profound effect on thought. WIREs Cogni
+               Sci 2011 2 253-265 DOI: 10.1002/wcs.104 For further resources
+               related to this article, please visit the WIREs website.",
+  month     =  "1~" # may,
+  year      =  2011,
+  keywords  = "linguistics",
+  language  = "en"
+}
+
+@INCOLLECTION{Boroditsky2003-du,
+  title     = "Sex, Syntax, and Semantics",
+  author    = "Boroditsky, Lera and Schmidt, Lauren A and Phillips, Webb",
+  booktitle = "Language in Mind",
+  publisher = "The MIT Press",
+  pages     = "61--80",
+  month     =  "14~" # mar,
+  year      =  2003,
+  keywords  = "linguistics"
+}
+
+@ARTICLE{Bae2015-vk,
+  title     = "Why some colors appear more memorable than others: A model
+               combining categories and particulars in color working memory",
+  author    = "Bae, Gi-Yeul and Olkkonen, Maria and Allred, Sarah R and
+               Flombaum, Jonathan I",
+  journal   = "J. Exp. Psychol. Gen.",
+  publisher = "American Psychological Association (APA)",
+  volume    =  144,
+  number    =  4,
+  pages     = "744--763",
+  abstract  = "Categorization with basic color terms is an intuitive and
+               universal aspect of color perception. Yet research on visual
+               working memory capacity has largely assumed that only continuous
+               estimates within color space are relevant to memory. As a result,
+               the influence of color categories on working memory remains
+               unknown. We propose a dual content model of color representation
+               in which color matches to objects that are either present
+               (perception) or absent (memory) integrate category
+               representations along with estimates of specific values on a
+               continuous scale (``particulars''). We develop and test the model
+               through 4 experiments. In a first experiment pair, participants
+               reproduce a color target, both with and without a delay, using a
+               recently influential estimation paradigm. In a second experiment
+               pair, we use standard methods in color perception to identify
+               boundary and focal colors in the stimulus set. The main results
+               are that responses drawn from working memory are significantly
+               biased away from category boundaries and toward category centers.
+               Importantly, the same pattern of results is present without a
+               memory delay. The proposed dual content model parsimoniously
+               explains these results, and it should replace prevailing single
+               content models in studies of visual working memory. More broadly,
+               the model and the results demonstrate how the main consequence of
+               visual working memory maintenance is the amplification of
+               category related biases and stimulus-specific variability that
+               originate in perception.",
+  month     =  aug,
+  year      =  2015,
+  keywords  = "linguistics",
+  language  = "en"
+}
+
+@ARTICLE{Ernst2002-mp,
+  title     = "Humans integrate visual and haptic information in a statistically
+               optimal fashion",
+  author    = "Ernst, Marc O and Banks, Martin S",
+  journal   = "Nature",
+  publisher = "Springer Science and Business Media LLC",
+  volume    =  415,
+  number    =  6870,
+  pages     = "429--433",
+  abstract  = "When a person looks at an object while exploring it with their
+               hand, vision and touch both provide information for estimating
+               the properties of the object. Vision frequently dominates the
+               integrated visual-haptic percept, for example when judging size,
+               shape or position, but in some circumstances the percept is
+               clearly affected by haptics. Here we propose that a general
+               principle, which minimizes variance in the final estimate,
+               determines the degree to which vision or haptics dominates. This
+               principle is realized by using maximum-likelihood estimation to
+               combine the inputs. To investigate cue combination
+               quantitatively, we first measured the variances associated with
+               visual and haptic estimation of height. We then used these
+               measurements to construct a maximum-likelihood integrator. This
+               model behaved very similarly to humans in a visual-haptic task.
+               Thus, the nervous system seems to combine visual and haptic
+               information in a fashion that is similar to a maximum-likelihood
+               integrator. Visual dominance occurs when the variance associated
+               with visual estimation is lower than that associated with haptic
+               estimation.",
+  month     =  "24~" # jan,
+  year      =  2002,
+  keywords  = "linguistics",
+  language  = "en"
+}
+
+@ARTICLE{Cibelli2016-sj,
+  title     = "The Sapir-Whorf hypothesis and probabilistic inference: Evidence
+               from the domain of color",
+  author    = "Cibelli, Emily and Xu, Yang and Austerweil, Joseph L and
+               Griffiths, Thomas L and Regier, Terry",
+  journal   = "PLoS One",
+  publisher = "Public Library of Science (PLoS)",
+  volume    =  11,
+  number    =  7,
+  pages     = "e0158725",
+  abstract  = "The Sapir-Whorf hypothesis holds that our thoughts are shaped by
+               our native language, and that speakers of different languages
+               therefore think differently. This hypothesis is controversial in
+               part because it appears to deny the possibility of a universal
+               groundwork for human cognition, and in part because some findings
+               taken to support it have not reliably replicated. We argue that
+               considering this hypothesis through the lens of probabilistic
+               inference has the potential to resolve both issues, at least with
+               respect to certain prominent findings in the domain of color
+               cognition. We explore a probabilistic model that is grounded in a
+               presumed universal perceptual color space and in
+               language-specific categories over that space. The model predicts
+               that categories will most clearly affect color memory when
+               perceptual information is uncertain. In line with earlier
+               studies, we show that this model accounts for language-consistent
+               biases in color reconstruction from memory in English speakers,
+               modulated by uncertainty. We also show, to our knowledge for the
+               first time, that such a model accounts for influential existing
+               data on cross-language differences in color discrimination from
+               memory, both within and across categories. We suggest that these
+               ideas may help to clarify the debate over the Sapir-Whorf
+               hypothesis.",
+  month     =  "19~" # jul,
+  year      =  2016,
+  keywords  = "linguistics",
+  language  = "en"
+}
+
+@MISC{Xu2025-kp,
+  title         = "Can language models learn typologically implausible
+                   languages?",
+  author        = "Xu, Tianyang and Kuribayashi, Tatsuki and Oseki, Yohei and
+                   Cotterell, Ryan and Warstadt, Alex",
+  abstract      = "Grammatical features across human languages show intriguing
+                   correlations often attributed to learning biases in humans.
+                   However, empirical evidence has been limited to experiments
+                   with highly simplified artificial languages, and whether
+                   these correlations arise from domain-general or
+                   language-specific biases remains a matter of debate. Language
+                   models (LMs) provide an opportunity to study artificial
+                   language learning at a large scale and with a high degree of
+                   naturalism. In this paper, we begin with an in-depth
+                   discussion of how LMs allow us to better determine the role
+                   of domain-general learning biases in language universals. We
+                   then assess learnability differences for LMs resulting from
+                   typologically plausible and implausible languages closely
+                   following the word-order universals identified by linguistic
+                   typologists. We conduct a symmetrical cross-lingual study
+                   training and testing LMs on an array of highly naturalistic
+                   but counterfactual versions of the English (head-initial) and
+                   Japanese (head-final) languages. Compared to similar work,
+                   our datasets are more naturalistic and fall closer to the
+                   boundary of plausibility. Our experiments show that these LMs
+                   are often slower to learn these subtly implausible languages,
+                   while ultimately achieving similar performance on some
+                   metrics regardless of typological plausibility. These
+                   findings lend credence to the conclusion that LMs do show
+                   some typologically-aligned learning preferences, and that the
+                   typological patterns may result from, at least to some
+                   degree, domain-general learning biases.",
+  month         =  "17~" # feb,
+  year          =  2025,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2502.12317",
+  keywords      = "linguistics;multilinguality"
+}
+
+@INPROCEEDINGS{Bandarkar2025-tv,
+  title     = "Multilingual Routing in Mixture-of-Experts",
+  author    = "Bandarkar, Lucas and Yang, Chenyuan and Fayyaz, Mohsen and Hu,
+               Junlin and Peng, Nanyun",
+  booktitle = "The Fourteenth International Conference on Learning
+               Representations",
+  abstract  = "Mixture-of-Experts (MoE) architectures have become the key to
+               scaling modern LLMs, yet little is understood about how their
+               sparse routing dynamics respond to multilingual data. In this
+               work, we analyze expert routing patterns using parallel
+               multilingual datasets and present highly interpretable layer-wise
+               phenomena. We find that MoE models route tokens in
+               language-specific ways in the early and late decoder layers but
+               exhibit significant cross-lingual routing alignment in middle
+               layers, mirroring parameter-sharing trends observed in dense
+               LLMs. In particular, we reveal a clear, strong correlation
+               between a model's performance in a given language and how
+               similarly its tokens are routed to English in these layers.
+               Extending beyond correlation, we explore inference-time
+               interventions that induce higher cross-lingual routing alignment.
+               We introduce a method that steers the router by promoting
+               middle-layer task experts frequently activated in English, and it
+               successfully increases multilingual performance. These 1-2\%
+               gains are remarkably consistent across two evaluation tasks,
+               three models, and 15+ languages, especially given that these
+               simple interventions override routers of extensively trained,
+               state-of-the-art LLMs. In comparison, interventions outside of
+               the middle layers or targeting multilingual-specialized experts
+               only yield performance degradation. Altogether, we present
+               numerous findings that explain how MoEs process non-English text
+               and demonstrate that generalization is limited by the model's
+               ability to leverage language-universal experts in all languages.",
+  month     =  "8~" # oct,
+  year      =  2025,
+  keywords  = "Reading List;multilinguality"
+}
+
+@INPROCEEDINGS{Bandarkar2025-qj,
+  title     = "The unreasonable effectiveness of model merging for cross-lingual
+               transfer in {LLMs}",
+  author    = "Bandarkar, Lucas and Peng, Nanyun",
+  booktitle = "Proceedings of the 5th Workshop on Multilingual Representation
+               Learning (MRL 2025)",
+  publisher = "Association for Computational Linguistics",
+  address   = "Stroudsburg, PA, USA",
+  pages     = "131--148",
+  abstract  = "Lucas Bandarkar, Nanyun Peng. Proceedings of the 5th Workshop on
+               Multilingual Representation Learning (MRL 2025). 2025.",
+  month     =  nov,
+  year      =  2025,
+  keywords  = "Reading List;multilinguality"
+}
+
+@INPROCEEDINGS{Bandarkar2024-mb,
+  title     = "Layer Swapping for Zero-Shot Cross-Lingual Transfer in Large
+               Language Models",
+  author    = "Bandarkar, Lucas and Muller, Benjamin and Yuvraj, Pritish and
+               Hou, Rui and Singhal, Nayan and Lv, Hongjiang and Liu, Bing",
+  booktitle = "The Thirteenth International Conference on Learning
+               Representations",
+  abstract  = "Model merging, such as model souping, is the practice of
+               combining different models with the same architecture together
+               without further training. In this work, we present a model
+               merging methodology that addresses the difficulty of fine-tuning
+               Large Language Models (LLMs) for target tasks in non-English
+               languages, where task-specific data is often unavailable. We
+               focus on mathematical reasoning and without in-language math
+               data, facilitate cross-lingual transfer by composing language and
+               math capabilities. Starting from the same pretrained model, we
+               fine-tune separate ``experts'' on math instruction data in
+               English and on generic instruction data in the target language.
+               We then replace the top and bottom transformer layers of the math
+               expert directly with layers from the language expert, which
+               consequently enhances math performance in the target language.
+               The resulting merged models outperform the individual experts and
+               other merging methods on the math benchmark, MGSM, by 10\% across
+               four major languages where math instruction data is scarce. In
+               addition, this layer swapping is simple, inexpensive, and
+               intuitive, as it is based on an interpretative analysis of the
+               most important parameter changes during the fine-tuning of each
+               expert. The ability to successfully re-compose LLMs for
+               cross-lingual transfer in this manner opens up future
+               possibilities to combine model expertise, create modular
+               solutions, and transfer reasoning capabilities across languages
+               all post hoc.",
+  month     =  "4~" # oct,
+  year      =  2024,
+  keywords  = "Reading List;multilinguality"
+}
+
+@INPROCEEDINGS{Lu2024-ol,
+  title     = "Not all experts are equal: Efficient expert pruning and skipping
+               for mixture-of-experts large language models",
+  author    = "Lu, Xudong and Liu, Qi and Xu, Yuhui and Zhou, Aojun and Huang,
+               Siyuan and Zhang, Bo and Yan, Junchi and Li, Hongsheng",
+  booktitle = "Proceedings of the 62nd Annual Meeting of the Association for
+               Computational Linguistics (Volume 1: Long Papers)",
+  publisher = "Association for Computational Linguistics",
+  address   = "Stroudsburg, PA, USA",
+  pages     = "6159--6172",
+  abstract  = "Xudong Lu, Qi Liu, Yuhui Xu, Aojun Zhou, Siyuan Huang, Bo Zhang,
+               Junchi Yan, Hongsheng Li. Proceedings of the 62nd Annual Meeting
+               of the Association for Computational Linguistics (Volume 1: Long
+               Papers). 2024.",
+  year      =  2024,
+  keywords  = "pruning"
+}
+
+@MISC{Agarwal2023-lt,
+  title         = "On-policy distillation of language models: Learning from
+                   self-generated mistakes",
+  author        = "Agarwal, Rishabh and Vieillard, Nino and Zhou, Yongchao and
+                   Stanczyk, Piotr and Ramos, Sabela and Geist, Matthieu and
+                   Bachem, Olivier",
+  abstract      = "Knowledge distillation (KD) is widely used for compressing a
+                   teacher model to reduce its inference cost and memory
+                   footprint, by training a smaller student model. However,
+                   current KD methods for auto-regressive sequence models suffer
+                   from distribution mismatch between output sequences seen
+                   during training and those generated by the student during
+                   inference. To address this issue, we introduce Generalized
+                   Knowledge Distillation (GKD). Instead of solely relying on a
+                   fixed set of output sequences, GKD trains the student on its
+                   self-generated output sequences by leveraging feedback from
+                   the teacher on such sequences. Unlike supervised KD
+                   approaches, GKD also offers the flexibility to employ
+                   alternative loss functions between the student and teacher,
+                   which can be useful when the student lacks the expressivity
+                   to mimic the teacher's distribution. Furthermore, GKD
+                   facilitates the seamless integration of distillation with RL
+                   fine-tuning (RLHF). We demonstrate the efficacy of GKD for
+                   distilling auto-regressive language models on summarization,
+                   translation, and arithmetic reasoning tasks, and
+                   task-agnostic distillation for instruction-tuning.",
+  month         =  "23~" # jun,
+  year          =  2023,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "2306.13649",
+  language      = "en"
+}
+
+@MISC{Frantar2023-si,
+  title         = "{SparseGPT}: Massive language models can be accurately pruned
+                   in one-shot",
+  author        = "Frantar, Elias and Alistarh, Dan",
+  abstract      = "We show for the first time that large-scale generative
+                   pretrained transformer (GPT) family models can be pruned to
+                   at least 50\% sparsity in one-shot, without any retraining,
+                   at minimal loss of accuracy. This is achieved via a new
+                   pruning method called SparseGPT, specifically designed to
+                   work efficiently and accurately on massive GPT-family models.
+                   We can execute SparseGPT on the largest available open-source
+                   models, OPT-175B and BLOOM-176B, in under 4.5 hours, and can
+                   reach 60\% unstructured sparsity with negligible increase in
+                   perplexity: remarkably, more than 100 billion weights from
+                   these models can be ignored at inference time. SparseGPT
+                   generalizes to semi-structured (2:4 and 4:8) patterns, and is
+                   compatible with weight quantization approaches. The code is
+                   available at: https://github.com/IST-DASLab/sparsegpt.",
+  month         =  "2~" # jan,
+  year          =  2023,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "2301.00774"
+}
+
+@MISC{Dettmers2023-si,
+  title         = "{QLoRA}: Efficient Finetuning of Quantized {LLMs}",
+  author        = "Dettmers, Tim and Pagnoni, Artidoro and Holtzman, Ari and
+                   Zettlemoyer, Luke",
+  abstract      = "We present QLoRA, an efficient finetuning approach that
+                   reduces memory usage enough to finetune a 65B parameter model
+                   on a single 48GB GPU while preserving full 16-bit finetuning
+                   task performance. QLoRA backpropagates gradients through a
+                   frozen, 4-bit quantized pretrained language model into Low
+                   Rank Adapters~(LoRA). Our best model family, which we name
+                   Guanaco, outperforms all previous openly released models on
+                   the Vicuna benchmark, reaching 99.3\% of the performance
+                   level of ChatGPT while only requiring 24 hours of finetuning
+                   on a single GPU. QLoRA introduces a number of innovations to
+                   save memory without sacrificing performance: (a) 4-bit
+                   NormalFloat (NF4), a new data type that is information
+                   theoretically optimal for normally distributed weights (b)
+                   double quantization to reduce the average memory footprint by
+                   quantizing the quantization constants, and (c) paged
+                   optimziers to manage memory spikes. We use QLoRA to finetune
+                   more than 1,000 models, providing a detailed analysis of
+                   instruction following and chatbot performance across 8
+                   instruction datasets, multiple model types (LLaMA, T5), and
+                   model scales that would be infeasible to run with regular
+                   finetuning (e.g. 33B and 65B parameter models). Our results
+                   show that QLoRA finetuning on a small high-quality dataset
+                   leads to state-of-the-art results, even when using smaller
+                   models than the previous SoTA. We provide a detailed analysis
+                   of chatbot performance based on both human and GPT-4
+                   evaluations showing that GPT-4 evaluations are a cheap and
+                   reasonable alternative to human evaluation. Furthermore, we
+                   find that current chatbot benchmarks are not trustworthy to
+                   accurately evaluate the performance levels of chatbots. A
+                   lemon-picked analysis demonstrates where Guanaco fails
+                   compared to ChatGPT. We release all of our models and code,
+                   including CUDA kernels for 4-bit training.",
+  month         =  "23~" # may,
+  year          =  2023,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "2305.14314"
+}
+
+@MISC{Magister2022-zi,
+  title         = "Teaching small language models to reason",
+  author        = "Magister, Lucie Charlotte and Mallinson, Jonathan and Adamek,
+                   Jakub and Malmi, Eric and Severyn, Aliaksei",
+  abstract      = "Chain of thought prompting successfully improves the
+                   reasoning capabilities of large language models, achieving
+                   state of the art results on a range of datasets. However,
+                   these reasoning capabilities only appear to emerge in models
+                   with a size of over 100 billion parameters. In this paper, we
+                   explore the transfer of such reasoning capabilities to models
+                   with less than 100 billion parameters via knowledge
+                   distillation. Specifically, we finetune a student model on
+                   the chain of thought outputs generated by a larger teacher
+                   model. Our experiments show that the proposed method improves
+                   task performance across arithmetic, commonsense and symbolic
+                   reasoning datasets. For example, the accuracy of T5 XXL on
+                   GSM8K improves from 8.11\% to 21.99\% when finetuned on
+                   PaLM-540B generated chains of thought.",
+  month         =  "16~" # dec,
+  year          =  2022,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2212.08410",
+  keywords      = "distillation"
+}
+
+@INPROCEEDINGS{Boguraev2025-ib,
+  title     = "Causal interventions reveal shared structure across English
+               filler--gap constructions",
+  author    = "Boguraev, Sasha and Potts, Christopher and Mahowald, Kyle",
+  booktitle = "Proceedings of the 2025 Conference on Empirical Methods in
+               Natural Language Processing",
+  publisher = "Association for Computational Linguistics",
+  address   = "Stroudsburg, PA, USA",
+  pages     = "25032--25053",
+  abstract  = "Sasha Boguraev, Christopher Potts, Kyle Mahowald. Proceedings of
+               the 2025 Conference on Empirical Methods in Natural Language
+               Processing. 2025.",
+  month     =  nov,
+  year      =  2025,
+  keywords  = "Reading List;linguistics"
 }
