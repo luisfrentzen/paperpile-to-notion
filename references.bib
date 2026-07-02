@@ -8344,3 +8344,38 @@
   year      =  2025,
   keywords  = "Reading List;linguistics"
 }
+
+@MISC{Xia2025-ek,
+  title         = "Cross-{LoRA}: A data-free {LoRA} transfer framework across
+                   heterogeneous {LLMs}",
+  author        = "Xia, Feifan and Liao, Mingyang and Fang, Yuyang and Li,
+                   Defang and Xie, Yantong and Li, Weikang and Li, Yang and Xia,
+                   Deguo and Huang, Jizhou",
+  abstract      = "Traditional parameter-efficient fine-tuning (PEFT) methods
+                   such as LoRA are tightly coupled with the base model
+                   architecture, which constrains their applicability across
+                   heterogeneous pretrained large language models (LLMs). To
+                   address this limitation, we introduce Cross-LoRA, a data-free
+                   framework for transferring LoRA modules between diverse base
+                   models without requiring additional training data. Cross-LoRA
+                   consists of two key components: (a) LoRA-Align, which
+                   performs subspace alignment between source and target base
+                   models through rank-truncated singular value decomposition
+                   (SVD) and Frobenius-optimal linear transformation, ensuring
+                   compatibility under dimension mismatch; and (b) LoRA-Shift,
+                   which applies the aligned subspaces to project source LoRA
+                   weight updates into the target model parameter space. Both
+                   components are data-free, training-free, and enable
+                   lightweight adaptation on a commodity GPU in 20 minutes.
+                   Experiments on ARCs, OBOA and HellaSwag show that Cross-LoRA
+                   achieves relative gains of up to 5.26\% over base models.
+                   Across other commonsense reasoning benchmarks, Cross-LoRA
+                   maintains performance comparable to that of directly trained
+                   LoRA adapters.",
+  month         =  "7~" # aug,
+  year          =  2025,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "2508.05232",
+  keywords      = "to-read"
+}
