@@ -5845,6 +5845,41 @@
   language  = "en"
 }
 
+@ARTICLE{Ponti2021-yg,
+  title     = "Parameter space factorization for zero-shot learning across tasks
+               and languages",
+  author    = "Ponti, Edoardo M and Vuli\'{c}, Ivan and Cotterell, Ryan and
+               Parovic, Marinela and Reichart, Roi and Korhonen, Anna",
+  journal   = "Trans. Assoc. Comput. Linguist.",
+  publisher = "MIT Press",
+  volume    =  9,
+  pages     = "410--428",
+  abstract  = "AbstractMost combinations of NLP tasks and language varieties
+               lack in-domain examples for supervised training because of the
+               paucity of annotated data. How can neural models make
+               sample-efficient generalizations from task--language combinations
+               with available data to low-resource ones? In this work, we
+               propose a Bayesian generative model for the space of neural
+               parameters. We assume that this space can be factorized into
+               latent variables for each language and each task. We infer the
+               posteriors over such latent variables based on data from seen
+               task--language combinations through variational inference. This
+               enables zero-shot classification on unseen combinations at
+               prediction time. For instance, given training data for named
+               entity recognition (NER) in Vietnamese and for part-of-speech
+               (POS) tagging in Wolof, our model can perform accurate
+               predictions for NER in Wolof. In particular, we experiment with a
+               typologically diverse sample of 33 languages from 4 continents
+               and 11 families, and show that our model yields comparable or
+               better results than state-of-the-art, zero-shot cross-lingual
+               transfer methods. Our code is available at
+               github.com/cambridgeltl/parameter-factorization.",
+  month     =  "26~" # apr,
+  year      =  2021,
+  keywords  = "multilinguality",
+  language  = "en"
+}
+
 @ARTICLE{Oh2023-uz,
   title     = "Why does surprisal from larger Transformer-based language models
                provide a poorer fit to human reading times?",
