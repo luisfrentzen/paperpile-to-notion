@@ -9497,3 +9497,35 @@
   year      =  2025,
   keywords  = "multilinguality"
 }
+
+@MISC{Heinzerling2024-cs,
+  title         = "Monotonic representation of numeric properties in language
+                   models",
+  author        = "Heinzerling, Benjamin and Inui, Kentaro",
+  abstract      = "Language models (LMs) can express factual knowledge involving
+                   numeric properties such as Karl Popper was born in 1902.
+                   However, how this information is encoded in the model's
+                   internal representations is not understood well. Here, we
+                   introduce a simple method for finding and editing
+                   representations of numeric properties such as an entity's
+                   birth year. Empirically, we find low-dimensional subspaces
+                   that encode numeric properties monotonically, in an
+                   interpretable and editable fashion. When editing
+                   representations along directions in these subspaces, LM
+                   output changes accordingly. For example, by patching
+                   activations along a ``birthyear'' direction we can make the
+                   LM express an increasingly late birthyear: Karl Popper was
+                   born in 1929, Karl Popper was born in 1957, Karl Popper was
+                   born in 1968. Property-encoding directions exist across
+                   several numeric properties in all models under consideration,
+                   suggesting the possibility that monotonic representation of
+                   numeric properties consistently emerges during LM
+                   pretraining. Code:
+                   https://github.com/bheinzerling/numeric-property-repr",
+  month         =  "15~" # mar,
+  year          =  2024,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2403.10381",
+  keywords      = "interpretability"
+}
